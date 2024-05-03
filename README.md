@@ -5,4 +5,4 @@
 - Hugo Gomes -- 2220893
 - Rodrigo jerónimo -- 2220909
 
-![iCantina Logo](logotipo/iCantina_logo.svg)
+![iCantina Logo](logotipo/iCantina_logoNoBG.svg)
