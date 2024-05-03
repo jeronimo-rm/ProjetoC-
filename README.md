@@ -1,6 +1,6 @@
 # Projeto de DA em C# iCantina
 
 ## Realizado por
-Abner Gonçalves -- ##2220906
-Hugo Gomes -- ##2220893
-Rodrigo jerónimo -- ##2220909
+Abner Gonçalves -- 2220906
+Hugo Gomes -- 2220893
+Rodrigo jerónimo -- 2220909
