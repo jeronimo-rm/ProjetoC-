@@ -12,7 +12,7 @@ namespace iCantina
 {
     public partial class FormExtras : Form
     {
-        public FormExtras()
+        public FormExtras(FormPrincipal formPrincipal)
         {
             InitializeComponent();
         }

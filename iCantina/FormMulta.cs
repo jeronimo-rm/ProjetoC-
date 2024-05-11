@@ -12,9 +12,14 @@ namespace iCantina
 {
     public partial class FormMulta : Form
     {
-        public FormMulta()
+        public FormMulta(FormPrincipal formPrincipal)
         {
             InitializeComponent();
+        }
+
+        private void FormMulta_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

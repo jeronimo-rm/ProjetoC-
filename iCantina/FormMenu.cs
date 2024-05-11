@@ -12,9 +12,14 @@ namespace iCantina
 {
     public partial class FormMenu : Form
     {
-        public FormMenu()
+        public FormMenu(FormPrincipal formPrincipal)
         {
             InitializeComponent();
+        }
+
+        private void FormMenu_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

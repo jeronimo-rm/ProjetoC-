@@ -12,9 +12,14 @@ namespace iCantina
 {
     public partial class FormGestaoClientes : Form
     {
-        public FormGestaoClientes()
+        public FormGestaoClientes(FormPrincipal formPrincipal)
         {
             InitializeComponent();
+        }
+
+        private void FormGestaoClientes_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

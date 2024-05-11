@@ -12,7 +12,7 @@ namespace iCantina
 {
     public partial class FormReservas : Form
     {
-        public FormReservas()
+        public FormReservas(FormPrincipal formPrincipal)
         {
             InitializeComponent();
         }

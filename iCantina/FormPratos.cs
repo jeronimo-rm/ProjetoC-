@@ -16,5 +16,10 @@ namespace iCantina
         {
             InitializeComponent();
         }
+
+        private void FormPratos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

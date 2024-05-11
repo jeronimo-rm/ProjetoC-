@@ -12,9 +12,14 @@ namespace iCantina
 {
     public partial class FormFuncionario : Form
     {
-        public FormFuncionario()
+        public FormFuncionario(FormPrincipal formPrincipal)
         {
             InitializeComponent();
+        }
+
+        private void FormFuncionario_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
