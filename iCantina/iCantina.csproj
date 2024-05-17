@@ -105,10 +105,10 @@
     <Compile Include="FormReservas.Designer.cs">
       <DependentUpon>FormReservas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Utilizador.cs" />
     <Compile Include="Prato.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilizadores.cs" />
     <EmbeddedResource Include="FormExtras.resx">
       <DependentUpon>FormExtras.cs</DependentUpon>
     </EmbeddedResource>

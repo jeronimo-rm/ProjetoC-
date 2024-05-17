@@ -30,122 +30,26 @@
         { 
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.definiçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pratosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.funcionarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.extrasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reservasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.multaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabelHora = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabelNomeCinema = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabelNomeFuncionarioLogado = new System.Windows.Forms.ToolStripStatusLabel();
             this.timerFormPrincipal = new System.Windows.Forms.Timer(this.components);
-            this.menuStrip1.SuspendLayout();
+            this.dateTimePickerSessoesFormPrinc = new System.Windows.Forms.DateTimePicker();
+            this.monthCalendar = new System.Windows.Forms.MonthCalendar();
+            this.buttonPratos = new System.Windows.Forms.Button();
+            this.buttonMenu = new System.Windows.Forms.Button();
+            this.buttonFuncionarios = new System.Windows.Forms.Button();
+            this.buttonExtras = new System.Windows.Forms.Button();
+            this.buttonMulta = new System.Windows.Forms.Button();
+            this.buttonClientes = new System.Windows.Forms.Button();
+            this.buttonReservas = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.BackColor = System.Drawing.Color.Azure;
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.definiçõesToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(1196, 26);
-            this.menuStrip1.TabIndex = 12;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // definiçõesToolStripMenuItem
-            // 
-            this.definiçõesToolStripMenuItem.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.definiçõesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.pratosToolStripMenuItem,
-            this.menuToolStripMenuItem,
-            this.funcionarioToolStripMenuItem,
-            this.extrasToolStripMenuItem,
-            this.reservasToolStripMenuItem,
-            this.clientesToolStripMenuItem,
-            this.multaToolStripMenuItem});
-            this.definiçõesToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.definiçõesToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.definiçõesToolStripMenuItem.Name = "definiçõesToolStripMenuItem";
-            this.definiçõesToolStripMenuItem.Size = new System.Drawing.Size(96, 24);
-            this.definiçõesToolStripMenuItem.Text = "Definições";
-            // 
-            // pratosToolStripMenuItem
-            // 
-            this.pratosToolStripMenuItem.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.pratosToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.pratosToolStripMenuItem.Name = "pratosToolStripMenuItem";
-            this.pratosToolStripMenuItem.Size = new System.Drawing.Size(203, 26);
-            this.pratosToolStripMenuItem.Text = "🍽️Pratos";
-            this.pratosToolStripMenuItem.Click += new System.EventHandler(this.pratosToolStripMenuItem_Click);
-            // 
-            // menuToolStripMenuItem
-            // 
-            this.menuToolStripMenuItem.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.menuToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            this.menuToolStripMenuItem.Size = new System.Drawing.Size(203, 26);
-            this.menuToolStripMenuItem.Text = "🛎️Menu";
-            this.menuToolStripMenuItem.Click += new System.EventHandler(this.menuToolStripMenuItem_Click);
-            // 
-            // funcionarioToolStripMenuItem
-            // 
-            this.funcionarioToolStripMenuItem.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.funcionarioToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.funcionarioToolStripMenuItem.Name = "funcionarioToolStripMenuItem";
-            this.funcionarioToolStripMenuItem.Size = new System.Drawing.Size(203, 26);
-            this.funcionarioToolStripMenuItem.Text = "‍⛑️Funcionários";
-            this.funcionarioToolStripMenuItem.Click += new System.EventHandler(this.funcionarioToolStripMenuItem_Click);
-            // 
-            // extrasToolStripMenuItem
-            // 
-            this.extrasToolStripMenuItem.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.extrasToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.extrasToolStripMenuItem.Name = "extrasToolStripMenuItem";
-            this.extrasToolStripMenuItem.Size = new System.Drawing.Size(203, 26);
-            this.extrasToolStripMenuItem.Text = "➕Extras";
-            this.extrasToolStripMenuItem.Click += new System.EventHandler(this.extrasToolStripMenuItem_Click);
-            // 
-            // reservasToolStripMenuItem
-            // 
-            this.reservasToolStripMenuItem.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.reservasToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.reservasToolStripMenuItem.Name = "reservasToolStripMenuItem";
-            this.reservasToolStripMenuItem.Size = new System.Drawing.Size(203, 26);
-            this.reservasToolStripMenuItem.Text = "🎟️Reservas";
-            this.reservasToolStripMenuItem.Click += new System.EventHandler(this.reservasToolStripMenuItem_Click);
-            // 
-            // clientesToolStripMenuItem
-            // 
-            this.clientesToolStripMenuItem.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.clientesToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(203, 26);
-            this.clientesToolStripMenuItem.Text = "👤Clientes";
-            this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
-            // 
-            // multaToolStripMenuItem
-            // 
-            this.multaToolStripMenuItem.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.multaToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.multaToolStripMenuItem.Name = "multaToolStripMenuItem";
-            this.multaToolStripMenuItem.Size = new System.Drawing.Size(203, 26);
-            this.multaToolStripMenuItem.Text = "⚠️Multa";
-            this.multaToolStripMenuItem.Click += new System.EventHandler(this.multaToolStripMenuItem_Click);
             // 
             // pictureBox1
             // 
@@ -161,10 +65,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(828, 0);
+            this.pictureBox2.Location = new System.Drawing.Point(918, 0);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(409, 85);
+            this.pictureBox2.Size = new System.Drawing.Size(278, 85);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 14;
             this.pictureBox2.TabStop = false;
@@ -174,8 +78,6 @@
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabelHora,
-            this.toolStripStatusLabel2,
-            this.toolStripStatusLabelNomeCinema,
             this.toolStripStatusLabel1,
             this.toolStripStatusLabelNomeFuncionarioLogado});
             this.statusStrip1.Location = new System.Drawing.Point(0, 532);
@@ -191,18 +93,6 @@
             this.toolStripStatusLabelHora.Size = new System.Drawing.Size(63, 20);
             this.toolStripStatusLabelHora.Text = "00:00:00";
             // 
-            // toolStripStatusLabel2
-            // 
-            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(126, 20);
-            this.toolStripStatusLabel2.Text = "Nome do Cinema";
-            // 
-            // toolStripStatusLabelNomeCinema
-            // 
-            this.toolStripStatusLabelNomeCinema.Name = "toolStripStatusLabelNomeCinema";
-            this.toolStripStatusLabelNomeCinema.Size = new System.Drawing.Size(151, 20);
-            this.toolStripStatusLabelNomeCinema.Text = "toolStripStatusLabel3";
-            // 
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
@@ -214,11 +104,125 @@
             this.toolStripStatusLabelNomeFuncionarioLogado.Name = "toolStripStatusLabelNomeFuncionarioLogado";
             this.toolStripStatusLabelNomeFuncionarioLogado.Size = new System.Drawing.Size(90, 20);
             this.toolStripStatusLabelNomeFuncionarioLogado.Text = "FAÇA LOGIN";
+            this.toolStripStatusLabelNomeFuncionarioLogado.Click += new System.EventHandler(this.toolStripStatusLabelNomeFuncionarioLogado_Click);
             // 
             // timerFormPrincipal
             // 
             this.timerFormPrincipal.Enabled = true;
             this.timerFormPrincipal.Tick += new System.EventHandler(this.timerFormPrincipal_Tick);
+            // 
+            // dateTimePickerSessoesFormPrinc
+            // 
+            this.dateTimePickerSessoesFormPrinc.CalendarMonthBackground = System.Drawing.Color.Black;
+            this.dateTimePickerSessoesFormPrinc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerSessoesFormPrinc.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.dateTimePickerSessoesFormPrinc.Location = new System.Drawing.Point(495, 183);
+            this.dateTimePickerSessoesFormPrinc.Margin = new System.Windows.Forms.Padding(4);
+            this.dateTimePickerSessoesFormPrinc.MinDate = new System.DateTime(2023, 6, 3, 0, 0, 0, 0);
+            this.dateTimePickerSessoesFormPrinc.Name = "dateTimePickerSessoesFormPrinc";
+            this.dateTimePickerSessoesFormPrinc.Size = new System.Drawing.Size(215, 23);
+            this.dateTimePickerSessoesFormPrinc.TabIndex = 16;
+            // 
+            // monthCalendar
+            // 
+            this.monthCalendar.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.monthCalendar.CalendarDimensions = new System.Drawing.Size(2, 1);
+            this.monthCalendar.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.monthCalendar.Location = new System.Drawing.Point(334, 219);
+            this.monthCalendar.Name = "monthCalendar";
+            this.monthCalendar.TabIndex = 18;
+            this.monthCalendar.TrailingForeColor = System.Drawing.SystemColors.ControlText;
+            // 
+            // buttonPratos
+            // 
+            this.buttonPratos.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonPratos.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPratos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonPratos.Location = new System.Drawing.Point(9, 12);
+            this.buttonPratos.Name = "buttonPratos";
+            this.buttonPratos.Size = new System.Drawing.Size(125, 44);
+            this.buttonPratos.TabIndex = 19;
+            this.buttonPratos.Text = "Pratos";
+            this.buttonPratos.UseVisualStyleBackColor = false;
+            this.buttonPratos.Click += new System.EventHandler(this.buttonPratos_Click);
+            // 
+            // buttonMenu
+            // 
+            this.buttonMenu.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonMenu.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMenu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonMenu.Location = new System.Drawing.Point(140, 12);
+            this.buttonMenu.Name = "buttonMenu";
+            this.buttonMenu.Size = new System.Drawing.Size(125, 43);
+            this.buttonMenu.TabIndex = 20;
+            this.buttonMenu.Text = "Menu";
+            this.buttonMenu.UseVisualStyleBackColor = false;
+            this.buttonMenu.Click += new System.EventHandler(this.buttonMenu_Click);
+            // 
+            // buttonFuncionarios
+            // 
+            this.buttonFuncionarios.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonFuncionarios.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonFuncionarios.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonFuncionarios.Location = new System.Drawing.Point(271, 12);
+            this.buttonFuncionarios.Name = "buttonFuncionarios";
+            this.buttonFuncionarios.Size = new System.Drawing.Size(125, 44);
+            this.buttonFuncionarios.TabIndex = 21;
+            this.buttonFuncionarios.Text = "Funcionários";
+            this.buttonFuncionarios.UseVisualStyleBackColor = false;
+            this.buttonFuncionarios.Click += new System.EventHandler(this.buttonFuncionarios_Click);
+            // 
+            // buttonExtras
+            // 
+            this.buttonExtras.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonExtras.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonExtras.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonExtras.Location = new System.Drawing.Point(402, 12);
+            this.buttonExtras.Name = "buttonExtras";
+            this.buttonExtras.Size = new System.Drawing.Size(125, 44);
+            this.buttonExtras.TabIndex = 26;
+            this.buttonExtras.Text = "Extras";
+            this.buttonExtras.UseVisualStyleBackColor = false;
+            this.buttonExtras.Click += new System.EventHandler(this.buttonExtras_Click);
+            // 
+            // buttonMulta
+            // 
+            this.buttonMulta.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonMulta.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMulta.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonMulta.Location = new System.Drawing.Point(795, 12);
+            this.buttonMulta.Name = "buttonMulta";
+            this.buttonMulta.Size = new System.Drawing.Size(125, 44);
+            this.buttonMulta.TabIndex = 27;
+            this.buttonMulta.Text = "Multa";
+            this.buttonMulta.UseVisualStyleBackColor = false;
+            this.buttonMulta.Click += new System.EventHandler(this.buttonMulta_Click);
+            // 
+            // buttonClientes
+            // 
+            this.buttonClientes.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonClientes.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonClientes.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonClientes.Location = new System.Drawing.Point(664, 12);
+            this.buttonClientes.Name = "buttonClientes";
+            this.buttonClientes.Size = new System.Drawing.Size(125, 44);
+            this.buttonClientes.TabIndex = 28;
+            this.buttonClientes.Text = "Clientes";
+            this.buttonClientes.UseVisualStyleBackColor = false;
+            this.buttonClientes.Click += new System.EventHandler(this.buttonClientes_Click);
+            // 
+            // buttonReservas
+            // 
+            this.buttonReservas.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonReservas.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonReservas.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonReservas.Location = new System.Drawing.Point(533, 12);
+            this.buttonReservas.Name = "buttonReservas";
+            this.buttonReservas.Size = new System.Drawing.Size(125, 44);
+            this.buttonReservas.TabIndex = 29;
+            this.buttonReservas.Text = "Reservas";
+            this.buttonReservas.UseVisualStyleBackColor = false;
+            this.buttonReservas.Click += new System.EventHandler(this.buttonReservas_Click);
             // 
             // FormPrincipal
             // 
@@ -226,15 +230,21 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(1196, 558);
+            this.Controls.Add(this.buttonReservas);
+            this.Controls.Add(this.buttonClientes);
+            this.Controls.Add(this.buttonMulta);
+            this.Controls.Add(this.buttonExtras);
+            this.Controls.Add(this.buttonFuncionarios);
+            this.Controls.Add(this.buttonMenu);
+            this.Controls.Add(this.buttonPratos);
+            this.Controls.Add(this.monthCalendar);
+            this.Controls.Add(this.dateTimePickerSessoesFormPrinc);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.menuStrip1);
             this.Name = "FormPrincipal";
             this.Text = "FormPrincipal";
             this.Load += new System.EventHandler(this.FormPrincipal_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.statusStrip1.ResumeLayout(false);
@@ -247,23 +257,21 @@
         #endregion
 
         private System.Windows.Forms.ToolStripContainer toolStripContainer1;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem definiçõesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pratosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem funcionarioToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem extrasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem reservasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem multaToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelHora;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelNomeCinema;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelNomeFuncionarioLogado;
         private System.Windows.Forms.Timer timerFormPrincipal;
+        private System.Windows.Forms.DateTimePicker dateTimePickerSessoesFormPrinc;
+        private System.Windows.Forms.MonthCalendar monthCalendar;
+        private System.Windows.Forms.Button buttonPratos;
+        private System.Windows.Forms.Button buttonMenu;
+        private System.Windows.Forms.Button buttonFuncionarios;
+        private System.Windows.Forms.Button buttonExtras;
+        private System.Windows.Forms.Button buttonMulta;
+        private System.Windows.Forms.Button buttonClientes;
+        private System.Windows.Forms.Button buttonReservas;
     }
 }

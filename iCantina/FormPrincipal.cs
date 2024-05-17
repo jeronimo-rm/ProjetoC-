@@ -21,6 +21,7 @@ namespace iCantina
         Form formGestaoClientes;
         Form formMulta;
         Form formReservas;
+        
         public FormPrincipal()
         {
             InitializeComponent();
@@ -35,42 +36,6 @@ namespace iCantina
             formMulta = new FormMulta(this);
      
         }
-
-        private void pratosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            formPratos.ShowDialog();
-        }
-
-        private void menuToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            formMenu.ShowDialog();
-        }
-
-        private void funcionarioToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            formFuncionario.ShowDialog();
-        }
-
-        private void extrasToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            formExtras.ShowDialog();
-        }
-
-        private void reservasToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            formReservas.ShowDialog();
-        }
-
-        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            formGestaoClientes.ShowDialog();
-        }
-
-        private void multaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            formMulta.ShowDialog();
-        }
-
         private void FormPrincipal_Load(object sender, EventArgs e)
         {
 
@@ -79,6 +44,54 @@ namespace iCantina
         private void timerFormPrincipal_Tick(object sender, EventArgs e)
         {
             this.toolStripStatusLabelHora.Text = DateTime.Now.ToString("G"); // F, U, ou G (senao apaga o G e ver as opcoes)
+        }
+
+
+        // MÉTODO PARA ATUALIZAR A LABEL COM O NOME DO FUNCIONARIO LOGADO
+        public void setNomeFuncionario(int Id)
+        {
+            var db = new ApplicationContext();
+            var funcionario = db.Utilizadores.Find(Id); // procura o funcionario pelo id recebido
+            toolStripStatusLabelNomeFuncionarioLogado.Text = funcionario.NomeUtilizador; // para aparecer o nome na label
+        }
+        private void toolStripStatusLabelNomeFuncionarioLogado_Click(object sender, EventArgs e)
+        {
+            formFuncionario.ShowDialog();
+        }
+
+        private void buttonPratos_Click(object sender, EventArgs e)
+        {
+            formPratos.ShowDialog();
+        }
+
+        private void buttonMenu_Click(object sender, EventArgs e)
+        {
+            formMenu.ShowDialog();
+        }
+
+        private void buttonFuncionarios_Click(object sender, EventArgs e)
+        {
+            formFuncionario.ShowDialog();
+        }
+
+        private void buttonExtras_Click(object sender, EventArgs e)
+        {
+            formExtras.ShowDialog();
+        }
+
+        private void buttonReservas_Click(object sender, EventArgs e)
+        {
+            formReservas.ShowDialog();
+        }
+
+        private void buttonClientes_Click(object sender, EventArgs e)
+        {
+            formGestaoClientes.ShowDialog();
+        }
+
+        private void buttonMulta_Click(object sender, EventArgs e)
+        {
+            formMulta.ShowDialog();
         }
     }
 }
