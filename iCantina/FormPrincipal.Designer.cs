@@ -138,9 +138,9 @@
             this.buttonPratos.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonPratos.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPratos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonPratos.Location = new System.Drawing.Point(9, 12);
+            this.buttonPratos.Location = new System.Drawing.Point(12, 12);
             this.buttonPratos.Name = "buttonPratos";
-            this.buttonPratos.Size = new System.Drawing.Size(125, 44);
+            this.buttonPratos.Size = new System.Drawing.Size(151, 44);
             this.buttonPratos.TabIndex = 19;
             this.buttonPratos.Text = "Pratos";
             this.buttonPratos.UseVisualStyleBackColor = false;
@@ -151,9 +151,9 @@
             this.buttonMenu.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonMenu.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonMenu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonMenu.Location = new System.Drawing.Point(140, 12);
+            this.buttonMenu.Location = new System.Drawing.Point(12, 62);
             this.buttonMenu.Name = "buttonMenu";
-            this.buttonMenu.Size = new System.Drawing.Size(125, 43);
+            this.buttonMenu.Size = new System.Drawing.Size(151, 43);
             this.buttonMenu.TabIndex = 20;
             this.buttonMenu.Text = "Menu";
             this.buttonMenu.UseVisualStyleBackColor = false;
@@ -161,12 +161,12 @@
             // 
             // buttonFuncionarios
             // 
-            this.buttonFuncionarios.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonFuncionarios.BackColor = System.Drawing.Color.RosyBrown;
             this.buttonFuncionarios.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonFuncionarios.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonFuncionarios.Location = new System.Drawing.Point(271, 12);
+            this.buttonFuncionarios.Location = new System.Drawing.Point(324, 12);
             this.buttonFuncionarios.Name = "buttonFuncionarios";
-            this.buttonFuncionarios.Size = new System.Drawing.Size(125, 44);
+            this.buttonFuncionarios.Size = new System.Drawing.Size(149, 44);
             this.buttonFuncionarios.TabIndex = 21;
             this.buttonFuncionarios.Text = "Funcionários";
             this.buttonFuncionarios.UseVisualStyleBackColor = false;
@@ -174,12 +174,12 @@
             // 
             // buttonExtras
             // 
-            this.buttonExtras.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonExtras.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.buttonExtras.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonExtras.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonExtras.Location = new System.Drawing.Point(402, 12);
+            this.buttonExtras.Location = new System.Drawing.Point(169, 62);
             this.buttonExtras.Name = "buttonExtras";
-            this.buttonExtras.Size = new System.Drawing.Size(125, 44);
+            this.buttonExtras.Size = new System.Drawing.Size(151, 44);
             this.buttonExtras.TabIndex = 26;
             this.buttonExtras.Text = "Extras";
             this.buttonExtras.UseVisualStyleBackColor = false;
@@ -187,12 +187,12 @@
             // 
             // buttonMulta
             // 
-            this.buttonMulta.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonMulta.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.buttonMulta.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonMulta.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonMulta.Location = new System.Drawing.Point(795, 12);
+            this.buttonMulta.Location = new System.Drawing.Point(169, 12);
             this.buttonMulta.Name = "buttonMulta";
-            this.buttonMulta.Size = new System.Drawing.Size(125, 44);
+            this.buttonMulta.Size = new System.Drawing.Size(151, 44);
             this.buttonMulta.TabIndex = 27;
             this.buttonMulta.Text = "Multa";
             this.buttonMulta.UseVisualStyleBackColor = false;
@@ -200,12 +200,12 @@
             // 
             // buttonClientes
             // 
-            this.buttonClientes.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonClientes.BackColor = System.Drawing.Color.RosyBrown;
             this.buttonClientes.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonClientes.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonClientes.Location = new System.Drawing.Point(664, 12);
+            this.buttonClientes.Location = new System.Drawing.Point(324, 62);
             this.buttonClientes.Name = "buttonClientes";
-            this.buttonClientes.Size = new System.Drawing.Size(125, 44);
+            this.buttonClientes.Size = new System.Drawing.Size(149, 44);
             this.buttonClientes.TabIndex = 28;
             this.buttonClientes.Text = "Clientes";
             this.buttonClientes.UseVisualStyleBackColor = false;
@@ -216,9 +216,9 @@
             this.buttonReservas.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonReservas.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonReservas.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonReservas.Location = new System.Drawing.Point(533, 12);
+            this.buttonReservas.Location = new System.Drawing.Point(12, 111);
             this.buttonReservas.Name = "buttonReservas";
-            this.buttonReservas.Size = new System.Drawing.Size(125, 44);
+            this.buttonReservas.Size = new System.Drawing.Size(151, 44);
             this.buttonReservas.TabIndex = 29;
             this.buttonReservas.Text = "Reservas";
             this.buttonReservas.UseVisualStyleBackColor = false;

@@ -28,7 +28,7 @@ namespace iCantina
             // FORM CENTRADO COM ECRA
             this.CenterToScreen();
             formPratos = new FormPratos();
-            formFuncionario = new FormFuncionario(this);
+            formFuncionario = new FormFuncionarios(this);
             formGestaoClientes = new FormGestaoClientes(this);
             formExtras = new FormExtras(this);
             formMenu = new FormMenu(this);
@@ -48,11 +48,11 @@ namespace iCantina
 
 
         // MÉTODO PARA ATUALIZAR A LABEL COM O NOME DO FUNCIONARIO LOGADO
-        public void setNomeFuncionario(int Id)
+        public void setUsernameFuncionario(int Id)
         {
-            var db = new ApplicationContext();
-            var funcionario = db.Utilizadores.Find(Id); // procura o funcionario pelo id recebido
-            toolStripStatusLabelNomeFuncionarioLogado.Text = funcionario.NomeUtilizador; // para aparecer o nome na label
+         //   var db = new ApplicationContext();
+          //  var funcionario = db.Utilizadores.Find(Id); // procura o funcionario pelo id recebido
+          //  toolStripStatusLabelNomeFuncionarioLogado.Text = funcionario.NomeUtilizador; // para aparecer o nome na label
         }
         private void toolStripStatusLabelNomeFuncionarioLogado_Click(object sender, EventArgs e)
         {
