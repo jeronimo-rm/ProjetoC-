@@ -19,3 +19,4 @@ C:\Users\jeron\OneDrive\Ambiente de Trabalho\da\ProjetoC-\iCantina\obj\Debug\iCa
 C:\Users\jeron\OneDrive\Ambiente de Trabalho\da\ProjetoC-\iCantina\obj\Debug\iCantina.FormMenu.resources
 C:\Users\jeron\OneDrive\Ambiente de Trabalho\da\ProjetoC-\iCantina\obj\Debug\iCantina.FormMulta.resources
 C:\Users\jeron\OneDrive\Ambiente de Trabalho\da\ProjetoC-\iCantina\obj\Debug\iCantina.FormPratos.resources
+C:\Users\jeron\OneDrive\Ambiente de Trabalho\da\ProjetoC-\iCantina\obj\Debug\iCantina.FormFuncionarios.resources

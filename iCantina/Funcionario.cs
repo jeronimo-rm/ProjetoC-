@@ -14,7 +14,7 @@ namespace iCantina
 
         public string UsernameFuncionario { get; set; }
 
-        public Funcionario(string nomePessoa, int nifPessoa, string usernameFuncionario) : base(nomePessoa, nifPessoa)
+        public Funcionario(string nomeUtilizador, string nifUtilizador, string usernameFuncionario) : base(nomeUtilizador,nifUtilizador)
         {
 
             UsernameFuncionario = usernameFuncionario;
@@ -28,7 +28,7 @@ namespace iCantina
 
         public override string ToString()
         {
-            return "NOME: " + NomePessoa + "  NIF: " + NifPessoa + "  FUNÇÃO: " + TipoFuncionario + " SALARIO: " + NIfFuncionario;
+            return "Username: " + UsernameFuncionario + "  NIF: " + NIFUtilizador + " Nome: " + NomeUtilizador;
         }
     }
 }
