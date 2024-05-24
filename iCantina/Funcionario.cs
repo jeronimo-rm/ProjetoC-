@@ -14,7 +14,7 @@ namespace iCantina
 
         public string UsernameFuncionario { get; set; }
 
-        public Funcionario(string nomeUtilizador, string nifUtilizador, string usernameFuncionario) : base(nomeUtilizador,nifUtilizador)
+        public Funcionario(string nomeUtilizador, int nifUtilizador, string usernameFuncionario) : base(nomeUtilizador,nifUtilizador)
         {
 
             UsernameFuncionario = usernameFuncionario;

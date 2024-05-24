@@ -51,33 +51,29 @@ namespace iCantina
         {
             // RECEBE AS VARIAVEIS DAS TEXTBOX E VALIDA QUE NÃO ESTAO VAZIAS
             // retorna false caso nao cumpra qualquer condicao
-            // retorna true caso cumpra a todas
             string usernameFuncionario = textBoxUsernameFuncionario.Text;
             if (usernameFuncionario.Length == 0)
             {
                 MessageBox.Show("O campo 'username' não pode ser vazio!", "Aviso!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
-            double nifFuncionario;
-            if (!double.TryParse(textBoxNIFFuncionario.Text, out nifFuncionario))
+
+            int nifFuncionario;
+            if (textBoxNIFUtilizador.Text.Length != 9 || !int.TryParse(textBoxNIFUtilizador.Text, out nifFuncionario))
             {
-                MessageBox.Show("O valor do 'nif' deve ser numérico!", "Aviso!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("O campo 'nif' não pode ser vazio!", "Aviso!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
-            string nomeFuncionario = textBoxNomeFuncionario.Text;
-            if (nomeFuncionario.Length == 0)
+            string nomecompletoFuncionario = textBoxNomeUtilizador.Text;
+            if (nomecompletoFuncionario.Length == 0)
             {
-                MessageBox.Show("O campo 'nome' não pode ser vazio!", "Aviso!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("O campo 'nome completo' não pode ser vazio!", "Aviso!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
             else
             {
                 return true;
             }
-        }
-        private void FormFuncionario_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void buttonGuardarFuncionario_Click(object sender, EventArgs e)
@@ -90,15 +86,15 @@ namespace iCantina
 
             //guarda os valores inseridos nas variaveis
             string usernameFuncionario = textBoxUsernameFuncionario.Text;
-            string nifUtilizador =  textBoxNIFFuncionario.Text;// faz a conversao de texto para double
-            string nomeUtilizador = textBoxNomeFuncionario.Text;
-            
+            int nifUtilizador = int.Parse(textBoxNIFUtilizador.Text);// faz a conversao de texto para int
+            string nomeUtilizador = textBoxNomeUtilizador.Text;
+
             try
             {   // manda para o construtor faz a instancia
                 Funcionario funcionario = new Funcionario(usernameFuncionario, nifUtilizador, nomeUtilizador.ToString());
-                textBoxNomeFuncionario.Text = funcionario.NomeUtilizador;
+                textBoxNomeUtilizador.Text = funcionario.NomeUtilizador;
                 textBoxUsernameFuncionario.Text = funcionario.UsernameFuncionario;
-                textBoxNIFFuncionario.Text = funcionario.NIFUtilizador.ToString();
+                textBoxNIFUtilizador.Text = funcionario.NIFUtilizador.ToString();
             }
             catch (Exception)
             {   // caso haja algum erro
@@ -110,8 +106,8 @@ namespace iCantina
                 Funcionario funcionarioSelecionado = (Funcionario)listBoxFuncionarios.SelectedItem;
                 // altera dos dados do funcionario selecionado
                 funcionarioSelecionado.UsernameFuncionario = textBoxUsernameFuncionario.Text;
-                funcionarioSelecionado.NIFUtilizador = textBoxNIFFuncionario.Text;
-                funcionarioSelecionado.NomeUtilizador = textBoxNomeFuncionario.Text;
+                funcionarioSelecionado.NIFUtilizador = int.Parse(textBoxNIFUtilizador.Text);
+                funcionarioSelecionado.NomeUtilizador = textBoxNomeUtilizador.Text;
                 // Atualizar a exibição do funcionário na ListBox
                 int editarfuncionario = listBoxFuncionarios.SelectedIndex;
                 listBoxFuncionarios.Items[editarfuncionario] = funcionarioSelecionado;
@@ -124,7 +120,7 @@ namespace iCantina
             }
             else // se não tiver, cria um novo
             {
-                Funcionario novofuncionario = new Funcionario(textBoxUsernameFuncionario.Text, textBoxNIFFuncionario.Text, textBoxNomeFuncionario.Text);
+                Funcionario novofuncionario = new Funcionario(textBoxUsernameFuncionario.Text, int.Parse(textBoxNIFUtilizador.Text), textBoxNomeUtilizador.Text);
 
                 listBoxFuncionarios.Items.Add(novofuncionario); // mostra na listbox antes de atualizar a db
                 using (var db = new ApplicationContext())
@@ -133,6 +129,11 @@ namespace iCantina
                     db.SaveChanges();
                 }
             }
+        }
+
+        private void groupBoxFuncionario_Enter(object sender, EventArgs e)
+        {
+
         }
 
         private void buttonApagarFuncionario_Click(object sender, EventArgs e)
@@ -171,9 +172,9 @@ namespace iCantina
                     Funcionario funcionarioSelecionado = (Funcionario)listBoxFuncionarios.SelectedItem; // descobrir o que será indicado nas textbox ao selecionar na listBox
                     // mostrar na textBox os dados do funcionario selecionado                                                                                   
                     textBoxUsernameFuncionario.Text = funcionarioSelecionado.UsernameFuncionario;
-                    textBoxNIFFuncionario.Text = funcionarioSelecionado.NIFUtilizador;
-                    textBoxNomeFuncionario.Text = funcionarioSelecionado.NomeUtilizador;
-                    
+                    textBoxNIFUtilizador.Text = funcionarioSelecionado.NIFUtilizador.ToString();
+                    textBoxNomeUtilizador.Text = funcionarioSelecionado.NomeUtilizador;
+
                 }
             }
         }
@@ -200,12 +201,13 @@ namespace iCantina
                     this.Close();
                 }
             }
+
         }
         public void limparDadosInseridos()
         {
             textBoxUsernameFuncionario.Clear();
-            textBoxNIFFuncionario.Clear();
-            textBoxNomeFuncionario.Clear();
+            textBoxNIFUtilizador.Clear();
+            textBoxNomeUtilizador.Clear();
         }
         private void tabPage1_Click(object sender, EventArgs e)
         {

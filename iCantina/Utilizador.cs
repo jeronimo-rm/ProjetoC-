@@ -13,11 +13,10 @@ namespace iCantina
         [Key]
         public int Id { get; set; }
         public string NomeUtilizador { get; set; }
-        public double NIFUtilizador { get; set; }
+        public int NIFUtilizador { get; set; }
 
-        public Utilizador(int id, string nomeutilizador, double nifutilizador)
+        public Utilizador(string nomeutilizador, int nifutilizador)
         {
-            Id = id;
             NomeUtilizador = nomeutilizador;
             NIFUtilizador = nifutilizador;
         }

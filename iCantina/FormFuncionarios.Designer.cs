@@ -38,8 +38,8 @@
             this.groupBoxFuncionario = new System.Windows.Forms.GroupBox();
             this.textBoxUsernameFuncionario = new System.Windows.Forms.TextBox();
             this.buttonGuardarFuncionario = new System.Windows.Forms.Button();
-            this.textBoxNomeFuncionario = new System.Windows.Forms.TextBox();
-            this.textBoxNIFFuncionario = new System.Windows.Forms.TextBox();
+            this.textBoxNomeUtilizador = new System.Windows.Forms.TextBox();
+            this.textBoxNIFUtilizador = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -98,7 +98,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(174, 339);
+            this.label1.Location = new System.Drawing.Point(6, 339);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(364, 16);
             this.label1.TabIndex = 6;
@@ -131,8 +131,8 @@
             // 
             this.groupBoxFuncionario.Controls.Add(this.textBoxUsernameFuncionario);
             this.groupBoxFuncionario.Controls.Add(this.buttonGuardarFuncionario);
-            this.groupBoxFuncionario.Controls.Add(this.textBoxNomeFuncionario);
-            this.groupBoxFuncionario.Controls.Add(this.textBoxNIFFuncionario);
+            this.groupBoxFuncionario.Controls.Add(this.textBoxNomeUtilizador);
+            this.groupBoxFuncionario.Controls.Add(this.textBoxNIFUtilizador);
             this.groupBoxFuncionario.Controls.Add(this.label8);
             this.groupBoxFuncionario.Controls.Add(this.label10);
             this.groupBoxFuncionario.Controls.Add(this.label11);
@@ -142,6 +142,7 @@
             this.groupBoxFuncionario.TabIndex = 4;
             this.groupBoxFuncionario.TabStop = false;
             this.groupBoxFuncionario.Text = "Funcionarios";
+            this.groupBoxFuncionario.Enter += new System.EventHandler(this.groupBoxFuncionario_Enter);
             // 
             // textBoxUsernameFuncionario
             // 
@@ -163,19 +164,19 @@
             this.buttonGuardarFuncionario.UseVisualStyleBackColor = false;
             this.buttonGuardarFuncionario.Click += new System.EventHandler(this.buttonGuardarFuncionario_Click);
             // 
-            // textBoxNomeFuncionario
+            // textBoxNomeUtilizador
             // 
-            this.textBoxNomeFuncionario.Location = new System.Drawing.Point(6, 179);
-            this.textBoxNomeFuncionario.Name = "textBoxNomeFuncionario";
-            this.textBoxNomeFuncionario.Size = new System.Drawing.Size(225, 22);
-            this.textBoxNomeFuncionario.TabIndex = 1;
+            this.textBoxNomeUtilizador.Location = new System.Drawing.Point(6, 179);
+            this.textBoxNomeUtilizador.Name = "textBoxNomeUtilizador";
+            this.textBoxNomeUtilizador.Size = new System.Drawing.Size(225, 22);
+            this.textBoxNomeUtilizador.TabIndex = 1;
             // 
-            // textBoxNIFFuncionario
+            // textBoxNIFUtilizador
             // 
-            this.textBoxNIFFuncionario.Location = new System.Drawing.Point(6, 109);
-            this.textBoxNIFFuncionario.Name = "textBoxNIFFuncionario";
-            this.textBoxNIFFuncionario.Size = new System.Drawing.Size(225, 22);
-            this.textBoxNIFFuncionario.TabIndex = 0;
+            this.textBoxNIFUtilizador.Location = new System.Drawing.Point(6, 109);
+            this.textBoxNIFUtilizador.Name = "textBoxNIFUtilizador";
+            this.textBoxNIFUtilizador.Size = new System.Drawing.Size(225, 22);
+            this.textBoxNIFUtilizador.TabIndex = 0;
             // 
             // label8
             // 
@@ -213,7 +214,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "FormFuncionarios";
             this.Text = "FormFuncionario";
-            this.Load += new System.EventHandler(this.FormFuncionario_Load);
+            this.Load += new System.EventHandler(this.FormFuncionarios_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.groupBoxListaFuncionarios.ResumeLayout(false);
@@ -235,8 +236,8 @@
         private System.Windows.Forms.GroupBox groupBoxFuncionario;
         private System.Windows.Forms.TextBox textBoxUsernameFuncionario;
         private System.Windows.Forms.Button buttonGuardarFuncionario;
-        private System.Windows.Forms.TextBox textBoxNomeFuncionario;
-        private System.Windows.Forms.TextBox textBoxNIFFuncionario;
+        private System.Windows.Forms.TextBox textBoxNomeUtilizador;
+        private System.Windows.Forms.TextBox textBoxNIFUtilizador;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
