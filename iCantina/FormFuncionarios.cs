@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.Entity.Migrations;
 using System.Drawing;
@@ -22,6 +19,7 @@ namespace iCantina
         {
             InitializeComponent();
             atualizarDadosAoEntrar();
+            formPrincipal = new FormPrincipal();
         }
 
         public TabPage getPage()
@@ -52,22 +50,22 @@ namespace iCantina
             // RECEBE AS VARIAVEIS DAS TEXTBOX E VALIDA QUE NÃO ESTAO VAZIAS
             // retorna false caso nao cumpra qualquer condicao
             string usernameFuncionario = textBoxUsernameFuncionario.Text;
-            if (usernameFuncionario.Length == 0)
+            if (usernameFuncionario.Length < 3)
             {
-                MessageBox.Show("O campo 'username' não pode ser vazio!", "Aviso!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("O campo 'username' não pode ter menos de 3 caracteres!", "Aviso!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
 
             int nifFuncionario;
             if (textBoxNIFUtilizador.Text.Length != 9 || !int.TryParse(textBoxNIFUtilizador.Text, out nifFuncionario))
             {
-                MessageBox.Show("O campo 'nif' não pode ser vazio!", "Aviso!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("O valores no campo 'nif' não existem!", "Aviso!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
             string nomecompletoFuncionario = textBoxNomeUtilizador.Text;
-            if (nomecompletoFuncionario.Length == 0)
+            if (nomecompletoFuncionario.Length < 3)
             {
-                MessageBox.Show("O campo 'nome completo' não pode ser vazio!", "Aviso!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("O campo 'nome completo' não pode ter menos de 3 caracteres!", "Aviso!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
             else
@@ -198,7 +196,7 @@ namespace iCantina
                 if (usernamefuncionario != null) // so faz isso se tiver um funcionario
                 {
                     this.formPrincipal.setUsernameFuncionario(usernamefuncionario.Id);
-                    this.Close();
+                    this.formPrincipal.Show();
                 }
             }
 

@@ -13,7 +13,7 @@
                     {
                         Id = c.Int(nullable: false, identity: true),
                         NomeUtilizador = c.String(),
-                        NIFUtilizador = c.String(),
+                        NIFUtilizador = c.Int(),
                         UsernameFuncionario = c.String(),
                         Discriminator = c.String(nullable: false, maxLength: 128),
                     })

@@ -28,7 +28,7 @@ namespace iCantina
 
         public override string ToString()
         {
-            return "Username: " + UsernameFuncionario + "  NIF: " + NIFUtilizador + " Nome: " + NomeUtilizador;
+            return "Username: " + UsernameFuncionario + "       NIF: " + NIFUtilizador + "      Nome: " + NomeUtilizador;
         }
     }
 }

@@ -21,7 +21,7 @@ namespace iCantina
         Form formGestaoClientes;
         Form formMulta;
         Form formReservas;
-        
+
         public FormPrincipal()
         {
             InitializeComponent();
@@ -34,7 +34,7 @@ namespace iCantina
             formMenu = new FormMenu(this);
             formReservas = new FormReservas(this);
             formMulta = new FormMulta(this);
-     
+
         }
         private void FormPrincipal_Load(object sender, EventArgs e)
         {
@@ -50,9 +50,9 @@ namespace iCantina
         // MÉTODO PARA ATUALIZAR A LABEL COM O NOME DO FUNCIONARIO LOGADO
         public void setUsernameFuncionario(int Id)
         {
-         //   var db = new ApplicationContext();
-          //  var funcionario = db.Utilizadores.Find(Id); // procura o funcionario pelo id recebido
-          //  toolStripStatusLabelNomeFuncionarioLogado.Text = funcionario.NomeUtilizador; // para aparecer o nome na label
+            var db = new ApplicationContext();
+            var funcionario = db.Utilizadores.Find(Id) as Funcionario; // procura o funcionario pelo id recebido
+            toolStripStatusLabelNomeFuncionarioLogado.Text = funcionario.UsernameFuncionario; // para aparecer o nome na label
         }
         private void toolStripStatusLabelNomeFuncionarioLogado_Click(object sender, EventArgs e)
         {

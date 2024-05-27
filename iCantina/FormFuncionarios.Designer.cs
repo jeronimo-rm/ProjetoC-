@@ -113,6 +113,7 @@
             this.listBoxFuncionarios.Size = new System.Drawing.Size(595, 292);
             this.listBoxFuncionarios.TabIndex = 0;
             this.listBoxFuncionarios.SelectedIndexChanged += new System.EventHandler(this.listBoxFuncionarios_SelectedIndexChanged);
+            this.listBoxFuncionarios.DoubleClick += new System.EventHandler(this.listBoxFuncionarios_DoubleClick);
             // 
             // buttonApagarFuncionario
             // 
