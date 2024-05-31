@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\formfuncionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|solutionrelative:formfuncionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\formfuncionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|solutionrelative:formfuncionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\formfuncionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|solutionrelative:formfuncionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|c:\\users\\jeron\\onedrive\\ambiente de trabalho\\da\\projetoc-\\icantina\\formgestaoclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -97,7 +97,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -113,13 +113,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "FormFuncionarios.cs",
               "DocumentMoniker": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\FormFuncionarios.cs",
               "RelativeDocumentMoniker": "FormFuncionarios.cs",
               "ToolTip": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\FormFuncionarios.cs",
               "RelativeToolTip": "FormFuncionarios.cs",
-              "ViewState": "AQIAAL0AAAAAAAAAAAAwwMQAAAANAAAA",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAIwGoAAABSAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-10T21:34:42.359Z",
               "EditorCaption": ""
@@ -150,7 +150,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -163,7 +163,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "FormFuncionarios.cs [Design]",
               "DocumentMoniker": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\FormFuncionarios.cs",
               "RelativeDocumentMoniker": "FormFuncionarios.cs",
@@ -175,7 +175,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "FormPrincipal.cs",
               "DocumentMoniker": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\FormPrincipal.cs",
               "RelativeDocumentMoniker": "FormPrincipal.cs",

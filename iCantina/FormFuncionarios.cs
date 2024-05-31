@@ -102,9 +102,9 @@ namespace iCantina
             {
                 Funcionario funcionarioSelecionado = (Funcionario)listBoxFuncionarios.SelectedItem;
                 // altera dos dados do funcionario selecionado
-                funcionarioSelecionado.UsernameFuncionario = textBoxUsernameFuncionario.Text;
+                funcionarioSelecionado.UsernameFuncionario = textBoxNomeUtilizador.Text;
                 funcionarioSelecionado.NIFUtilizador = int.Parse(textBoxNIFUtilizador.Text);
-                funcionarioSelecionado.NomeUtilizador = textBoxNomeUtilizador.Text;
+                funcionarioSelecionado.NomeUtilizador = textBoxUsernameFuncionario.Text;
                 // Atualizar a exibição do funcionário na ListBox
                 int editarfuncionario = listBoxFuncionarios.SelectedIndex;
                 listBoxFuncionarios.Items[editarfuncionario] = funcionarioSelecionado;

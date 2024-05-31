@@ -31,7 +31,7 @@ namespace iCantina
         // OVERRIDE PARA DIZER O QUE VAI ESCREVER NA LISTBOX
         public override string ToString()
         {
-            return "Prato: " + descricaoPrato + " Tipo: " + tipoPrato + " Estado: " + estadoPrato;
+            return "Prato: " + descricaoPrato + "       Tipo: " + tipoPrato + "     Estado: " + estadoPrato;
         }
     }
 }
