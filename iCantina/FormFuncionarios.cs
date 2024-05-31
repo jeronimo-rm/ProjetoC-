@@ -51,20 +51,20 @@ namespace iCantina
             string usernameFuncionario = textBoxUsernameFuncionario.Text;
             if (usernameFuncionario.Length < 3)
             {
-                MessageBox.Show("O campo 'username' não pode ter menos de 3 caracteres!", "Aviso!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("O campo 'username' não pode ter menos de 3 caracteres!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
 
             int nifFuncionario;
             if (textBoxNIFUtilizador.Text.Length != 9 || !int.TryParse(textBoxNIFUtilizador.Text, out nifFuncionario))
             {
-                MessageBox.Show("O valore no campo 'nif' não é válido!", "Aviso!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("O valore no campo 'nif' não é válido!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
             string nomecompletoFuncionario = textBoxNomeUtilizador.Text;
             if (nomecompletoFuncionario.Length < 3)
             {
-                MessageBox.Show("O campo 'nome completo' não pode ter menos de 3 caracteres!", "Aviso!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("O campo 'nome completo' não pode ter menos de 3 caracteres!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
             else
