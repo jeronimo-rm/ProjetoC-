@@ -19,7 +19,6 @@ namespace iCantina
         {
             InitializeComponent();
             atualizarDadosAoEntrar();
-            formPrincipal = new FormPrincipal();
         }
 
         public TabPage getPage()
@@ -59,7 +58,7 @@ namespace iCantina
             int nifFuncionario;
             if (textBoxNIFUtilizador.Text.Length != 9 || !int.TryParse(textBoxNIFUtilizador.Text, out nifFuncionario))
             {
-                MessageBox.Show("O valores no campo 'nif' não existem!", "Aviso!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("O valore no campo 'nif' não é válido!", "Aviso!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
             string nomecompletoFuncionario = textBoxNomeUtilizador.Text;
@@ -195,8 +194,9 @@ namespace iCantina
                 var usernamefuncionario = db.Utilizadores.Find(funcionario.Id); // buscar o id do funcionario q queremos mandar para o formprincipal
                 if (usernamefuncionario != null) // so faz isso se tiver um funcionario
                 {
+             
                     this.formPrincipal.setUsernameFuncionario(usernamefuncionario.Id);
-                    this.formPrincipal.Show();
+                    this.Close();
                 }
             }
 
@@ -207,15 +207,16 @@ namespace iCantina
             textBoxNIFUtilizador.Clear();
             textBoxNomeUtilizador.Clear();
         }
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-            listBoxFuncionarios.ClearSelected();
-            limparDadosInseridos();
-        }
 
         private void FormFuncionarios_Load(object sender, EventArgs e)
         {
             this.CenterToScreen();
+            listBoxFuncionarios.ClearSelected();
+            limparDadosInseridos();
+        }
+
+        private void tabPage1_Click_1(object sender, EventArgs e)
+        {
             listBoxFuncionarios.ClearSelected();
             limparDadosInseridos();
         }

@@ -35,6 +35,7 @@ namespace iCantina
             formReservas = new FormReservas(this);
             formMulta = new FormMulta(this);
 
+            formFuncionario.ShowDialog();
         }
         private void FormPrincipal_Load(object sender, EventArgs e)
         {
