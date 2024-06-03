@@ -111,6 +111,7 @@
       <DependentUpon>202405241830086_InitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Multa.cs" />
     <Compile Include="Prato.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

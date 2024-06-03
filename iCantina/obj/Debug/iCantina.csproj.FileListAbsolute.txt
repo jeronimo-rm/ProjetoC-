@@ -20,3 +20,25 @@ C:\Users\jeron\OneDrive\Ambiente de Trabalho\da\ProjetoC-\iCantina\obj\Debug\iCa
 C:\Users\jeron\OneDrive\Ambiente de Trabalho\da\ProjetoC-\iCantina\obj\Debug\iCantina.FormPratos.resources
 C:\Users\jeron\OneDrive\Ambiente de Trabalho\da\ProjetoC-\iCantina\obj\Debug\iCantina.FormFuncionarios.resources
 C:\Users\jeron\OneDrive\Ambiente de Trabalho\da\ProjetoC-\iCantina\obj\Debug\iCantina.Migrations.InitialCreate.resources
+C:\Users\hugo\Desktop\DA\ProjetoC-\iCantina\bin\Debug\iCantina.exe.config
+C:\Users\hugo\Desktop\DA\ProjetoC-\iCantina\bin\Debug\iCantina.exe
+C:\Users\hugo\Desktop\DA\ProjetoC-\iCantina\bin\Debug\iCantina.pdb
+C:\Users\hugo\Desktop\DA\ProjetoC-\iCantina\bin\Debug\EntityFramework.dll
+C:\Users\hugo\Desktop\DA\ProjetoC-\iCantina\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hugo\Desktop\DA\ProjetoC-\iCantina\bin\Debug\EntityFramework.xml
+C:\Users\hugo\Desktop\DA\ProjetoC-\iCantina\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hugo\Desktop\DA\ProjetoC-\iCantina\obj\Debug\iCantina.csproj.AssemblyReference.cache
+C:\Users\hugo\Desktop\DA\ProjetoC-\iCantina\obj\Debug\iCantina.FormExtras.resources
+C:\Users\hugo\Desktop\DA\ProjetoC-\iCantina\obj\Debug\iCantina.FormFuncionarios.resources
+C:\Users\hugo\Desktop\DA\ProjetoC-\iCantina\obj\Debug\iCantina.FormGestaoClientes.resources
+C:\Users\hugo\Desktop\DA\ProjetoC-\iCantina\obj\Debug\iCantina.FormMenu.resources
+C:\Users\hugo\Desktop\DA\ProjetoC-\iCantina\obj\Debug\iCantina.FormMulta.resources
+C:\Users\hugo\Desktop\DA\ProjetoC-\iCantina\obj\Debug\iCantina.FormPratos.resources
+C:\Users\hugo\Desktop\DA\ProjetoC-\iCantina\obj\Debug\iCantina.FormPrincipal.resources
+C:\Users\hugo\Desktop\DA\ProjetoC-\iCantina\obj\Debug\iCantina.Migrations.InitialCreate.resources
+C:\Users\hugo\Desktop\DA\ProjetoC-\iCantina\obj\Debug\iCantina.Properties.Resources.resources
+C:\Users\hugo\Desktop\DA\ProjetoC-\iCantina\obj\Debug\iCantina.csproj.GenerateResource.cache
+C:\Users\hugo\Desktop\DA\ProjetoC-\iCantina\obj\Debug\iCantina.csproj.CoreCompileInputs.cache
+C:\Users\hugo\Desktop\DA\ProjetoC-\iCantina\obj\Debug\iCantina.csproj.Up2Date
+C:\Users\hugo\Desktop\DA\ProjetoC-\iCantina\obj\Debug\iCantina.exe
+C:\Users\hugo\Desktop\DA\ProjetoC-\iCantina\obj\Debug\iCantina.pdb
