@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace iCantina
 {
     [Serializable]
-    internal class Estudante: Cliente
+    public class Estudante: Cliente
     {
         [Key]
 
@@ -22,6 +22,11 @@ namespace iCantina
         public Estudante()
         {
             // Construtor vazio necessário para o Entity Framework
+        }
+
+        public override string ToString()
+        {
+            return "Nome: " + NomeUtilizador + "       NIF: " + NIFUtilizador + "      Saldo: " + Saldo + "€      Número de Estudante: " + NumEstudante;
         }
 
     }

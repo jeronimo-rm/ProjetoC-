@@ -31,18 +31,23 @@
             this.tabControlClientes = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.buttonApagarFuncionario = new System.Windows.Forms.Button();
-            this.buttonMaisInfo = new System.Windows.Forms.Button();
             this.textBox_pesquisa = new System.Windows.Forms.TextBox();
             this.buttonPesquisarClientes = new System.Windows.Forms.Button();
             this.groupBoxFuncionario = new System.Windows.Forms.GroupBox();
             this.textBoxSaldoCliente = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelSaldo = new System.Windows.Forms.Label();
             this.buttonGuardarCliente = new System.Windows.Forms.Button();
             this.textBoxNIFCliente = new System.Windows.Forms.TextBox();
             this.textBoxNomeCliente = new System.Windows.Forms.TextBox();
             this.labelNomesClientes = new System.Windows.Forms.Label();
             this.listBoxClientes = new System.Windows.Forms.ListBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelNifClientes = new System.Windows.Forms.Label();
+            this.RadioEstudante = new System.Windows.Forms.RadioButton();
+            this.RadioProf = new System.Windows.Forms.RadioButton();
+            this.labelNumEstudante = new System.Windows.Forms.Label();
+            this.labelEmail = new System.Windows.Forms.Label();
+            this.textBoxNumEstudante = new System.Windows.Forms.TextBox();
+            this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.tabControlClientes.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBoxFuncionario.SuspendLayout();
@@ -61,7 +66,6 @@
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.buttonApagarFuncionario);
-            this.tabPage1.Controls.Add(this.buttonMaisInfo);
             this.tabPage1.Controls.Add(this.textBox_pesquisa);
             this.tabPage1.Controls.Add(this.buttonPesquisarClientes);
             this.tabPage1.Controls.Add(this.groupBoxFuncionario);
@@ -74,6 +78,7 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Clientes";
             this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // buttonApagarFuncionario
             // 
@@ -88,16 +93,6 @@
             this.buttonApagarFuncionario.Text = "Apagar";
             this.buttonApagarFuncionario.UseVisualStyleBackColor = false;
             this.buttonApagarFuncionario.Click += new System.EventHandler(this.buttonApagarFuncionario_Click);
-            // 
-            // buttonMaisInfo
-            // 
-            this.buttonMaisInfo.Location = new System.Drawing.Point(649, 220);
-            this.buttonMaisInfo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.buttonMaisInfo.Name = "buttonMaisInfo";
-            this.buttonMaisInfo.Size = new System.Drawing.Size(80, 20);
-            this.buttonMaisInfo.TabIndex = 8;
-            this.buttonMaisInfo.Text = "+ Info";
-            this.buttonMaisInfo.UseVisualStyleBackColor = true;
             // 
             // textBox_pesquisa
             // 
@@ -117,12 +112,19 @@
             this.buttonPesquisarClientes.TabIndex = 6;
             this.buttonPesquisarClientes.Text = "PESQUISAR";
             this.buttonPesquisarClientes.UseVisualStyleBackColor = true;
+            this.buttonPesquisarClientes.Click += new System.EventHandler(this.buttonPesquisarClientes_Click);
             // 
             // groupBoxFuncionario
             // 
-            this.groupBoxFuncionario.Controls.Add(this.label2);
+            this.groupBoxFuncionario.Controls.Add(this.textBoxEmail);
+            this.groupBoxFuncionario.Controls.Add(this.textBoxNumEstudante);
+            this.groupBoxFuncionario.Controls.Add(this.labelEmail);
+            this.groupBoxFuncionario.Controls.Add(this.labelNumEstudante);
+            this.groupBoxFuncionario.Controls.Add(this.RadioProf);
+            this.groupBoxFuncionario.Controls.Add(this.RadioEstudante);
+            this.groupBoxFuncionario.Controls.Add(this.labelNifClientes);
             this.groupBoxFuncionario.Controls.Add(this.textBoxSaldoCliente);
-            this.groupBoxFuncionario.Controls.Add(this.label1);
+            this.groupBoxFuncionario.Controls.Add(this.labelSaldo);
             this.groupBoxFuncionario.Controls.Add(this.buttonGuardarCliente);
             this.groupBoxFuncionario.Controls.Add(this.textBoxNIFCliente);
             this.groupBoxFuncionario.Controls.Add(this.textBoxNomeCliente);
@@ -131,7 +133,7 @@
             this.groupBoxFuncionario.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.groupBoxFuncionario.Name = "groupBoxFuncionario";
             this.groupBoxFuncionario.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.groupBoxFuncionario.Size = new System.Drawing.Size(235, 211);
+            this.groupBoxFuncionario.Size = new System.Drawing.Size(235, 236);
             this.groupBoxFuncionario.TabIndex = 4;
             this.groupBoxFuncionario.TabStop = false;
             this.groupBoxFuncionario.Text = "Clientes";
@@ -144,22 +146,22 @@
             this.textBoxSaldoCliente.Size = new System.Drawing.Size(170, 20);
             this.textBoxSaldoCliente.TabIndex = 7;
             // 
-            // label1
+            // labelSaldo
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(8, 83);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 13);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Saldo:";
+            this.labelSaldo.AutoSize = true;
+            this.labelSaldo.Location = new System.Drawing.Point(8, 83);
+            this.labelSaldo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelSaldo.Name = "labelSaldo";
+            this.labelSaldo.Size = new System.Drawing.Size(37, 13);
+            this.labelSaldo.TabIndex = 6;
+            this.labelSaldo.Text = "Saldo:";
             // 
             // buttonGuardarCliente
             // 
             this.buttonGuardarCliente.BackColor = System.Drawing.Color.ForestGreen;
             this.buttonGuardarCliente.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonGuardarCliente.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonGuardarCliente.Location = new System.Drawing.Point(155, 179);
+            this.buttonGuardarCliente.Location = new System.Drawing.Point(155, 203);
             this.buttonGuardarCliente.Margin = new System.Windows.Forms.Padding(2);
             this.buttonGuardarCliente.Name = "buttonGuardarCliente";
             this.buttonGuardarCliente.Size = new System.Drawing.Size(76, 27);
@@ -205,15 +207,71 @@
             this.listBoxClientes.SelectedIndexChanged += new System.EventHandler(this.listBoxClientes_SelectedIndexChanged);
             this.listBoxClientes.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listBoxClientes_MouseDoubleClick);
             // 
-            // label2
+            // labelNifClientes
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(8, 54);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(27, 13);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "NIF:";
+            this.labelNifClientes.AutoSize = true;
+            this.labelNifClientes.Location = new System.Drawing.Point(8, 54);
+            this.labelNifClientes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelNifClientes.Name = "labelNifClientes";
+            this.labelNifClientes.Size = new System.Drawing.Size(27, 13);
+            this.labelNifClientes.TabIndex = 9;
+            this.labelNifClientes.Text = "NIF:";
+            // 
+            // RadioEstudante
+            // 
+            this.RadioEstudante.AutoSize = true;
+            this.RadioEstudante.Location = new System.Drawing.Point(10, 114);
+            this.RadioEstudante.Name = "RadioEstudante";
+            this.RadioEstudante.Size = new System.Drawing.Size(73, 17);
+            this.RadioEstudante.TabIndex = 10;
+            this.RadioEstudante.TabStop = true;
+            this.RadioEstudante.Text = "Estudante";
+            this.RadioEstudante.UseVisualStyleBackColor = true;
+            this.RadioEstudante.CheckedChanged += new System.EventHandler(this.RadioEstudante_CheckedChanged);
+            // 
+            // RadioProf
+            // 
+            this.RadioProf.AutoSize = true;
+            this.RadioProf.Location = new System.Drawing.Point(147, 115);
+            this.RadioProf.Name = "RadioProf";
+            this.RadioProf.Size = new System.Drawing.Size(69, 17);
+            this.RadioProf.TabIndex = 11;
+            this.RadioProf.TabStop = true;
+            this.RadioProf.Text = "Professor";
+            this.RadioProf.UseVisualStyleBackColor = true;
+            this.RadioProf.CheckedChanged += new System.EventHandler(this.RadioProf_CheckedChanged);
+            // 
+            // labelNumEstudante
+            // 
+            this.labelNumEstudante.AutoSize = true;
+            this.labelNumEstudante.Location = new System.Drawing.Point(7, 151);
+            this.labelNumEstudante.Name = "labelNumEstudante";
+            this.labelNumEstudante.Size = new System.Drawing.Size(80, 13);
+            this.labelNumEstudante.TabIndex = 12;
+            this.labelNumEstudante.Text = "NumEstudante:";
+            // 
+            // labelEmail
+            // 
+            this.labelEmail.AutoSize = true;
+            this.labelEmail.Location = new System.Drawing.Point(9, 175);
+            this.labelEmail.Name = "labelEmail";
+            this.labelEmail.Size = new System.Drawing.Size(35, 13);
+            this.labelEmail.TabIndex = 13;
+            this.labelEmail.Text = "Email:";
+            // 
+            // textBoxNumEstudante
+            // 
+            this.textBoxNumEstudante.Location = new System.Drawing.Point(97, 147);
+            this.textBoxNumEstudante.Name = "textBoxNumEstudante";
+            this.textBoxNumEstudante.Size = new System.Drawing.Size(135, 20);
+            this.textBoxNumEstudante.TabIndex = 14;
+            // 
+            // textBoxEmail
+            // 
+            this.textBoxEmail.Location = new System.Drawing.Point(62, 173);
+            this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.Size = new System.Drawing.Size(170, 20);
+            this.textBoxEmail.TabIndex = 15;
             // 
             // FormGestaoClientes
             // 
@@ -238,7 +296,6 @@
         private System.Windows.Forms.TabControl tabControlClientes;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Button buttonApagarFuncionario;
-        private System.Windows.Forms.Button buttonMaisInfo;
         private System.Windows.Forms.TextBox textBox_pesquisa;
         private System.Windows.Forms.Button buttonPesquisarClientes;
         private System.Windows.Forms.GroupBox groupBoxFuncionario;
@@ -248,7 +305,13 @@
         private System.Windows.Forms.Label labelNomesClientes;
         private System.Windows.Forms.ListBox listBoxClientes;
         private System.Windows.Forms.TextBox textBoxSaldoCliente;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelSaldo;
+        private System.Windows.Forms.Label labelNifClientes;
+        private System.Windows.Forms.RadioButton RadioProf;
+        private System.Windows.Forms.RadioButton RadioEstudante;
+        private System.Windows.Forms.Label labelEmail;
+        private System.Windows.Forms.Label labelNumEstudante;
+        private System.Windows.Forms.TextBox textBoxEmail;
+        private System.Windows.Forms.TextBox textBoxNumEstudante;
     }
 }
