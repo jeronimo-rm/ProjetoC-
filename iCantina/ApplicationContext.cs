@@ -16,5 +16,7 @@ namespace iCantina
         //  public DbSet<Menu> Menus { get; set; }
         public DbSet<Prato> Pratos { get; set; }
         //  public DbSet<Reserva> Reservas { get; set; }
+        public DbSet<Funcionario> Funcionarios { get; set; }
+        public DbSet<Cliente> Clientes { get; set; }
     }
 }

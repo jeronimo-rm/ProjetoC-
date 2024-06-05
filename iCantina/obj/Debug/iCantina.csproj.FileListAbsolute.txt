@@ -20,3 +20,25 @@ C:\Users\jeron\OneDrive\Ambiente de Trabalho\da\ProjetoC-\iCantina\obj\Debug\iCa
 C:\Users\jeron\OneDrive\Ambiente de Trabalho\da\ProjetoC-\iCantina\obj\Debug\iCantina.FormPratos.resources
 C:\Users\jeron\OneDrive\Ambiente de Trabalho\da\ProjetoC-\iCantina\obj\Debug\iCantina.FormFuncionarios.resources
 C:\Users\jeron\OneDrive\Ambiente de Trabalho\da\ProjetoC-\iCantina\obj\Debug\iCantina.Migrations.InitialCreate.resources
+C:\Users\Abner Gonçalves\Documents\GitHub\ProjetoC-\iCantina\bin\Debug\iCantina.exe.config
+C:\Users\Abner Gonçalves\Documents\GitHub\ProjetoC-\iCantina\bin\Debug\iCantina.exe
+C:\Users\Abner Gonçalves\Documents\GitHub\ProjetoC-\iCantina\bin\Debug\iCantina.pdb
+C:\Users\Abner Gonçalves\Documents\GitHub\ProjetoC-\iCantina\bin\Debug\EntityFramework.dll
+C:\Users\Abner Gonçalves\Documents\GitHub\ProjetoC-\iCantina\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Abner Gonçalves\Documents\GitHub\ProjetoC-\iCantina\bin\Debug\EntityFramework.xml
+C:\Users\Abner Gonçalves\Documents\GitHub\ProjetoC-\iCantina\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Abner Gonçalves\Documents\GitHub\ProjetoC-\iCantina\obj\Debug\iCantina.csproj.AssemblyReference.cache
+C:\Users\Abner Gonçalves\Documents\GitHub\ProjetoC-\iCantina\obj\Debug\iCantina.FormExtras.resources
+C:\Users\Abner Gonçalves\Documents\GitHub\ProjetoC-\iCantina\obj\Debug\iCantina.FormFuncionarios.resources
+C:\Users\Abner Gonçalves\Documents\GitHub\ProjetoC-\iCantina\obj\Debug\iCantina.FormGestaoClientes.resources
+C:\Users\Abner Gonçalves\Documents\GitHub\ProjetoC-\iCantina\obj\Debug\iCantina.FormMenu.resources
+C:\Users\Abner Gonçalves\Documents\GitHub\ProjetoC-\iCantina\obj\Debug\iCantina.FormMulta.resources
+C:\Users\Abner Gonçalves\Documents\GitHub\ProjetoC-\iCantina\obj\Debug\iCantina.FormPratos.resources
+C:\Users\Abner Gonçalves\Documents\GitHub\ProjetoC-\iCantina\obj\Debug\iCantina.FormPrincipal.resources
+C:\Users\Abner Gonçalves\Documents\GitHub\ProjetoC-\iCantina\obj\Debug\iCantina.Migrations.InitialCreate.resources
+C:\Users\Abner Gonçalves\Documents\GitHub\ProjetoC-\iCantina\obj\Debug\iCantina.Properties.Resources.resources
+C:\Users\Abner Gonçalves\Documents\GitHub\ProjetoC-\iCantina\obj\Debug\iCantina.csproj.GenerateResource.cache
+C:\Users\Abner Gonçalves\Documents\GitHub\ProjetoC-\iCantina\obj\Debug\iCantina.csproj.CoreCompileInputs.cache
+C:\Users\Abner Gonçalves\Documents\GitHub\ProjetoC-\iCantina\obj\Debug\iCantina.csproj.Up2Date
+C:\Users\Abner Gonçalves\Documents\GitHub\ProjetoC-\iCantina\obj\Debug\iCantina.exe
+C:\Users\Abner Gonçalves\Documents\GitHub\ProjetoC-\iCantina\obj\Debug\iCantina.pdb
