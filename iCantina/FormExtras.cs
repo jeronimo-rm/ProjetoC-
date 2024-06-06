@@ -17,6 +17,7 @@ namespace iCantina
         public FormExtras()
         {
             InitializeComponent();
+            atualizarDadosAoEntrar();
         }
         public FormExtras(FormPrincipal formPrincipal) :this()
         {
@@ -26,7 +27,19 @@ namespace iCantina
         public TabPage getPage()
         {
             return tabControlExtras.TabPages[0];
-        }   
+        }
+
+        private void atualizarDadosAoEntrar()
+        {
+            using (var db = new ApplicationContext())
+            {
+                var extras = db.Extras.OfType<Extra>();
+                foreach (var extra in extras) //correr os extras para os adicionar à listBox 
+                {
+                    listBoxExtras.Items.Add(extra);
+                }
+            }
+        }
 
         public bool ValidarDadosInseridos()
         {
@@ -53,6 +66,12 @@ namespace iCantina
                 MessageBox.Show("Escolha um estado da lista!", "Aviso!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
+            int quantidadeExtra = int.Parse(textBoxQuantidade.Text);
+            if (quantidadeExtra == 0)
+            {
+                MessageBox.Show("Insira a quantidade do Extra!", "Aviso!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
             return true;
         }
 
@@ -68,13 +87,14 @@ namespace iCantina
             string descricaoExtra = textBoxDescricao.Text;
             decimal precoExtra = decimal.Parse(textBoxPreco.Text);
             string estadoExtra = comboBoxEstado.Text;
-            if(!ValidarDadosInseridos())
+            int quantidadeExtra = int.Parse(textBoxQuantidade.Text);
+            if (!ValidarDadosInseridos())
             {
                 return;
             }
             try
             {
-                Extra extra = new Extra(descricaoExtra, precoExtra, estadoExtra);
+                Extra extra = new Extra(descricaoExtra, precoExtra, estadoExtra, quantidadeExtra);
             }
             catch(Exception)
             {
@@ -88,6 +108,7 @@ namespace iCantina
                 extraSelecionado.DescricaoExtra = descricaoExtra;
                 extraSelecionado.PrecoExtra = precoExtra;
                 extraSelecionado.EstadoExtra = estadoExtra;
+                extraSelecionado.QuantidadeExtra = quantidadeExtra;
 
                 int editarExtra = listBoxExtras.SelectedIndex;
                 listBoxExtras.Items[editarExtra] = extraSelecionado;
@@ -101,7 +122,7 @@ namespace iCantina
             }
             else // se não tiver um Extra selecionado, cria um novo
             {
-                Extra novoExtra = new Extra(textBoxDescricao.Text, decimal.Parse(textBoxPreco.Text), comboBoxEstado.Text);
+                Extra novoExtra = new Extra(textBoxDescricao.Text, decimal.Parse(textBoxPreco.Text), comboBoxEstado.Text, int.Parse(textBoxQuantidade.Text));
 
                 //mostra na listBox o novo Extra
                 listBoxExtras.Items.Add(novoExtra);
@@ -112,6 +133,7 @@ namespace iCantina
                     db.SaveChanges();
                 }
             }
+            limparDadosInseridos();
         }
         public void AtualizarListBoxExtras()
         {
@@ -156,19 +178,20 @@ namespace iCantina
                 textBoxDescricao.Text = extraSelecionado.DescricaoExtra;
                 textBoxPreco.Text = extraSelecionado.PrecoExtra.ToString();
                 comboBoxEstado.Text = extraSelecionado.EstadoExtra;
+                textBoxQuantidade.Text = extraSelecionado.QuantidadeExtra.ToString();
             }
         }
 
         private void tabPage1_Click(object sender, EventArgs e)
         {
             listBoxExtras.ClearSelected();
-            limparDadosInseridos();
         }
         public void limparDadosInseridos()
         {
             textBoxDescricao.Clear();
             textBoxPreco.Clear();
             comboBoxEstado.SelectedIndex = -1;
+            textBoxQuantidade.Clear();
         }
     }
 }
