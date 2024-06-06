@@ -93,7 +93,7 @@ namespace iCantina
             {   // caso haja algum erro
                 MessageBox.Show("Erro ao criar o prato!", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            if (listBoxPratos.SelectedIndex != -1) // se tiver um funcionario selecionado, altera os dados
+            if (listBoxPratos.SelectedIndex != -1) // se tiver um Prato selecionado, altera os dados
             {
                 Prato pratoSelecionado = (Prato)listBoxPratos.SelectedItem;
                 // altera dos dados do prato selecionado
@@ -106,7 +106,7 @@ namespace iCantina
                 listBoxPratos.Items[editarPrato] = pratoSelecionado;
 
                 using (var db = new ApplicationContext())
-                {   //faz update do funcionario
+                {   //faz update do Prato
                     db.Pratos.AddOrUpdate(pratoSelecionado);
                     db.SaveChanges();
                 }
@@ -129,7 +129,7 @@ namespace iCantina
             using (var db = new ApplicationContext())
             {
                 var pratos = db.Pratos;
-                foreach (var prato in pratos) //correr os funcionarios para os adicionar à listBox 
+                foreach (var prato in pratos) //correr os pratos para os adicionar à listBox 
                 {
                     listBoxPratos.Items.Add(prato);
                 }

@@ -94,5 +94,13 @@ namespace iCantina
         {
             formMulta.ShowDialog();
         }
+
+        private void monthCalendar_DateChanged(object sender, DateRangeEventArgs e)
+        {
+            /*desativar todos os dias anteriores ao atual 
+            monthCalendar.MinDate = DateTime.Now;
+            monthCalendar.Show();*/
+
+        }
     }
 }

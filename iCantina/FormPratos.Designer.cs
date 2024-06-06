@@ -39,6 +39,7 @@
             this.comboBoxTipoPrato = new System.Windows.Forms.ComboBox();
             this.labelEstado = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.entityCommand1 = new System.Data.Entity.Core.EntityClient.EntityCommand();
             this.tabPage1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.SuspendLayout();
@@ -54,10 +55,11 @@
             this.tabPage1.Controls.Add(this.labelTipo);
             this.tabPage1.Controls.Add(this.comboBoxTipoPrato);
             this.tabPage1.Controls.Add(this.labelEstado);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1217, 463);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Size = new System.Drawing.Size(911, 374);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Pratos";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -68,9 +70,10 @@
             this.buttonApagarPrato.BackColor = System.Drawing.Color.Brown;
             this.buttonApagarPrato.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonApagarPrato.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonApagarPrato.Location = new System.Drawing.Point(182, 399);
+            this.buttonApagarPrato.Location = new System.Drawing.Point(136, 324);
+            this.buttonApagarPrato.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonApagarPrato.Name = "buttonApagarPrato";
-            this.buttonApagarPrato.Size = new System.Drawing.Size(117, 40);
+            this.buttonApagarPrato.Size = new System.Drawing.Size(88, 32);
             this.buttonApagarPrato.TabIndex = 5;
             this.buttonApagarPrato.Text = "Apagar";
             this.buttonApagarPrato.UseVisualStyleBackColor = false;
@@ -80,9 +83,10 @@
             // 
             this.labelPrato.AutoSize = true;
             this.labelPrato.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPrato.Location = new System.Drawing.Point(12, 33);
+            this.labelPrato.Location = new System.Drawing.Point(9, 27);
+            this.labelPrato.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelPrato.Name = "labelPrato";
-            this.labelPrato.Size = new System.Drawing.Size(56, 15);
+            this.labelPrato.Size = new System.Drawing.Size(47, 12);
             this.labelPrato.TabIndex = 13;
             this.labelPrato.Text = "PRATO:";
             // 
@@ -91,11 +95,11 @@
             this.listBoxPratos.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxPratos.FormattingEnabled = true;
             this.listBoxPratos.HorizontalScrollbar = true;
-            this.listBoxPratos.ItemHeight = 19;
-            this.listBoxPratos.Location = new System.Drawing.Point(317, 21);
-            this.listBoxPratos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.listBoxPratos.ItemHeight = 16;
+            this.listBoxPratos.Location = new System.Drawing.Point(238, 17);
+            this.listBoxPratos.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.listBoxPratos.Name = "listBoxPratos";
-            this.listBoxPratos.Size = new System.Drawing.Size(881, 403);
+            this.listBoxPratos.Size = new System.Drawing.Size(662, 324);
             this.listBoxPratos.TabIndex = 6;
             this.listBoxPratos.SelectedIndexChanged += new System.EventHandler(this.listBoxPratos_SelectedIndexChanged);
             // 
@@ -104,10 +108,9 @@
             this.buttonGuardarPrato.BackColor = System.Drawing.Color.ForestGreen;
             this.buttonGuardarPrato.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonGuardarPrato.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonGuardarPrato.Location = new System.Drawing.Point(15, 399);
-            this.buttonGuardarPrato.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonGuardarPrato.Location = new System.Drawing.Point(11, 324);
             this.buttonGuardarPrato.Name = "buttonGuardarPrato";
-            this.buttonGuardarPrato.Size = new System.Drawing.Size(117, 42);
+            this.buttonGuardarPrato.Size = new System.Drawing.Size(88, 34);
             this.buttonGuardarPrato.TabIndex = 4;
             this.buttonGuardarPrato.Text = "Guardar";
             this.buttonGuardarPrato.UseVisualStyleBackColor = false;
@@ -115,11 +118,11 @@
             // 
             // textBoxDescricaoPrato
             // 
-            this.textBoxDescricaoPrato.Location = new System.Drawing.Point(112, 33);
-            this.textBoxDescricaoPrato.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBoxDescricaoPrato.Location = new System.Drawing.Point(84, 27);
+            this.textBoxDescricaoPrato.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBoxDescricaoPrato.Multiline = true;
             this.textBoxDescricaoPrato.Name = "textBoxDescricaoPrato";
-            this.textBoxDescricaoPrato.Size = new System.Drawing.Size(165, 101);
+            this.textBoxDescricaoPrato.Size = new System.Drawing.Size(125, 83);
             this.textBoxDescricaoPrato.TabIndex = 0;
             // 
             // comboBoxEstadoPrato
@@ -128,10 +131,10 @@
             this.comboBoxEstadoPrato.Items.AddRange(new object[] {
             "Desativado",
             "Ativado"});
-            this.comboBoxEstadoPrato.Location = new System.Drawing.Point(112, 202);
-            this.comboBoxEstadoPrato.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.comboBoxEstadoPrato.Location = new System.Drawing.Point(84, 164);
+            this.comboBoxEstadoPrato.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.comboBoxEstadoPrato.Name = "comboBoxEstadoPrato";
-            this.comboBoxEstadoPrato.Size = new System.Drawing.Size(101, 24);
+            this.comboBoxEstadoPrato.Size = new System.Drawing.Size(77, 21);
             this.comboBoxEstadoPrato.TabIndex = 2;
             this.comboBoxEstadoPrato.Text = "Desativado";
             // 
@@ -139,9 +142,10 @@
             // 
             this.labelTipo.AutoSize = true;
             this.labelTipo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTipo.Location = new System.Drawing.Point(12, 155);
+            this.labelTipo.Location = new System.Drawing.Point(9, 126);
+            this.labelTipo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTipo.Name = "labelTipo";
-            this.labelTipo.Size = new System.Drawing.Size(42, 15);
+            this.labelTipo.Size = new System.Drawing.Size(34, 12);
             this.labelTipo.TabIndex = 14;
             this.labelTipo.Text = "TIPO:";
             // 
@@ -152,38 +156,49 @@
             "Carne",
             "Peixe",
             "Vegan"});
-            this.comboBoxTipoPrato.Location = new System.Drawing.Point(112, 151);
-            this.comboBoxTipoPrato.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.comboBoxTipoPrato.Location = new System.Drawing.Point(84, 123);
+            this.comboBoxTipoPrato.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.comboBoxTipoPrato.Name = "comboBoxTipoPrato";
-            this.comboBoxTipoPrato.Size = new System.Drawing.Size(101, 24);
+            this.comboBoxTipoPrato.Size = new System.Drawing.Size(77, 21);
             this.comboBoxTipoPrato.TabIndex = 1;
             // 
             // labelEstado
             // 
             this.labelEstado.AutoSize = true;
             this.labelEstado.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEstado.Location = new System.Drawing.Point(12, 211);
+            this.labelEstado.Location = new System.Drawing.Point(9, 171);
+            this.labelEstado.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelEstado.Name = "labelEstado";
-            this.labelEstado.Size = new System.Drawing.Size(66, 15);
+            this.labelEstado.Size = new System.Drawing.Size(54, 12);
             this.labelEstado.TabIndex = 15;
             this.labelEstado.Text = "ESTADO:";
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Location = new System.Drawing.Point(37, 28);
+            this.tabControl1.Location = new System.Drawing.Point(28, 23);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1225, 492);
+            this.tabControl1.Size = new System.Drawing.Size(919, 400);
             this.tabControl1.TabIndex = 22;
+            // 
+            // entityCommand1
+            // 
+            this.entityCommand1.CommandTimeout = 0;
+            this.entityCommand1.CommandTree = null;
+            this.entityCommand1.Connection = null;
+            this.entityCommand1.EnablePlanCaching = true;
+            this.entityCommand1.Transaction = null;
             // 
             // FormPratos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
-            this.ClientSize = new System.Drawing.Size(1274, 532);
+            this.ClientSize = new System.Drawing.Size(956, 432);
             this.Controls.Add(this.tabControl1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormPratos";
             this.Text = "FormPratos";
             this.Load += new System.EventHandler(this.FormPratos_Load);
@@ -207,5 +222,6 @@
         private System.Windows.Forms.ComboBox comboBoxTipoPrato;
         private System.Windows.Forms.Label labelEstado;
         private System.Windows.Forms.TabControl tabControl1;
+        private System.Data.Entity.Core.EntityClient.EntityCommand entityCommand1;
     }
 }
