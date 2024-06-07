@@ -299,5 +299,10 @@ namespace iCantina
                 textBoxNumEstudante.Enabled = true;
             }
         }
+
+        private void FormGestaoClientes_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

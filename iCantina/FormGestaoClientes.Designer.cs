@@ -34,6 +34,13 @@
             this.textBox_pesquisa = new System.Windows.Forms.TextBox();
             this.buttonPesquisarClientes = new System.Windows.Forms.Button();
             this.groupBoxFuncionario = new System.Windows.Forms.GroupBox();
+            this.textBoxEmail = new System.Windows.Forms.TextBox();
+            this.textBoxNumEstudante = new System.Windows.Forms.TextBox();
+            this.labelEmail = new System.Windows.Forms.Label();
+            this.labelNumEstudante = new System.Windows.Forms.Label();
+            this.RadioProf = new System.Windows.Forms.RadioButton();
+            this.RadioEstudante = new System.Windows.Forms.RadioButton();
+            this.labelNifClientes = new System.Windows.Forms.Label();
             this.textBoxSaldoCliente = new System.Windows.Forms.TextBox();
             this.labelSaldo = new System.Windows.Forms.Label();
             this.buttonGuardarCliente = new System.Windows.Forms.Button();
@@ -41,13 +48,6 @@
             this.textBoxNomeCliente = new System.Windows.Forms.TextBox();
             this.labelNomesClientes = new System.Windows.Forms.Label();
             this.listBoxClientes = new System.Windows.Forms.ListBox();
-            this.labelNifClientes = new System.Windows.Forms.Label();
-            this.RadioEstudante = new System.Windows.Forms.RadioButton();
-            this.RadioProf = new System.Windows.Forms.RadioButton();
-            this.labelNumEstudante = new System.Windows.Forms.Label();
-            this.labelEmail = new System.Windows.Forms.Label();
-            this.textBoxNumEstudante = new System.Windows.Forms.TextBox();
-            this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.tabControlClientes.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBoxFuncionario.SuspendLayout();
@@ -56,11 +56,11 @@
             // tabControlClientes
             // 
             this.tabControlClientes.Controls.Add(this.tabPage1);
-            this.tabControlClientes.Location = new System.Drawing.Point(11, 12);
-            this.tabControlClientes.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.tabControlClientes.Location = new System.Drawing.Point(15, 15);
+            this.tabControlClientes.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabControlClientes.Name = "tabControlClientes";
             this.tabControlClientes.SelectedIndex = 0;
-            this.tabControlClientes.Size = new System.Drawing.Size(847, 272);
+            this.tabControlClientes.Size = new System.Drawing.Size(1129, 335);
             this.tabControlClientes.TabIndex = 8;
             // 
             // tabPage1
@@ -70,11 +70,11 @@
             this.tabPage1.Controls.Add(this.buttonPesquisarClientes);
             this.tabPage1.Controls.Add(this.groupBoxFuncionario);
             this.tabPage1.Controls.Add(this.listBoxClientes);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.tabPage1.Size = new System.Drawing.Size(839, 246);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tabPage1.Size = new System.Drawing.Size(1121, 306);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Clientes";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -85,10 +85,10 @@
             this.buttonApagarFuncionario.BackColor = System.Drawing.Color.Brown;
             this.buttonApagarFuncionario.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonApagarFuncionario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonApagarFuncionario.Location = new System.Drawing.Point(759, 217);
-            this.buttonApagarFuncionario.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonApagarFuncionario.Location = new System.Drawing.Point(1012, 267);
+            this.buttonApagarFuncionario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonApagarFuncionario.Name = "buttonApagarFuncionario";
-            this.buttonApagarFuncionario.Size = new System.Drawing.Size(76, 27);
+            this.buttonApagarFuncionario.Size = new System.Drawing.Size(101, 33);
             this.buttonApagarFuncionario.TabIndex = 10;
             this.buttonApagarFuncionario.Text = "Apagar";
             this.buttonApagarFuncionario.UseVisualStyleBackColor = false;
@@ -96,19 +96,19 @@
             // 
             // textBox_pesquisa
             // 
-            this.textBox_pesquisa.Location = new System.Drawing.Point(260, 7);
-            this.textBox_pesquisa.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.textBox_pesquisa.Location = new System.Drawing.Point(347, 9);
+            this.textBox_pesquisa.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox_pesquisa.MaxLength = 9;
             this.textBox_pesquisa.Name = "textBox_pesquisa";
-            this.textBox_pesquisa.Size = new System.Drawing.Size(170, 20);
+            this.textBox_pesquisa.Size = new System.Drawing.Size(225, 22);
             this.textBox_pesquisa.TabIndex = 5;
             // 
             // buttonPesquisarClientes
             // 
-            this.buttonPesquisarClientes.Location = new System.Drawing.Point(434, 6);
-            this.buttonPesquisarClientes.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.buttonPesquisarClientes.Location = new System.Drawing.Point(579, 7);
+            this.buttonPesquisarClientes.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonPesquisarClientes.Name = "buttonPesquisarClientes";
-            this.buttonPesquisarClientes.Size = new System.Drawing.Size(110, 20);
+            this.buttonPesquisarClientes.Size = new System.Drawing.Size(147, 25);
             this.buttonPesquisarClientes.TabIndex = 6;
             this.buttonPesquisarClientes.Text = "PESQUISAR";
             this.buttonPesquisarClientes.UseVisualStyleBackColor = true;
@@ -129,30 +129,100 @@
             this.groupBoxFuncionario.Controls.Add(this.textBoxNIFCliente);
             this.groupBoxFuncionario.Controls.Add(this.textBoxNomeCliente);
             this.groupBoxFuncionario.Controls.Add(this.labelNomesClientes);
-            this.groupBoxFuncionario.Location = new System.Drawing.Point(2, 4);
-            this.groupBoxFuncionario.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.groupBoxFuncionario.Location = new System.Drawing.Point(3, 5);
+            this.groupBoxFuncionario.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBoxFuncionario.Name = "groupBoxFuncionario";
-            this.groupBoxFuncionario.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.groupBoxFuncionario.Size = new System.Drawing.Size(235, 236);
+            this.groupBoxFuncionario.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBoxFuncionario.Size = new System.Drawing.Size(313, 290);
             this.groupBoxFuncionario.TabIndex = 4;
             this.groupBoxFuncionario.TabStop = false;
             this.groupBoxFuncionario.Text = "Clientes";
             // 
+            // textBoxEmail
+            // 
+            this.textBoxEmail.Location = new System.Drawing.Point(83, 213);
+            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.Size = new System.Drawing.Size(225, 22);
+            this.textBoxEmail.TabIndex = 15;
+            // 
+            // textBoxNumEstudante
+            // 
+            this.textBoxNumEstudante.Location = new System.Drawing.Point(129, 181);
+            this.textBoxNumEstudante.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxNumEstudante.Name = "textBoxNumEstudante";
+            this.textBoxNumEstudante.Size = new System.Drawing.Size(179, 22);
+            this.textBoxNumEstudante.TabIndex = 14;
+            // 
+            // labelEmail
+            // 
+            this.labelEmail.AutoSize = true;
+            this.labelEmail.Location = new System.Drawing.Point(12, 215);
+            this.labelEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelEmail.Name = "labelEmail";
+            this.labelEmail.Size = new System.Drawing.Size(44, 16);
+            this.labelEmail.TabIndex = 13;
+            this.labelEmail.Text = "Email:";
+            // 
+            // labelNumEstudante
+            // 
+            this.labelNumEstudante.AutoSize = true;
+            this.labelNumEstudante.Location = new System.Drawing.Point(9, 186);
+            this.labelNumEstudante.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelNumEstudante.Name = "labelNumEstudante";
+            this.labelNumEstudante.Size = new System.Drawing.Size(98, 16);
+            this.labelNumEstudante.TabIndex = 12;
+            this.labelNumEstudante.Text = "NumEstudante:";
+            // 
+            // RadioProf
+            // 
+            this.RadioProf.AutoSize = true;
+            this.RadioProf.Location = new System.Drawing.Point(196, 142);
+            this.RadioProf.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RadioProf.Name = "RadioProf";
+            this.RadioProf.Size = new System.Drawing.Size(86, 20);
+            this.RadioProf.TabIndex = 11;
+            this.RadioProf.TabStop = true;
+            this.RadioProf.Text = "Professor";
+            this.RadioProf.UseVisualStyleBackColor = true;
+            this.RadioProf.CheckedChanged += new System.EventHandler(this.RadioProf_CheckedChanged);
+            // 
+            // RadioEstudante
+            // 
+            this.RadioEstudante.AutoSize = true;
+            this.RadioEstudante.Location = new System.Drawing.Point(13, 140);
+            this.RadioEstudante.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RadioEstudante.Name = "RadioEstudante";
+            this.RadioEstudante.Size = new System.Drawing.Size(88, 20);
+            this.RadioEstudante.TabIndex = 10;
+            this.RadioEstudante.TabStop = true;
+            this.RadioEstudante.Text = "Estudante";
+            this.RadioEstudante.UseVisualStyleBackColor = true;
+            this.RadioEstudante.CheckedChanged += new System.EventHandler(this.RadioEstudante_CheckedChanged);
+            // 
+            // labelNifClientes
+            // 
+            this.labelNifClientes.AutoSize = true;
+            this.labelNifClientes.Location = new System.Drawing.Point(11, 66);
+            this.labelNifClientes.Name = "labelNifClientes";
+            this.labelNifClientes.Size = new System.Drawing.Size(31, 16);
+            this.labelNifClientes.TabIndex = 9;
+            this.labelNifClientes.Text = "NIF:";
+            // 
             // textBoxSaldoCliente
             // 
-            this.textBoxSaldoCliente.Location = new System.Drawing.Point(62, 80);
-            this.textBoxSaldoCliente.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.textBoxSaldoCliente.Location = new System.Drawing.Point(83, 98);
+            this.textBoxSaldoCliente.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxSaldoCliente.Name = "textBoxSaldoCliente";
-            this.textBoxSaldoCliente.Size = new System.Drawing.Size(170, 20);
+            this.textBoxSaldoCliente.Size = new System.Drawing.Size(225, 22);
             this.textBoxSaldoCliente.TabIndex = 7;
             // 
             // labelSaldo
             // 
             this.labelSaldo.AutoSize = true;
-            this.labelSaldo.Location = new System.Drawing.Point(8, 83);
-            this.labelSaldo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelSaldo.Location = new System.Drawing.Point(11, 102);
             this.labelSaldo.Name = "labelSaldo";
-            this.labelSaldo.Size = new System.Drawing.Size(37, 13);
+            this.labelSaldo.Size = new System.Drawing.Size(46, 16);
             this.labelSaldo.TabIndex = 6;
             this.labelSaldo.Text = "Saldo:";
             // 
@@ -161,10 +231,10 @@
             this.buttonGuardarCliente.BackColor = System.Drawing.Color.ForestGreen;
             this.buttonGuardarCliente.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonGuardarCliente.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonGuardarCliente.Location = new System.Drawing.Point(155, 203);
-            this.buttonGuardarCliente.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonGuardarCliente.Location = new System.Drawing.Point(207, 250);
+            this.buttonGuardarCliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonGuardarCliente.Name = "buttonGuardarCliente";
-            this.buttonGuardarCliente.Size = new System.Drawing.Size(76, 27);
+            this.buttonGuardarCliente.Size = new System.Drawing.Size(101, 33);
             this.buttonGuardarCliente.TabIndex = 5;
             this.buttonGuardarCliente.Text = "Guardar";
             this.buttonGuardarCliente.UseVisualStyleBackColor = false;
@@ -172,116 +242,52 @@
             // 
             // textBoxNIFCliente
             // 
-            this.textBoxNIFCliente.Location = new System.Drawing.Point(62, 51);
-            this.textBoxNIFCliente.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.textBoxNIFCliente.Location = new System.Drawing.Point(83, 63);
+            this.textBoxNIFCliente.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxNIFCliente.Name = "textBoxNIFCliente";
-            this.textBoxNIFCliente.Size = new System.Drawing.Size(170, 20);
+            this.textBoxNIFCliente.Size = new System.Drawing.Size(225, 22);
             this.textBoxNIFCliente.TabIndex = 2;
             // 
             // textBoxNomeCliente
             // 
-            this.textBoxNomeCliente.Location = new System.Drawing.Point(62, 25);
-            this.textBoxNomeCliente.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.textBoxNomeCliente.Location = new System.Drawing.Point(83, 31);
+            this.textBoxNomeCliente.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxNomeCliente.Name = "textBoxNomeCliente";
-            this.textBoxNomeCliente.Size = new System.Drawing.Size(170, 20);
+            this.textBoxNomeCliente.Size = new System.Drawing.Size(225, 22);
             this.textBoxNomeCliente.TabIndex = 1;
             // 
             // labelNomesClientes
             // 
             this.labelNomesClientes.AutoSize = true;
-            this.labelNomesClientes.Location = new System.Drawing.Point(7, 29);
-            this.labelNomesClientes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelNomesClientes.Location = new System.Drawing.Point(9, 36);
             this.labelNomesClientes.Name = "labelNomesClientes";
-            this.labelNomesClientes.Size = new System.Drawing.Size(38, 13);
+            this.labelNomesClientes.Size = new System.Drawing.Size(47, 16);
             this.labelNomesClientes.TabIndex = 0;
             this.labelNomesClientes.Text = "Nome:";
             // 
             // listBoxClientes
             // 
             this.listBoxClientes.FormattingEnabled = true;
-            this.listBoxClientes.Location = new System.Drawing.Point(260, 29);
-            this.listBoxClientes.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.listBoxClientes.ItemHeight = 16;
+            this.listBoxClientes.Location = new System.Drawing.Point(347, 36);
+            this.listBoxClientes.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.listBoxClientes.Name = "listBoxClientes";
-            this.listBoxClientes.Size = new System.Drawing.Size(577, 186);
+            this.listBoxClientes.Size = new System.Drawing.Size(768, 228);
             this.listBoxClientes.TabIndex = 9;
             this.listBoxClientes.SelectedIndexChanged += new System.EventHandler(this.listBoxClientes_SelectedIndexChanged);
             this.listBoxClientes.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listBoxClientes_MouseDoubleClick);
             // 
-            // labelNifClientes
-            // 
-            this.labelNifClientes.AutoSize = true;
-            this.labelNifClientes.Location = new System.Drawing.Point(8, 54);
-            this.labelNifClientes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelNifClientes.Name = "labelNifClientes";
-            this.labelNifClientes.Size = new System.Drawing.Size(27, 13);
-            this.labelNifClientes.TabIndex = 9;
-            this.labelNifClientes.Text = "NIF:";
-            // 
-            // RadioEstudante
-            // 
-            this.RadioEstudante.AutoSize = true;
-            this.RadioEstudante.Location = new System.Drawing.Point(10, 114);
-            this.RadioEstudante.Name = "RadioEstudante";
-            this.RadioEstudante.Size = new System.Drawing.Size(73, 17);
-            this.RadioEstudante.TabIndex = 10;
-            this.RadioEstudante.TabStop = true;
-            this.RadioEstudante.Text = "Estudante";
-            this.RadioEstudante.UseVisualStyleBackColor = true;
-            this.RadioEstudante.CheckedChanged += new System.EventHandler(this.RadioEstudante_CheckedChanged);
-            // 
-            // RadioProf
-            // 
-            this.RadioProf.AutoSize = true;
-            this.RadioProf.Location = new System.Drawing.Point(147, 115);
-            this.RadioProf.Name = "RadioProf";
-            this.RadioProf.Size = new System.Drawing.Size(69, 17);
-            this.RadioProf.TabIndex = 11;
-            this.RadioProf.TabStop = true;
-            this.RadioProf.Text = "Professor";
-            this.RadioProf.UseVisualStyleBackColor = true;
-            this.RadioProf.CheckedChanged += new System.EventHandler(this.RadioProf_CheckedChanged);
-            // 
-            // labelNumEstudante
-            // 
-            this.labelNumEstudante.AutoSize = true;
-            this.labelNumEstudante.Location = new System.Drawing.Point(7, 151);
-            this.labelNumEstudante.Name = "labelNumEstudante";
-            this.labelNumEstudante.Size = new System.Drawing.Size(80, 13);
-            this.labelNumEstudante.TabIndex = 12;
-            this.labelNumEstudante.Text = "NumEstudante:";
-            // 
-            // labelEmail
-            // 
-            this.labelEmail.AutoSize = true;
-            this.labelEmail.Location = new System.Drawing.Point(9, 175);
-            this.labelEmail.Name = "labelEmail";
-            this.labelEmail.Size = new System.Drawing.Size(35, 13);
-            this.labelEmail.TabIndex = 13;
-            this.labelEmail.Text = "Email:";
-            // 
-            // textBoxNumEstudante
-            // 
-            this.textBoxNumEstudante.Location = new System.Drawing.Point(97, 147);
-            this.textBoxNumEstudante.Name = "textBoxNumEstudante";
-            this.textBoxNumEstudante.Size = new System.Drawing.Size(135, 20);
-            this.textBoxNumEstudante.TabIndex = 14;
-            // 
-            // textBoxEmail
-            // 
-            this.textBoxEmail.Location = new System.Drawing.Point(62, 173);
-            this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(170, 20);
-            this.textBoxEmail.TabIndex = 15;
-            // 
             // FormGestaoClientes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(880, 309);
+            this.BackColor = System.Drawing.Color.Azure;
+            this.ClientSize = new System.Drawing.Size(1173, 380);
             this.Controls.Add(this.tabControlClientes);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormGestaoClientes";
             this.Text = "FormGestaoClientes";
+            this.Load += new System.EventHandler(this.FormGestaoClientes_Load);
             this.tabControlClientes.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();

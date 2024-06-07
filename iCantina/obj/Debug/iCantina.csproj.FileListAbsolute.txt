@@ -42,3 +42,4 @@ C:\Users\Abner Gonçalves\Documents\GitHub\ProjetoC-\iCantina\obj\Debug\iCantina
 C:\Users\Abner Gonçalves\Documents\GitHub\ProjetoC-\iCantina\obj\Debug\iCantina.csproj.Up2Date
 C:\Users\Abner Gonçalves\Documents\GitHub\ProjetoC-\iCantina\obj\Debug\iCantina.exe
 C:\Users\Abner Gonçalves\Documents\GitHub\ProjetoC-\iCantina\obj\Debug\iCantina.pdb
+C:\Users\jeron\OneDrive\Ambiente de Trabalho\da\ProjetoC-\iCantina\obj\Debug\iCantina.FormReservas.resources

@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.labelQuantidade = new System.Windows.Forms.Label();
+            this.textBoxQuantidade = new System.Windows.Forms.TextBox();
             this.buttonApagarExtra = new System.Windows.Forms.Button();
             this.buttonGuardarExtra = new System.Windows.Forms.Button();
             this.textBoxPreco = new System.Windows.Forms.TextBox();
@@ -39,8 +41,6 @@
             this.LabelDescricao = new System.Windows.Forms.Label();
             this.listBoxExtras = new System.Windows.Forms.ListBox();
             this.tabControlExtras = new System.Windows.Forms.TabControl();
-            this.textBoxQuantidade = new System.Windows.Forms.TextBox();
-            this.labelQuantidade = new System.Windows.Forms.Label();
             this.tabPage1.SuspendLayout();
             this.tabControlExtras.SuspendLayout();
             this.SuspendLayout();
@@ -58,24 +58,44 @@
             this.tabPage1.Controls.Add(this.LabelPreco);
             this.tabPage1.Controls.Add(this.LabelDescricao);
             this.tabPage1.Controls.Add(this.listBoxExtras);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(598, 282);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Size = new System.Drawing.Size(800, 350);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Extras";
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // labelQuantidade
+            // 
+            this.labelQuantidade.AutoSize = true;
+            this.labelQuantidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelQuantidade.Location = new System.Drawing.Point(13, 106);
+            this.labelQuantidade.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelQuantidade.Name = "labelQuantidade";
+            this.labelQuantidade.Size = new System.Drawing.Size(102, 15);
+            this.labelQuantidade.TabIndex = 10;
+            this.labelQuantidade.Text = "QUANTIDADE :";
+            // 
+            // textBoxQuantidade
+            // 
+            this.textBoxQuantidade.Location = new System.Drawing.Point(145, 101);
+            this.textBoxQuantidade.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxQuantidade.Name = "textBoxQuantidade";
+            this.textBoxQuantidade.Size = new System.Drawing.Size(132, 22);
+            this.textBoxQuantidade.TabIndex = 9;
             // 
             // buttonApagarExtra
             // 
             this.buttonApagarExtra.BackColor = System.Drawing.Color.Brown;
             this.buttonApagarExtra.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonApagarExtra.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonApagarExtra.Location = new System.Drawing.Point(137, 221);
-            this.buttonApagarExtra.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonApagarExtra.Location = new System.Drawing.Point(183, 272);
+            this.buttonApagarExtra.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonApagarExtra.Name = "buttonApagarExtra";
-            this.buttonApagarExtra.Size = new System.Drawing.Size(72, 32);
+            this.buttonApagarExtra.Size = new System.Drawing.Size(96, 39);
             this.buttonApagarExtra.TabIndex = 8;
             this.buttonApagarExtra.Text = "Apagar";
             this.buttonApagarExtra.UseVisualStyleBackColor = false;
@@ -86,9 +106,10 @@
             this.buttonGuardarExtra.BackColor = System.Drawing.Color.ForestGreen;
             this.buttonGuardarExtra.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonGuardarExtra.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonGuardarExtra.Location = new System.Drawing.Point(13, 221);
+            this.buttonGuardarExtra.Location = new System.Drawing.Point(17, 272);
+            this.buttonGuardarExtra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonGuardarExtra.Name = "buttonGuardarExtra";
-            this.buttonGuardarExtra.Size = new System.Drawing.Size(72, 34);
+            this.buttonGuardarExtra.Size = new System.Drawing.Size(96, 42);
             this.buttonGuardarExtra.TabIndex = 7;
             this.buttonGuardarExtra.Text = "Guardar";
             this.buttonGuardarExtra.UseVisualStyleBackColor = false;
@@ -96,16 +117,18 @@
             // 
             // textBoxPreco
             // 
-            this.textBoxPreco.Location = new System.Drawing.Point(109, 53);
+            this.textBoxPreco.Location = new System.Drawing.Point(145, 65);
+            this.textBoxPreco.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxPreco.Name = "textBoxPreco";
-            this.textBoxPreco.Size = new System.Drawing.Size(100, 20);
+            this.textBoxPreco.Size = new System.Drawing.Size(132, 22);
             this.textBoxPreco.TabIndex = 6;
             // 
             // textBoxDescricao
             // 
-            this.textBoxDescricao.Location = new System.Drawing.Point(109, 21);
+            this.textBoxDescricao.Location = new System.Drawing.Point(145, 26);
+            this.textBoxDescricao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxDescricao.Name = "textBoxDescricao";
-            this.textBoxDescricao.Size = new System.Drawing.Size(100, 20);
+            this.textBoxDescricao.Size = new System.Drawing.Size(132, 22);
             this.textBoxDescricao.TabIndex = 5;
             // 
             // comboBoxEstado
@@ -114,18 +137,20 @@
             this.comboBoxEstado.Items.AddRange(new object[] {
             "Ativo",
             "Desativado"});
-            this.comboBoxEstado.Location = new System.Drawing.Point(109, 112);
+            this.comboBoxEstado.Location = new System.Drawing.Point(145, 138);
+            this.comboBoxEstado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxEstado.Name = "comboBoxEstado";
-            this.comboBoxEstado.Size = new System.Drawing.Size(100, 21);
+            this.comboBoxEstado.Size = new System.Drawing.Size(132, 24);
             this.comboBoxEstado.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(10, 116);
+            this.label3.Location = new System.Drawing.Point(13, 143);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 12);
+            this.label3.Size = new System.Drawing.Size(69, 15);
             this.label3.TabIndex = 3;
             this.label3.Text = "ESTADO :";
             // 
@@ -133,9 +158,10 @@
             // 
             this.LabelPreco.AutoSize = true;
             this.LabelPreco.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelPreco.Location = new System.Drawing.Point(10, 57);
+            this.LabelPreco.Location = new System.Drawing.Point(13, 70);
+            this.LabelPreco.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelPreco.Name = "LabelPreco";
-            this.LabelPreco.Size = new System.Drawing.Size(50, 12);
+            this.LabelPreco.Size = new System.Drawing.Size(62, 15);
             this.LabelPreco.TabIndex = 2;
             this.LabelPreco.Text = "PREÇO :";
             // 
@@ -143,54 +169,42 @@
             // 
             this.LabelDescricao.AutoSize = true;
             this.LabelDescricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelDescricao.Location = new System.Drawing.Point(11, 25);
+            this.LabelDescricao.Location = new System.Drawing.Point(15, 31);
+            this.LabelDescricao.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelDescricao.Name = "LabelDescricao";
-            this.LabelDescricao.Size = new System.Drawing.Size(78, 12);
+            this.LabelDescricao.Size = new System.Drawing.Size(93, 15);
             this.LabelDescricao.TabIndex = 1;
             this.LabelDescricao.Text = "DESCRIÇÃO :";
             // 
             // listBoxExtras
             // 
             this.listBoxExtras.FormattingEnabled = true;
-            this.listBoxExtras.Location = new System.Drawing.Point(215, 6);
+            this.listBoxExtras.ItemHeight = 16;
+            this.listBoxExtras.Location = new System.Drawing.Point(287, 7);
+            this.listBoxExtras.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listBoxExtras.Name = "listBoxExtras";
-            this.listBoxExtras.Size = new System.Drawing.Size(377, 199);
+            this.listBoxExtras.Size = new System.Drawing.Size(501, 244);
             this.listBoxExtras.TabIndex = 0;
             this.listBoxExtras.SelectedIndexChanged += new System.EventHandler(this.listBoxExtras_SelectedIndexChanged);
             // 
             // tabControlExtras
             // 
             this.tabControlExtras.Controls.Add(this.tabPage1);
-            this.tabControlExtras.Location = new System.Drawing.Point(12, 12);
+            this.tabControlExtras.Location = new System.Drawing.Point(16, 15);
+            this.tabControlExtras.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabControlExtras.Name = "tabControlExtras";
             this.tabControlExtras.SelectedIndex = 0;
-            this.tabControlExtras.Size = new System.Drawing.Size(606, 308);
+            this.tabControlExtras.Size = new System.Drawing.Size(808, 379);
             this.tabControlExtras.TabIndex = 0;
-            // 
-            // textBoxQuantidade
-            // 
-            this.textBoxQuantidade.Location = new System.Drawing.Point(109, 82);
-            this.textBoxQuantidade.Name = "textBoxQuantidade";
-            this.textBoxQuantidade.Size = new System.Drawing.Size(100, 20);
-            this.textBoxQuantidade.TabIndex = 9;
-            // 
-            // labelQuantidade
-            // 
-            this.labelQuantidade.AutoSize = true;
-            this.labelQuantidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelQuantidade.Location = new System.Drawing.Point(10, 86);
-            this.labelQuantidade.Name = "labelQuantidade";
-            this.labelQuantidade.Size = new System.Drawing.Size(85, 12);
-            this.labelQuantidade.TabIndex = 10;
-            this.labelQuantidade.Text = "QUANTIDADE :";
             // 
             // FormExtras
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(627, 328);
+            this.BackColor = System.Drawing.Color.Azure;
+            this.ClientSize = new System.Drawing.Size(836, 404);
             this.Controls.Add(this.tabControlExtras);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormExtras";
             this.Text = "FormExtras";
             this.Load += new System.EventHandler(this.FormExtras_Load);

@@ -84,10 +84,24 @@ namespace iCantina
 
         private void buttonGuardarExtra_Click(object sender, EventArgs e)
         {
-            string descricaoExtra = textBoxDescricao.Text;
-            decimal precoExtra = decimal.Parse(textBoxPreco.Text);
-            string estadoExtra = comboBoxEstado.Text;
-            int quantidadeExtra = int.Parse(textBoxQuantidade.Text);
+            string descricaoExtra = string.Empty;
+            decimal precoExtra = 0;
+            string estadoExtra = string.Empty;
+            int quantidadeExtra = 0;
+
+            try
+            {
+                 descricaoExtra = textBoxDescricao.Text;
+                 precoExtra = decimal.Parse(textBoxPreco.Text);
+                 estadoExtra = comboBoxEstado.Text;
+                 quantidadeExtra = int.Parse(textBoxQuantidade.Text);
+            }
+            catch(Exception)
+            {
+                // caso haja algum erro
+                MessageBox.Show("Caracteres Inválidos Detectados!", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             if (!ValidarDadosInseridos())
             {
                 return;

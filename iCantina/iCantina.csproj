@@ -115,6 +115,7 @@
       <DependentUpon>202405241830086_InitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Multa.cs" />
     <Compile Include="Prato.cs" />
     <Compile Include="Professor.cs" />
     <Compile Include="Program.cs" />
@@ -141,6 +142,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReservas.resx">
+      <DependentUpon>FormReservas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202405241830086_InitialCreate.resx">
       <DependentUpon>202405241830086_InitialCreate.cs</DependentUpon>

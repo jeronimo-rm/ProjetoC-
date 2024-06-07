@@ -12,11 +12,11 @@ namespace iCantina
     {
         [Key]
         public int Id { get; set; }
-        public int IdCliente { get; set; }
-        public int IdPrato { get; set; }
-        public int IdMenu { get; set; }
-        public int IdExtra { get; set; }
-        public int IdMulta { get; set; }
+        public Cliente Cliente { get; set; }
+        public Prato Prato { get; set; }
+        public Menu Menu { get; set; }
+        public Extra Extra { get; set; }
+        public Multa Multa { get; set; }
         public DateTime DataReserva { get; set; }
 
 
@@ -25,19 +25,20 @@ namespace iCantina
 
         }
 
-        public Reserva(int idCliente, int idPrato, int idMenu, int idExtra, int idMulta, DateTime dataReserva)
+        public Reserva(int id, Cliente cliente, Prato prato, Menu menu, Extra extra, Multa multa, DateTime dataReserva)
         {
-            IdCliente = idCliente;
-            IdPrato = idPrato;
-            IdMenu = idMenu;
-            IdExtra = idExtra;
-            IdMulta = idMulta;
+            Id = id;
+            Cliente = cliente;
+            Prato = prato;
+            Menu = menu;
+            Extra = extra;
+            Multa = multa;
             DataReserva = dataReserva;
         }
 
         public override string ToString()
         {
-            return "Cliente: " + IdCliente + "       Prato: " + IdPrato + "       Menu: " + IdMenu + "       Extra: " + IdExtra + "       Multa: " + IdMulta + "       Data: " + DataReserva;
+            return "Cliente: " + Cliente + "       Prato: " + Prato + "       Menu: " + Menu + "       Extra: " + Extra + "       Multa: " + Multa + "       Data: " + DataReserva;
         }
     }
 

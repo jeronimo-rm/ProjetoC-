@@ -16,5 +16,10 @@ namespace iCantina
         {
             InitializeComponent();
         }
+
+        private void FormReservas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
