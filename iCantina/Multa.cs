@@ -11,10 +11,11 @@ namespace iCantina
     public class Multa
     {
         [Key]
-        public decimal Valor {  get; set; }
+        public int ID { get; set; }
+        public double Valor {  get; set; }
         public TimeSpan NumHoras { get; set; }
 
-        public Multa(decimal valor, TimeSpan numHoras)
+        public Multa(double valor, TimeSpan numHoras)
         {
             Valor = valor;
             NumHoras = numHoras;
@@ -23,6 +24,12 @@ namespace iCantina
         public Multa()
         {
             // Construtor vazio necessário para o Entity Framework
+        }
+
+        // OVERRIDE PARA DIZER O QUE VAI ESCREVER NA LISTBOX
+        public override string ToString()
+        {
+            return "Valor da Multa: " + Valor + "       Hora da Multa: " + NumHoras;
         }
     }
 
