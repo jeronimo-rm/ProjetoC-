@@ -56,7 +56,7 @@ namespace iCantina
                     Multa multaselecionada = (Multa)ListBoxMulta.SelectedItem; // descobrir o que será indicado nas textbox ao selecionar na listBox
                                                                                // mostra dados da multa                                                                                   
                     textBoxValor.Text = multaselecionada.Valor.ToString();
-                    dateTimePickerMulta.Text = multaselecionada.NumHoras.ToString();
+                    dateTimePickerMulta.Value.Add(multaselecionada.NumHoras);
 
 
                 }

@@ -60,6 +60,7 @@
     <Compile Include="Cliente.cs" />
     <Compile Include="Estudante.cs" />
     <Compile Include="Extra.cs" />
+    <Compile Include="Fatura.cs" />
     <Compile Include="FormExtras.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +110,7 @@
       <DependentUpon>FormReservas.cs</DependentUpon>
     </Compile>
     <Compile Include="Funcionario.cs" />
+    <Compile Include="ItemFatura.cs" />
     <Compile Include="Menu.cs" />
     <Compile Include="Migrations\202405241830086_InitialCreate.cs" />
     <Compile Include="Migrations\202405241830086_InitialCreate.Designer.cs">
