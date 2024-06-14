@@ -14,7 +14,7 @@ namespace iCantina
 
         public int NumEstudante { get; set; }
         
-        public Estudante (string nomeUtilizador, int nifUtilizador, int saldo, int numEstudante) : base(nomeUtilizador, nifUtilizador, saldo)
+        public Estudante (string nomeUtilizador, int nifUtilizador, decimal saldo, int numEstudante) : base(nomeUtilizador, nifUtilizador, saldo)
         {
             NumEstudante = numEstudante;
         }

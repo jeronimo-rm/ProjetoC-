@@ -14,7 +14,7 @@ namespace iCantina
 
         public string Email { get; set; }
 
-        public Professor(string nomeUtilizador, int nifUtilizador, int saldo, string email) : base(nomeUtilizador, nifUtilizador, saldo)
+        public Professor(string nomeUtilizador, int nifUtilizador, decimal saldo, string email) : base(nomeUtilizador, nifUtilizador, saldo)
         {
             Email = email;
         }

@@ -16,8 +16,8 @@ namespace iCantina
         public string DescricaoMenu { get; set; }
         public int IdPrato { get; set; }
         public int IdExtra { get; set; }
-        public int PrecoEstudante { get; set; }
-        public int PrecoProfessor { get; set; }
+        public decimal PrecoEstudante { get; set; }
+        public decimal PrecoProfessor { get; set; }
         public int Quantidade { get; set; }
 
         public Menu()
@@ -25,7 +25,7 @@ namespace iCantina
 
         }
 
-        public Menu(string descricaoMenu, int idPrato, int idExtra, int precoEstudante, int precoProfessor, int quantidade)
+        public Menu(string descricaoMenu, int idPrato, int idExtra, decimal precoEstudante, decimal precoProfessor, int quantidade)
         {
             DescricaoMenu = descricaoMenu;
             IdPrato = idPrato;

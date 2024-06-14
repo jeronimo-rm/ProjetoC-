@@ -11,9 +11,9 @@ namespace iCantina
     public class Cliente : Utilizador
     {
         [Key] 
-        public int Saldo { get; set; }
+        public decimal Saldo { get; set; }
 
-        public Cliente(string nomeUtilizador, int nifUtilizador, int saldo) : base(nomeUtilizador, nifUtilizador)
+        public Cliente(string nomeUtilizador, int nifUtilizador, decimal saldo) : base(nomeUtilizador, nifUtilizador)
         {
             Saldo = saldo;
         }

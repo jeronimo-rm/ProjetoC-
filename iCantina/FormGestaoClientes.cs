@@ -61,8 +61,8 @@ namespace iCantina
                 return false;
             }
 
-            int saldoCliente;
-            if (!int.TryParse(textBoxSaldoCliente.Text, out saldoCliente))
+            decimal saldoCliente;
+            if (!decimal.TryParse(textBoxSaldoCliente.Text, out saldoCliente))
             {
                 MessageBox.Show("O campo 'saldo' tem de ser um número positivo!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
@@ -111,7 +111,7 @@ namespace iCantina
             //guarda os valores inseridos nas variaveis
             string nomeCliente = textBoxNomeCliente.Text;
             int nifCliente = int.Parse(textBoxNIFCliente.Text); //faz a conversão do texto para Int
-            int saldoCliente = int.Parse(textBoxSaldoCliente.Text);
+            decimal saldoCliente = decimal.Parse(textBoxSaldoCliente.Text);
             string emailCliente = textBoxEmail.Text;
             int numEstudante = 0;
             if (RadioEstudante.Checked && !string.IsNullOrEmpty(textBoxNumEstudante.Text))
