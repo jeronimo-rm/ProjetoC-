@@ -29,7 +29,7 @@ namespace iCantina
         // OVERRIDE PARA DIZER O QUE VAI ESCREVER NA LISTBOX
         public override string ToString()
         {
-            return "Valor da Multa: " + Valor + "       Hora da Multa: " + NumHoras;
+            return "Valor da Multa: " + Valor +" € " + "       Hora da Multa: " + NumHoras;
         }
     }
 

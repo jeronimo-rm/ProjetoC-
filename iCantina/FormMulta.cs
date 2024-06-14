@@ -71,7 +71,7 @@ namespace iCantina
         {
             //Criar uma multa
             TimeSpan numHoras = TimeSpan.Parse(dateTimePickerMulta.Text);
-            double Valor = double.Parse(textBoxValor.Text);
+            decimal Valor = decimal.Parse(textBoxValor.Text);
 
             if (!validarDadosInseridos())
             {
@@ -91,7 +91,7 @@ namespace iCantina
             {
                 Multa multaSelecionada = (Multa)ListBoxMulta.SelectedItem;
                 // altera dos dados da multa selecionada
-                multaSelecionada.Valor = double.Parse(textBoxValor.Text);
+                multaSelecionada.Valor = decimal.Parse(textBoxValor.Text);
                 multaSelecionada.NumHoras = TimeSpan.Parse(dateTimePickerMulta.Text);
 
                 // Atualizar a exibição das Multas na ListBox
@@ -106,7 +106,7 @@ namespace iCantina
             }
             else // se não , cria um novo
             {
-                Multa novaMulta = new Multa(double.Parse(textBoxValor.Text), TimeSpan.Parse(dateTimePickerMulta.Text));
+                Multa novaMulta = new Multa(decimal.Parse(textBoxValor.Text), TimeSpan.Parse(dateTimePickerMulta.Text));
 
                 ListBoxMulta.Items.Add(novaMulta); // mostra na listbox antes de atualizar a db
                 using (var db = new ApplicationContext())

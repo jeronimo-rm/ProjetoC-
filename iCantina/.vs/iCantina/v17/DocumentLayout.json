@@ -1,14 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Abner Gon\u00E7alves\\Documents\\GitHub\\ProjetoC-\\iCantina\\",
+  "WorkspaceRootPath": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\",
   "Documents": [
     {
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\formfuncionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\formpratos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|solutionrelative:formpratos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\formmulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|solutionrelative:formmulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\formreservas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|solutionrelative:formreservas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\multa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|solutionrelative:multa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\formmulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|solutionrelative:formmulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|c:\\users\\jeron\\onedrive\\ambiente de trabalho\\da\\projetoc-\\icantina\\formfuncionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|solutionrelative:formfuncionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|c:\\users\\jeron\\onedrive\\ambiente de trabalho\\da\\projetoc-\\icantina\\itemfatura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\itemfatura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|solutionrelative:itemfatura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -20,28 +39,12 @@
       "RelativeMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|solutionrelative:formreservas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\formreservas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|solutionrelative:formreservas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\extra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|solutionrelative:extra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\formmulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|solutionrelative:formmulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|solutionrelative:formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\formmulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|solutionrelative:formmulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\multa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|solutionrelative:multa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -74,10 +77,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\formextras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|solutionrelative:formextras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\formpratos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|solutionrelative:formpratos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -129,34 +128,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\formmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|solutionrelative:formmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
-      "AbsoluteMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|C:\\Users\\Abner Gon\u00E7alves\\Documents\\GitHub\\ProjetoC-\\iCantina\\formpratos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|solutionrelative:formpratos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|c:\\users\\abner gon\u00E7alves\\documents\\github\\projetoc-\\icantina\\formgestaoclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|solutionrelative:formgestaoclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|c:\\users\\abner gon\u00E7alves\\documents\\github\\projetoc-\\icantina\\professor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|solutionrelative:professor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|c:\\users\\abner gon\u00E7alves\\documents\\github\\projetoc-\\icantina\\estudante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|solutionrelative:estudante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|c:\\users\\abner gon\u00E7alves\\documents\\github\\projetoc-\\icantina\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|solutionrelative:cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|c:\\users\\abner gon\u00E7alves\\documents\\github\\projetoc-\\icantina\\formgestaoclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|solutionrelative:formgestaoclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|C:\\Users\\Abner Gon\u00E7alves\\Documents\\GitHub\\ProjetoC-\\iCantina\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{053DD9B8-E15C-4B25-8BD0-56AC8445868F}|iCantina.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> de8e7507331eb9b9395fd073e44df36e9f408904
     }
   ],
   "DocumentGroupContainers": [
@@ -166,12 +137,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< HEAD
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "FormFuncionarios.cs [Design]",
               "DocumentMoniker": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\FormFuncionarios.cs",
               "RelativeDocumentMoniker": "FormFuncionarios.cs",
@@ -184,133 +154,57 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-=======
-          "SelectedChildIndex": 7,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
->>>>>>> de8e7507331eb9b9395fd073e44df36e9f408904
+              "DocumentIndex": 7,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Abner Gon\u00E7alves\\Documents\\GitHub\\ProjetoC-\\iCantina\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Abner Gon\u00E7alves\\Documents\\GitHub\\ProjetoC-\\iCantina\\Program.cs",
+              "ToolTip": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAQAAAAAAAAAAAAcwBIAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-10T21:07:11.164Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-<<<<<<< HEAD
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FormMulta.cs",
-              "DocumentMoniker": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\FormMulta.cs",
-              "RelativeDocumentMoniker": "FormMulta.cs",
-              "ToolTip": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\FormMulta.cs",
-              "RelativeToolTip": "FormMulta.cs",
-              "ViewState": "AQIAAC8AAAAAAAAAAADwvzoAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T21:34:59.219Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ItemFatura.cs",
-              "DocumentMoniker": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\ItemFatura.cs",
-              "RelativeDocumentMoniker": "ItemFatura.cs",
-              "ToolTip": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\ItemFatura.cs",
-              "RelativeToolTip": "ItemFatura.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAgwBoAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T07:52:30.809Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Extra.cs",
-              "DocumentMoniker": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\Extra.cs",
-              "RelativeDocumentMoniker": "Extra.cs",
-              "ToolTip": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\Extra.cs",
-              "RelativeToolTip": "Extra.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAACUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T07:55:09.113Z",
-=======
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Professor.cs",
-              "DocumentMoniker": "C:\\Users\\Abner Gon\u00E7alves\\Documents\\GitHub\\ProjetoC-\\iCantina\\Professor.cs",
-              "RelativeDocumentMoniker": "Professor.cs",
-              "ToolTip": "C:\\Users\\Abner Gon\u00E7alves\\Documents\\GitHub\\ProjetoC-\\iCantina\\Professor.cs",
-              "RelativeToolTip": "Professor.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T08:55:38.04Z",
->>>>>>> de8e7507331eb9b9395fd073e44df36e9f408904
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-<<<<<<< HEAD
-              "Title": "FormReservas.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\FormReservas.cs",
-              "RelativeDocumentMoniker": "FormReservas.cs",
-              "ToolTip": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\FormReservas.cs [Design]",
-              "RelativeToolTip": "FormReservas.cs [Design]",
+              "Title": "Multa.cs",
+              "DocumentMoniker": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\Multa.cs",
+              "RelativeDocumentMoniker": "Multa.cs",
+              "ToolTip": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\Multa.cs",
+              "RelativeToolTip": "Multa.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAAB8AAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T21:12:56.183Z",
-=======
-              "Title": "Estudante.cs",
-              "DocumentMoniker": "C:\\Users\\Abner Gon\u00E7alves\\Documents\\GitHub\\ProjetoC-\\iCantina\\Estudante.cs",
-              "RelativeDocumentMoniker": "Estudante.cs",
-              "ToolTip": "C:\\Users\\Abner Gon\u00E7alves\\Documents\\GitHub\\ProjetoC-\\iCantina\\Estudante.cs",
-              "RelativeToolTip": "Estudante.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T08:55:00.285Z",
+              "WhenOpened": "2024-06-07T17:58:14.726Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FormGestaoClientes.cs",
-              "DocumentMoniker": "C:\\Users\\Abner Gon\u00E7alves\\Documents\\GitHub\\ProjetoC-\\iCantina\\FormGestaoClientes.cs",
-              "RelativeDocumentMoniker": "FormGestaoClientes.cs",
-              "ToolTip": "C:\\Users\\Abner Gon\u00E7alves\\Documents\\GitHub\\ProjetoC-\\iCantina\\FormGestaoClientes.cs",
-              "RelativeToolTip": "FormGestaoClientes.cs",
-              "ViewState": "AQIAAN0AAAAAAAAAAAAewKAAAAAVAAAA",
+              "DocumentIndex": 10,
+              "Title": "FormPrincipal.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\FormPrincipal.cs",
+              "RelativeDocumentMoniker": "FormPrincipal.cs",
+              "ToolTip": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\FormPrincipal.cs [Design]",
+              "RelativeToolTip": "FormPrincipal.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-05-03T21:12:42.037Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormPratos.cs",
+              "DocumentMoniker": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\FormPratos.cs",
+              "RelativeDocumentMoniker": "FormPratos.cs",
+              "ToolTip": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\FormPratos.cs",
+              "RelativeToolTip": "FormPratos.cs",
+              "ViewState": "AQIAAHkAAAAAAAAAAADgv4MAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T08:48:17.754Z",
+              "WhenOpened": "2024-05-10T21:35:04.331Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FormGestaoClientes.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Abner Gon\u00E7alves\\Documents\\GitHub\\ProjetoC-\\iCantina\\FormGestaoClientes.cs",
-              "RelativeDocumentMoniker": "FormGestaoClientes.cs",
-              "ToolTip": "C:\\Users\\Abner Gon\u00E7alves\\Documents\\GitHub\\ProjetoC-\\iCantina\\FormGestaoClientes.cs [Design]",
-              "RelativeToolTip": "FormGestaoClientes.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T08:48:10.222Z",
->>>>>>> de8e7507331eb9b9395fd073e44df36e9f408904
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-<<<<<<< HEAD
+              "DocumentIndex": 2,
               "Title": "FormReservas.cs",
               "DocumentMoniker": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\FormReservas.cs",
               "RelativeDocumentMoniker": "FormReservas.cs",
@@ -323,32 +217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FormPrincipal.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\FormPrincipal.cs",
-              "RelativeDocumentMoniker": "FormPrincipal.cs",
-              "ToolTip": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\FormPrincipal.cs [Design]",
-              "RelativeToolTip": "FormPrincipal.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T21:12:42.037Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Multa.cs",
-              "DocumentMoniker": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\Multa.cs",
-              "RelativeDocumentMoniker": "Multa.cs",
-              "ToolTip": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\Multa.cs",
-              "RelativeToolTip": "Multa.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB8AAABFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T17:58:14.726Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "FormMulta.cs [Design]",
               "DocumentMoniker": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\FormMulta.cs",
               "RelativeDocumentMoniker": "FormMulta.cs",
@@ -357,6 +226,55 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-03T21:14:36.571Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FormReservas.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\FormReservas.cs",
+              "RelativeDocumentMoniker": "FormReservas.cs",
+              "ToolTip": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\FormReservas.cs [Design]",
+              "RelativeToolTip": "FormReservas.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T21:12:56.183Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Extra.cs",
+              "DocumentMoniker": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\Extra.cs",
+              "RelativeDocumentMoniker": "Extra.cs",
+              "ToolTip": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\Extra.cs",
+              "RelativeToolTip": "Extra.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAACUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T07:55:09.113Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormMulta.cs",
+              "DocumentMoniker": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\FormMulta.cs",
+              "RelativeDocumentMoniker": "FormMulta.cs",
+              "ToolTip": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\FormMulta.cs",
+              "RelativeToolTip": "FormMulta.cs",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAIwGwAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T21:34:59.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ItemFatura.cs",
+              "DocumentMoniker": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\ItemFatura.cs",
+              "RelativeDocumentMoniker": "ItemFatura.cs",
+              "ToolTip": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\ItemFatura.cs",
+              "RelativeToolTip": "ItemFatura.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAgwBoAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T07:52:30.809Z"
             },
             {
               "$type": "Document",
@@ -372,7 +290,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Utilizador.cs",
               "DocumentMoniker": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\Utilizador.cs",
               "RelativeDocumentMoniker": "Utilizador.cs",
@@ -384,7 +302,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Menu.cs",
               "DocumentMoniker": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\Menu.cs",
               "RelativeDocumentMoniker": "Menu.cs",
@@ -396,7 +314,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Cliente.cs",
               "DocumentMoniker": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\Cliente.cs",
               "RelativeDocumentMoniker": "Cliente.cs",
@@ -408,7 +326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Reserva.cs",
               "DocumentMoniker": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\Reserva.cs",
               "RelativeDocumentMoniker": "Reserva.cs",
@@ -420,7 +338,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Fatura.cs",
               "DocumentMoniker": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\Fatura.cs",
               "RelativeDocumentMoniker": "Fatura.cs",
@@ -432,7 +350,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Professor.cs",
               "DocumentMoniker": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\Professor.cs",
               "RelativeDocumentMoniker": "Professor.cs",
@@ -456,7 +374,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "FormMenu.cs [Design]",
               "DocumentMoniker": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\FormMenu.cs",
               "RelativeDocumentMoniker": "FormMenu.cs",
@@ -467,7 +385,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "FormExtras.cs [Design]",
               "DocumentMoniker": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\FormExtras.cs",
               "RelativeDocumentMoniker": "FormExtras.cs",
@@ -478,18 +396,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "FormPratos.cs",
-              "DocumentMoniker": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\FormPratos.cs",
-              "RelativeDocumentMoniker": "FormPratos.cs",
-              "ToolTip": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\FormPratos.cs",
-              "RelativeToolTip": "FormPratos.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAAAIMAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T21:35:04.331Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 21,
               "Title": "FormPratos.cs [Design]",
               "DocumentMoniker": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\FormPratos.cs",
@@ -497,7 +403,8 @@
               "ToolTip": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\FormPratos.cs [Design]",
               "RelativeToolTip": "FormPratos.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T18:46:52.147Z"
+              "WhenOpened": "2024-05-31T18:46:52.147Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -576,9 +483,8 @@
               "ToolTip": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\FormFuncionarios.cs",
               "RelativeToolTip": "FormFuncionarios.cs",
               "ViewState": "AQIAABkAAAAAAAAAAAAwwCQAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T21:34:42.359Z",
-              "EditorCaption": ""
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-05-10T21:34:42.359Z"
             },
             {
               "$type": "Document",
@@ -601,9 +507,8 @@
               "ToolTip": "C:\\Users\\jeron\\OneDrive\\Ambiente de Trabalho\\da\\ProjetoC-\\iCantina\\FormPrincipal.Designer.cs",
               "RelativeToolTip": "FormPrincipal.Designer.cs",
               "ViewState": "AQIAAGIAAAAAAAAAAAAIwG4AAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T08:47:26.785Z",
-              "EditorCaption": ""
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001384|",
+              "WhenOpened": "2024-05-23T08:47:26.785Z"
             },
             {
               "$type": "Document",
@@ -616,30 +521,6 @@
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-10T21:34:57.598Z"
-=======
-              "Title": "Cliente.cs",
-              "DocumentMoniker": "C:\\Users\\Abner Gon\u00E7alves\\Documents\\GitHub\\ProjetoC-\\iCantina\\Cliente.cs",
-              "RelativeDocumentMoniker": "Cliente.cs",
-              "ToolTip": "C:\\Users\\Abner Gon\u00E7alves\\Documents\\GitHub\\ProjetoC-\\iCantina\\Cliente.cs",
-              "RelativeToolTip": "Cliente.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T08:47:04.617Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormPratos.cs",
-              "DocumentMoniker": "C:\\Users\\Abner Gon\u00E7alves\\Documents\\GitHub\\ProjetoC-\\iCantina\\FormPratos.cs",
-              "RelativeDocumentMoniker": "FormPratos.cs",
-              "ToolTip": "C:\\Users\\Abner Gon\u00E7alves\\Documents\\GitHub\\ProjetoC-\\iCantina\\FormPratos.cs",
-              "RelativeToolTip": "FormPratos.cs",
-              "ViewState": "AQIAAHAAAAAAAAAAAAAuwIgAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T21:35:04.331Z",
-              "EditorCaption": ""
->>>>>>> de8e7507331eb9b9395fd073e44df36e9f408904
             }
           ]
         }

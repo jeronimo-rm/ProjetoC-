@@ -37,12 +37,14 @@
             this.labelPrecoSessoes = new System.Windows.Forms.Label();
             this.textBoxValor = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabPage1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.ListBoxMulta);
             this.tabPage1.Controls.Add(this.buttonApagar);
             this.tabPage1.Controls.Add(this.buttonCriar);
@@ -101,13 +103,13 @@
             this.dateTimePickerMulta.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePickerMulta.Location = new System.Drawing.Point(20, 54);
             this.dateTimePickerMulta.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.dateTimePickerMulta.MaxDate = new System.DateTime(2023, 6, 4, 22, 0, 0, 0);
-            this.dateTimePickerMulta.MinDate = new System.DateTime(2023, 6, 4, 10, 0, 0, 0);
+            this.dateTimePickerMulta.MaxDate = new System.DateTime(2024, 6, 14, 22, 0, 0, 0);
+            this.dateTimePickerMulta.MinDate = new System.DateTime(2023, 6, 14, 10, 0, 0, 0);
             this.dateTimePickerMulta.Name = "dateTimePickerMulta";
             this.dateTimePickerMulta.ShowUpDown = true;
             this.dateTimePickerMulta.Size = new System.Drawing.Size(144, 22);
             this.dateTimePickerMulta.TabIndex = 17;
-            this.dateTimePickerMulta.Value = new System.DateTime(2023, 6, 4, 10, 0, 0, 0);
+            this.dateTimePickerMulta.Value = new System.DateTime(2023, 6, 14, 10, 0, 0, 0);
             // 
             // labelHoraSessoes
             // 
@@ -144,6 +146,16 @@
             this.tabControl1.Size = new System.Drawing.Size(846, 434);
             this.tabControl1.TabIndex = 23;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(171, 161);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(23, 25);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "€";
+            // 
             // FormMulta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -172,5 +184,6 @@
         private System.Windows.Forms.Label labelPrecoSessoes;
         private System.Windows.Forms.TextBox textBoxValor;
         private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.Label label1;
     }
 }
