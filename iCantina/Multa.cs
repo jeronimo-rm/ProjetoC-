@@ -12,10 +12,10 @@ namespace iCantina
     {
         [Key]
         public int ID { get; set; }
-        public double Valor {  get; set; }
+        public decimal Valor {  get; set; }
         public TimeSpan NumHoras { get; set; }
 
-        public Multa(double valor, TimeSpan numHoras)
+        public Multa(decimal valor, TimeSpan numHoras)
         {
             Valor = valor;
             NumHoras = numHoras;
