@@ -12,27 +12,34 @@ namespace iCantina
     public class Menu
     {
         [Key]
-        public int Id { get; set; }
-        public string DescricaoMenu { get; set; }
+       public int Id { get; set; }
+
         public int IdPrato { get; set; }
         public int IdExtra { get; set; }
         public decimal PrecoEstudante { get; set; }
         public decimal PrecoProfessor { get; set; }
         public int Quantidade { get; set; }
+        public TimeSpan Horario { get; set; }
 
-        public Menu()
+
+        public Menu( int idPrato, int idExtra, decimal precoEstudante, decimal precoProfessor, int quantidade,TimeSpan horario)
         {
-
-        }
-
-        public Menu(string descricaoMenu, int idPrato, int idExtra, decimal precoEstudante, decimal precoProfessor, int quantidade)
-        {
-            DescricaoMenu = descricaoMenu;
+           
             IdPrato = idPrato;
             IdExtra = idExtra;
             PrecoEstudante = precoEstudante;
             PrecoProfessor = precoProfessor;
             Quantidade = quantidade;
+            Horario = horario;
+        }
+
+        public Menu(object idPrato, object idExtra, object precoEstudante, object precoProfessor, object quantidade)
+        {
+            IdPrato1 = idPrato;
+            IdExtra1 = idExtra;
+            PrecoEstudante1 = precoEstudante;
+            PrecoProfessor1 = precoProfessor;
+            Quantidade1 = quantidade;
         }
 
         public override string ToString()
