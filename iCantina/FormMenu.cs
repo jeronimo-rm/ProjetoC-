@@ -21,7 +21,8 @@ namespace iCantina
 
         private void FormMenu_Load(object sender, EventArgs e)
         {
-
+            CarregarPratosDisponiveis();
+            CarregarExtrasDisponiveis();
         }
 
         public bool validarDadosInseridos()
@@ -52,9 +53,8 @@ namespace iCantina
 
             int prato = int.Parse(ComboBoxPrato.Text);
             int tipoPrato =int.Parse( comboBoxTipo.Text);
-            string estadoPrato = comboBoxEstado.Text;
             int quantidade  = int.Parse(TextboxQuantidade.Text);
-            int extra = int.Parse(comboBoExtras.Text);         
+            int extra = int.Parse(comboBoxExtras.Text);         
 
 
             validarDadosInseridos();
@@ -68,18 +68,19 @@ namespace iCantina
                 }
                 try
                 {
-                    double preco = double.Parse(Preco);
+                    decimal preco = decimal.Parse(Preco);
               //    string data = dateTimePickerdoMENU.Value.ToString("dd/MM/yyyy");
                     TimeSpan hora = TimeSpan.Parse(dateTimePickerHoraMENU.Value.ToString("HH:mm"));
 
+                decimal precoEstudante = preco;
+                decimal precoProfessor = preco;
 
-                
-                    Menu menu = new Menu(prato,extra, preco, quantidade,hora);
-                    var db = new ApplicationContext();
-                    ListBoxMENU.Items.Add(menu);
-                            var sessoes = db.Menus.ToList();
-                            db.Menus.Add(menu); // Adicionar menu na base de dados
-                            db.SaveChanges(); // Salva as alterações base de dados
+
+                Menu menu = new Menu(prato, extra, precoEstudante, precoProfessor, quantidade, hora);
+                var db = new ApplicationContext();
+                ListBoxMENU.Items.Add(menu);
+                db.Menus.Add(menu); // Adicionar menu na base de dados
+                db.SaveChanges(); // Salva as alterações na base de dados
             }
                 catch (FormatException)
                 {
@@ -141,6 +142,34 @@ namespace iCantina
         private void label10_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void CarregarExtrasDisponiveis()
+        {
+            List<Extra> extras;
+            using (var db = new ApplicationContext())
+            {
+                // Supondo que a tabela Extras tenha uma coluna 'Ativo' que indica se o extra está ativo
+                extras = db.Extras.Where(estadoExtra => estadoExtra.EstadoExtra == "Ativo").ToList();
+
+                comboBoxExtras.DisplayMember = "descricaoExtra";
+                comboBoxExtras.ValueMember = "Id";
+                comboBoxExtras.DataSource = extras;
+            }
+        }
+
+        private void CarregarPratosDisponiveis()
+        {
+            List<Prato> pratos;
+
+            using (var db = new ApplicationContext())
+            {
+                pratos = db.Pratos.Where(estadoPrato => estadoPrato.EstadoPrato == "Desativo").ToList();
+
+                ComboBoxPrato.DisplayMember = "descricaoPrato";
+                ComboBoxPrato.ValueMember = "Id";
+                ComboBoxPrato.DataSource = pratos;
+            }
         }
     }
 }

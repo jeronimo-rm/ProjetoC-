@@ -56,9 +56,9 @@
             this.tabPage1.Controls.Add(this.comboBoxTipoPrato);
             this.tabPage1.Controls.Add(this.labelEstado);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage1.Size = new System.Drawing.Size(911, 374);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Pratos";
@@ -71,7 +71,7 @@
             this.buttonApagarPrato.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonApagarPrato.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonApagarPrato.Location = new System.Drawing.Point(136, 324);
-            this.buttonApagarPrato.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonApagarPrato.Margin = new System.Windows.Forms.Padding(2);
             this.buttonApagarPrato.Name = "buttonApagarPrato";
             this.buttonApagarPrato.Size = new System.Drawing.Size(88, 32);
             this.buttonApagarPrato.TabIndex = 5;
@@ -136,7 +136,6 @@
             this.comboBoxEstadoPrato.Name = "comboBoxEstadoPrato";
             this.comboBoxEstadoPrato.Size = new System.Drawing.Size(77, 21);
             this.comboBoxEstadoPrato.TabIndex = 2;
-            this.comboBoxEstadoPrato.Text = "Desativado";
             // 
             // labelTipo
             // 
@@ -177,7 +176,7 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Location = new System.Drawing.Point(28, 23);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(919, 400);
@@ -198,7 +197,7 @@
             this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(956, 432);
             this.Controls.Add(this.tabControl1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormPratos";
             this.Text = "FormPratos";
             this.Load += new System.EventHandler(this.FormPratos_Load);

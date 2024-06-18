@@ -33,21 +33,12 @@ namespace iCantina
             Horario = horario;
         }
 
-        public Menu(object idPrato, object idExtra, object precoEstudante, object precoProfessor, object quantidade)
-        {
-            IdPrato1 = idPrato;
-            IdExtra1 = idExtra;
-            PrecoEstudante1 = precoEstudante;
-            PrecoProfessor1 = precoProfessor;
-            Quantidade1 = quantidade;
-        }
-
         public override string ToString()
         {
             var db = new ApplicationContext();
             var nomePrato = db.Pratos.Find(IdPrato);
             var nomeExtra = db.Extras.Find(IdExtra);
-            return "Menu: " + DescricaoMenu + "    Prato: " + nomePrato.descricaoPrato + "     Extra: " + nomeExtra.DescricaoExtra + "     Preço Estudante: " + PrecoEstudante + "€    Preço Professor: " + PrecoProfessor + "€       Quantidade: " + Quantidade;
+            return " Prato: " + nomePrato.DescricaoPrato + "     Extra: " + nomeExtra.DescricaoExtra + "     Preço Estudante: " + PrecoEstudante + "€    Preço Professor: " + PrecoProfessor + "€   Quantidade: " + Quantidade;
         }
     }
 }
