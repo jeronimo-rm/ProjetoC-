@@ -25,6 +25,7 @@ namespace iCantina
             DescricaoPrato = descricaoPrato;
             TipoPrato = tipoPrato;
             EstadoPrato = estadoPrato;
+     
         }
 
 

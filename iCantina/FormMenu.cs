@@ -193,13 +193,25 @@ namespace iCantina
         private void AtualizarPrecos()
         {
             // Tenta converter o texto da textBoxPreco para um valor decimal
-            if (decimal.TryParse(textBoxPreco.Text, out decimal preco))
+            if (decimal.TryParse(textBoxPreco.Text, out decimal precoBase))
             {
-                // Formata o valor como um valor monetário e atualiza a labelPrecoEstudante
-                labelPrecoEstudante.Text = preco.ToString("C");
+                // Inicializa o preço do extra como 0
+                decimal precoExtra = 0;
 
-                // Calcula o preço para professores, subtraindo 0,70 do preço original
-                decimal precoProf = preco - 0.70m;
+                // Verifica se um extra está selecionado e tenta obter seu preço
+                if (comboBoxExtras.SelectedItem is Extra extraSelecionado)
+                {
+                    precoExtra = extraSelecionado.PrecoExtra;
+                }
+
+                // Calcula o preço total adicionando o preço do extra ao preço base
+                decimal precoTotal = precoBase + precoExtra;
+
+                // Atualiza a labelPrecoEstudante com o preço total
+                labelPrecoEstudante.Text = precoTotal.ToString("C");
+
+                // Calcula o preço para professores, subtraindo 0,70 do preço total
+                decimal precoProf = precoTotal - 0.70m;
 
                 // Verifica se o preço para professores não é negativo antes de atualizar a labelPrecoProf
                 labelPrecoProf.Text = precoProf >= 0 ? precoProf.ToString("C") : "Valor inválido";

@@ -96,15 +96,16 @@ namespace iCantina
             }
         }
 
-        private void CarregarPratosDisponiveis()
+        private void CarregarPratosDisponiveis(int? idMenuSelecionado = null)
         {
             List<Prato> pratos;
 
             using (var db = new ApplicationContext())
             {
+                // Supondo que a tabela Extras tenha uma coluna 'Ativo' que indica se o extra está ativo
                 pratos = db.Pratos.Where(estadoPrato => estadoPrato.EstadoPrato == "Ativado").ToList();
 
-                comboBoxPrato.DisplayMember = "descricaoPrato";
+                comboBoxPrato.DisplayMember = "descricaoExtra";
                 comboBoxPrato.ValueMember = "Id";
                 comboBoxPrato.DataSource = pratos;
             }
@@ -135,6 +136,11 @@ namespace iCantina
         private void comboBoxExtras_SelectedIndexChanged(object sender, EventArgs e)
         {
             AtualizarValorTotal();
+        }
+
+        private void comboBoxMenu_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
