@@ -129,8 +129,8 @@
             // 
             this.comboBoxEstadoPrato.FormattingEnabled = true;
             this.comboBoxEstadoPrato.Items.AddRange(new object[] {
-            "Desativado",
-            "Ativado"});
+            "Ativado",
+            "Desativo"});
             this.comboBoxEstadoPrato.Location = new System.Drawing.Point(84, 164);
             this.comboBoxEstadoPrato.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.comboBoxEstadoPrato.Name = "comboBoxEstadoPrato";

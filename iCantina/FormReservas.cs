@@ -102,7 +102,7 @@ namespace iCantina
 
             using (var db = new ApplicationContext())
             {
-                pratos = db.Pratos.Where(estadoPrato => estadoPrato.EstadoPrato == "Ativo").ToList();
+                pratos = db.Pratos.Where(estadoPrato => estadoPrato.EstadoPrato == "Ativado").ToList();
 
                 comboBoxPrato.DisplayMember = "descricaoPrato";
                 comboBoxPrato.ValueMember = "Id";

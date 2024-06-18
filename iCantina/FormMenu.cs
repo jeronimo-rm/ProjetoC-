@@ -17,6 +17,7 @@ namespace iCantina
         public FormMenu(FormPrincipal formPrincipal)
         {
             InitializeComponent();
+            textBoxPreco.TextChanged += textBoxPreco_TextChanged;
         }
 
         private void FormMenu_Load(object sender, EventArgs e)
@@ -52,7 +53,7 @@ namespace iCantina
         {
 
             int prato = int.Parse(ComboBoxPrato.Text);
-            int tipoPrato =int.Parse( comboBoxTipo.Text);
+            int tipoPrato =int.Parse( ComboBoxTipo.Text);
             int quantidade  = int.Parse(TextboxQuantidade.Text);
             int extra = int.Parse(comboBoxExtras.Text);         
 
@@ -99,7 +100,7 @@ namespace iCantina
                     Menu menuselecionado= (Menu)ListBoxMENU.SelectedItem; // descobrir o que será indicado nas textbox ao selecionar na listBox
                                                                                // mostra dados da multa                                                                                   
                     ComboBoxPrato.Text = menuselecionado.IdPrato.ToString();
-                    if(comboBoxTipo.Text == "Estudante")
+                    if(ComboBoxTipo.Text == "Estudante")
                     {
                         textBoxPreco.Text = menuselecionado.PrecoEstudante.ToString();
                     }
@@ -125,15 +126,15 @@ namespace iCantina
             }
             if (ListBoxMENU.Items[apagarMenu] is Menu menu)
             {
-                //se tiver sessao selecionada
+                //se tiver menu selecionada
                 // apaga da listbox
                 ListBoxMENU.Items.Remove(menu);
                 //apaga da base de dados
                 var db = new ApplicationContext();
-                var menuapagar = db.Menus.Find(menu.Id); // buscar o id da sessao que queremos apagar
-                if (menuapagar != null) // so faz isso se tiver uma sessao
+                var menuapagar = db.Menus.Find(menu.Id); 
+                if (menuapagar != null) // so faz isso se tiver um menu
                 {
-                    db.Menus.Remove(menuapagar); // remove sala pelo id
+                    db.Menus.Remove(menuapagar); // remove menu pelo id
                     db.SaveChanges(); // guarda as alterações na base de dados
                 }
             }
@@ -147,29 +148,69 @@ namespace iCantina
         private void CarregarExtrasDisponiveis()
         {
             List<Extra> extras;
-            using (var db = new ApplicationContext())
-            {
-                // Supondo que a tabela Extras tenha uma coluna 'Ativo' que indica se o extra está ativo
-                extras = db.Extras.Where(estadoExtra => estadoExtra.EstadoExtra == "Ativo").ToList();
+            
+                using (var db = new ApplicationContext())
+                {
+                    // Supondo que a tabela Extras tenha uma coluna 'Ativo' que indica se o extra está ativo
+                    extras = db.Extras.Where(estadoExtra => estadoExtra.EstadoExtra == "Ativo").ToList();
 
-                comboBoxExtras.DisplayMember = "descricaoExtra";
-                comboBoxExtras.ValueMember = "Id";
-                comboBoxExtras.DataSource = extras;
-            }
+                    comboBoxExtras.DisplayMember = "descricaoExtra";
+                    comboBoxExtras.ValueMember = "Id";
+                    comboBoxExtras.DataSource = extras;
+                }
         }
 
         private void CarregarPratosDisponiveis()
         {
-            List<Prato> pratos;
+            //mostrar todos os pratos ativos na comboBoxPrato
+            List<Prato> prato;
+            
+                using (var db = new ApplicationContext())
+                {
+                    prato = db.Pratos.Where(estadoPrato => estadoPrato.EstadoPrato == "Ativado").ToList();
 
-            using (var db = new ApplicationContext())
+                    ComboBoxPrato.DisplayMember = "descricaoPrato";
+                    ComboBoxPrato.ValueMember = "Id";
+                    ComboBoxPrato.DataSource = prato;
+                }
+        }
+
+        private void ComboBoxPrato_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(ComboBoxPrato.SelectedIndex != -1)
             {
-                pratos = db.Pratos.Where(estadoPrato => estadoPrato.EstadoPrato == "Desativo").ToList();
+                using (var db = new ApplicationContext())
+                {
+                    Prato prato = (Prato)ComboBoxPrato.SelectedItem;
+                    ComboBoxTipo.Text = prato.TipoPrato;
+                }
+            }
+        }
+        private void textBoxPreco_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarPrecos();
+        }
+        private void AtualizarPrecos()
+        {
+            // Tenta converter o texto da textBoxPreco para um valor decimal
+            if (decimal.TryParse(textBoxPreco.Text, out decimal preco))
+            {
+                // Formata o valor como um valor monetário e atualiza a labelPrecoEstudante
+                labelPrecoEstudante.Text = preco.ToString("C");
 
-                ComboBoxPrato.DisplayMember = "descricaoPrato";
-                ComboBoxPrato.ValueMember = "Id";
-                ComboBoxPrato.DataSource = pratos;
+                // Calcula o preço para professores, subtraindo 0,70 do preço original
+                decimal precoProf = preco - 0.70m;
+
+                // Verifica se o preço para professores não é negativo antes de atualizar a labelPrecoProf
+                labelPrecoProf.Text = precoProf >= 0 ? precoProf.ToString("C") : "Valor inválido";
+            }
+            else
+            {
+                // Se o valor inserido não for um número válido, atualiza as labels para indicar o erro
+                labelPrecoEstudante.Text = "Valor inválido";
+                labelPrecoProf.Text = "Valor inválido";
             }
         }
     }
 }
+    
