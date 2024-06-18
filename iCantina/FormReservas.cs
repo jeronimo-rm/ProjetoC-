@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Data.Entity.Migrations;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -12,14 +13,73 @@ namespace iCantina
 {
     public partial class FormReservas : Form
     {
-        public FormReservas(FormPrincipal formPrincipal)
+        private FormPrincipal FormPrincipal;
+
+        public TabPage getPage()
+        {
+            return tabControlReservas.TabPages[0];
+        }
+
+        public FormReservas(FormPrincipal formPrincipal) : this()
+        {
+            this.FormPrincipal = formPrincipal;
+        }
+        public FormReservas()
         {
             InitializeComponent();
         }
+
+        private void buttonPesquisarClientes_Click(object sender, EventArgs e)
+        {
+            string valorPesquisa = textBoxNIF.Text;
+
+            using (var db = new ApplicationContext())
+            {
+                List<Cliente> clientes = new List<Cliente>();
+
+                // Removeu a verificação que buscava todos os clientes se a pesquisa estivesse vazia
+                if (!string.IsNullOrEmpty(valorPesquisa))
+                {
+                    // Se a pesquisa não estiver vazia, obtenha os clientes que correspondem à pesquisa
+                    clientes = db.Utilizadores.OfType<Cliente>().Where(c => c.NIFUtilizador.ToString().Contains(valorPesquisa)).ToList();
+                }
+
+                if (clientes.Any()) // se houver algum cliente que corresponda à pesquisa
+                {
+                    textBoxCliente.Text = ""; // Limpa o texto antes de adicionar novos itens
+                    foreach (var cliente in clientes)
+                    {
+                        textBoxCliente.Text += cliente.NomeUtilizador;
+                        labelSaldo.Text = cliente.Saldo.ToString();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Cliente não encontrado!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+        }
+
 
         private void FormReservas_Load(object sender, EventArgs e)
         {
 
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

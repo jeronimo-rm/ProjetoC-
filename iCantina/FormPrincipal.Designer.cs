@@ -54,10 +54,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1021, 470);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(766, 382);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(173, 62);
+            this.pictureBox1.Size = new System.Drawing.Size(130, 50);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
@@ -65,10 +65,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(917, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(688, 0);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(277, 85);
+            this.pictureBox2.Size = new System.Drawing.Size(208, 69);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 14;
             this.pictureBox2.TabStop = false;
@@ -80,29 +80,30 @@
             this.toolStripStatusLabelHora,
             this.toolStripStatusLabel1,
             this.toolStripStatusLabelNomeFuncionarioLogado});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 532);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 431);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 9, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(1196, 26);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 7, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(897, 22);
             this.statusStrip1.TabIndex = 15;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // toolStripStatusLabelHora
             // 
             this.toolStripStatusLabelHora.Name = "toolStripStatusLabelHora";
-            this.toolStripStatusLabelHora.Size = new System.Drawing.Size(63, 20);
+            this.toolStripStatusLabelHora.Size = new System.Drawing.Size(49, 17);
             this.toolStripStatusLabelHora.Text = "00:00:00";
             // 
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(160, 20);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(129, 17);
             this.toolStripStatusLabel1.Text = "Nome do Funcionario: ";
+            this.toolStripStatusLabel1.Click += new System.EventHandler(this.toolStripStatusLabel1_Click);
             // 
             // toolStripStatusLabelNomeFuncionarioLogado
             // 
             this.toolStripStatusLabelNomeFuncionarioLogado.Name = "toolStripStatusLabelNomeFuncionarioLogado";
-            this.toolStripStatusLabelNomeFuncionarioLogado.Size = new System.Drawing.Size(90, 20);
+            this.toolStripStatusLabelNomeFuncionarioLogado.Size = new System.Drawing.Size(74, 17);
             this.toolStripStatusLabelNomeFuncionarioLogado.Text = "FAÇA LOGIN";
             this.toolStripStatusLabelNomeFuncionarioLogado.Click += new System.EventHandler(this.toolStripStatusLabelNomeFuncionarioLogado_Click);
             // 
@@ -116,18 +117,18 @@
             this.dateTimePickerSessoesFormPrinc.CalendarMonthBackground = System.Drawing.Color.Black;
             this.dateTimePickerSessoesFormPrinc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePickerSessoesFormPrinc.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dateTimePickerSessoesFormPrinc.Location = new System.Drawing.Point(495, 183);
-            this.dateTimePickerSessoesFormPrinc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePickerSessoesFormPrinc.Location = new System.Drawing.Point(371, 149);
             this.dateTimePickerSessoesFormPrinc.MinDate = new System.DateTime(2023, 6, 3, 0, 0, 0, 0);
             this.dateTimePickerSessoesFormPrinc.Name = "dateTimePickerSessoesFormPrinc";
-            this.dateTimePickerSessoesFormPrinc.Size = new System.Drawing.Size(215, 23);
+            this.dateTimePickerSessoesFormPrinc.Size = new System.Drawing.Size(162, 20);
             this.dateTimePickerSessoesFormPrinc.TabIndex = 16;
             // 
             // monthCalendar
             // 
             this.monthCalendar.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.monthCalendar.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.monthCalendar.Location = new System.Drawing.Point(467, 219);
+            this.monthCalendar.Location = new System.Drawing.Point(350, 178);
+            this.monthCalendar.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.monthCalendar.Name = "monthCalendar";
             this.monthCalendar.TabIndex = 18;
             this.monthCalendar.TrailingForeColor = System.Drawing.SystemColors.ControlText;
@@ -138,10 +139,10 @@
             this.buttonPratos.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonPratos.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPratos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonPratos.Location = new System.Drawing.Point(12, 12);
-            this.buttonPratos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonPratos.Location = new System.Drawing.Point(9, 10);
+            this.buttonPratos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonPratos.Name = "buttonPratos";
-            this.buttonPratos.Size = new System.Drawing.Size(151, 44);
+            this.buttonPratos.Size = new System.Drawing.Size(113, 36);
             this.buttonPratos.TabIndex = 19;
             this.buttonPratos.Text = "Pratos";
             this.buttonPratos.UseVisualStyleBackColor = false;
@@ -152,10 +153,10 @@
             this.buttonMenu.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonMenu.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonMenu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonMenu.Location = new System.Drawing.Point(12, 62);
-            this.buttonMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonMenu.Location = new System.Drawing.Point(9, 50);
+            this.buttonMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonMenu.Name = "buttonMenu";
-            this.buttonMenu.Size = new System.Drawing.Size(151, 43);
+            this.buttonMenu.Size = new System.Drawing.Size(113, 35);
             this.buttonMenu.TabIndex = 20;
             this.buttonMenu.Text = "Menu";
             this.buttonMenu.UseVisualStyleBackColor = false;
@@ -166,10 +167,10 @@
             this.buttonFuncionarios.BackColor = System.Drawing.Color.RosyBrown;
             this.buttonFuncionarios.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonFuncionarios.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonFuncionarios.Location = new System.Drawing.Point(324, 12);
-            this.buttonFuncionarios.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonFuncionarios.Location = new System.Drawing.Point(243, 10);
+            this.buttonFuncionarios.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonFuncionarios.Name = "buttonFuncionarios";
-            this.buttonFuncionarios.Size = new System.Drawing.Size(149, 44);
+            this.buttonFuncionarios.Size = new System.Drawing.Size(112, 36);
             this.buttonFuncionarios.TabIndex = 21;
             this.buttonFuncionarios.Text = "Funcionários";
             this.buttonFuncionarios.UseVisualStyleBackColor = false;
@@ -180,10 +181,10 @@
             this.buttonExtras.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.buttonExtras.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonExtras.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonExtras.Location = new System.Drawing.Point(169, 62);
-            this.buttonExtras.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonExtras.Location = new System.Drawing.Point(127, 50);
+            this.buttonExtras.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonExtras.Name = "buttonExtras";
-            this.buttonExtras.Size = new System.Drawing.Size(151, 44);
+            this.buttonExtras.Size = new System.Drawing.Size(113, 36);
             this.buttonExtras.TabIndex = 26;
             this.buttonExtras.Text = "Extras";
             this.buttonExtras.UseVisualStyleBackColor = false;
@@ -194,10 +195,10 @@
             this.buttonMulta.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.buttonMulta.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonMulta.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonMulta.Location = new System.Drawing.Point(169, 12);
-            this.buttonMulta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonMulta.Location = new System.Drawing.Point(127, 10);
+            this.buttonMulta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonMulta.Name = "buttonMulta";
-            this.buttonMulta.Size = new System.Drawing.Size(151, 44);
+            this.buttonMulta.Size = new System.Drawing.Size(113, 36);
             this.buttonMulta.TabIndex = 27;
             this.buttonMulta.Text = "Multa";
             this.buttonMulta.UseVisualStyleBackColor = false;
@@ -208,10 +209,10 @@
             this.buttonClientes.BackColor = System.Drawing.Color.RosyBrown;
             this.buttonClientes.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonClientes.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonClientes.Location = new System.Drawing.Point(324, 62);
-            this.buttonClientes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonClientes.Location = new System.Drawing.Point(243, 50);
+            this.buttonClientes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonClientes.Name = "buttonClientes";
-            this.buttonClientes.Size = new System.Drawing.Size(149, 44);
+            this.buttonClientes.Size = new System.Drawing.Size(112, 36);
             this.buttonClientes.TabIndex = 28;
             this.buttonClientes.Text = "Clientes";
             this.buttonClientes.UseVisualStyleBackColor = false;
@@ -222,10 +223,10 @@
             this.buttonReservas.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonReservas.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonReservas.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonReservas.Location = new System.Drawing.Point(12, 111);
-            this.buttonReservas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonReservas.Location = new System.Drawing.Point(9, 90);
+            this.buttonReservas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonReservas.Name = "buttonReservas";
-            this.buttonReservas.Size = new System.Drawing.Size(151, 44);
+            this.buttonReservas.Size = new System.Drawing.Size(113, 36);
             this.buttonReservas.TabIndex = 29;
             this.buttonReservas.Text = "Reserva";
             this.buttonReservas.UseVisualStyleBackColor = false;
@@ -233,10 +234,10 @@
             // 
             // FormPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
-            this.ClientSize = new System.Drawing.Size(1196, 558);
+            this.ClientSize = new System.Drawing.Size(897, 453);
             this.Controls.Add(this.buttonReservas);
             this.Controls.Add(this.buttonClientes);
             this.Controls.Add(this.buttonMulta);
@@ -249,7 +250,7 @@
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormPrincipal";
             this.Text = "FormPrincipal";
             this.Load += new System.EventHandler(this.FormPrincipal_Load);
