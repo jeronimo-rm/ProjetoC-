@@ -26,6 +26,8 @@ namespace iCantina
         {
             CarregarPratosDisponiveis();
             CarregarExtrasDisponiveis();
+            dateTimePickerdoMENU.MinDate = DateTime.Today;
+            dateTimePickerdoMENU.MaxDate = DateTime.Today.AddMonths(1);
         }
 
         public bool validarDadosInseridos()
