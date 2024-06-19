@@ -207,5 +207,33 @@ namespace iCantina
         {
             dateTimePicker1.Value = monthCalendar1.SelectionStart;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Verifica se há um item selecionado na listBoxWaiting
+                if (listBoxWaiting.SelectedIndex != -1)
+                {
+                    // Adiciona o item selecionado da listBoxWaiting para listBoxDone
+                    listBoxDone.Items.Add(listBoxWaiting.SelectedItem);
+
+                    // Remove o item selecionado da listBoxWaiting
+                    int i = listBoxWaiting.SelectedIndex;
+                    listBoxWaiting.Items.RemoveAt(i);
+                }
+                else
+                {
+                    // Nenhum item selecionado, mostra uma mensagem de aviso
+                    MessageBox.Show("Por favor, seleciona um item para mover.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            catch (Exception ex)
+            {
+                // Captura qualquer exceção inesperada e mostra uma mensagem de erro
+                MessageBox.Show("Ocorreu um erro ao mover o item: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
     }
 }

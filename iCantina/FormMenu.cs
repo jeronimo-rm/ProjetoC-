@@ -49,16 +49,24 @@ namespace iCantina
 
         private void ListBoxMENU_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int escolherMenu = ListBoxMENU.SelectedIndex;
-            if (escolherMenu != -1)
+            try
             {
-                Menu menuSelecionado = (Menu)ListBoxMENU.SelectedItem;
-                ComboBoxPrato.Text = menuSelecionado.Prato.DescricaoPrato;
-                comboBoxExtras.Text = menuSelecionado.Extra.DescricaoExtra;
-                ComboBoxTipo.Text = menuSelecionado.Prato.TipoPrato;
-                TextboxQuantidade.Text = menuSelecionado.Quantidade.ToString();
-                dateTimePickerdoMENU.Text = menuSelecionado.Horario.ToString();
-                dateTimePickerHoraMENU.Text = menuSelecionado.Horario.ToString();
+                int escolherMenu = ListBoxMENU.SelectedIndex;
+                if (escolherMenu != -1)
+                {
+                    Menu menuSelecionado = (Menu)ListBoxMENU.SelectedItem;
+                    ComboBoxPrato.Text = menuSelecionado.Prato.DescricaoPrato;
+                    comboBoxExtras.Text = menuSelecionado.Extra.DescricaoExtra;
+                    ComboBoxTipo.Text = menuSelecionado.Prato.TipoPrato;
+                    TextboxQuantidade.Text = menuSelecionado.Quantidade.ToString();
+                    dateTimePickerdoMENU.Text = menuSelecionado.Horario.ToString();
+                    dateTimePickerHoraMENU.Text = menuSelecionado.Horario.ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                // Captura qualquer exceção inesperada e mostra uma mensagem de erro
+                MessageBox.Show("Menu foi criado.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 

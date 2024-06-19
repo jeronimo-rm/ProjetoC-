@@ -48,3 +48,7 @@ C:\Users\Abner Gonçalves\Documents\GitHub\ProjetoC-\iCantina\bin\Debug\BouncyCa
 C:\Users\Abner Gonçalves\Documents\GitHub\ProjetoC-\iCantina\bin\Debug\itextsharp.dll
 C:\Users\Abner Gonçalves\Documents\GitHub\ProjetoC-\iCantina\bin\Debug\BouncyCastle.Cryptography.xml
 C:\Users\Abner Gonçalves\Documents\GitHub\ProjetoC-\iCantina\bin\Debug\itextsharp.xml
+C:\Users\jeron\OneDrive\Ambiente de Trabalho\da\ProjetoC-\iCantina\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\jeron\OneDrive\Ambiente de Trabalho\da\ProjetoC-\iCantina\bin\Debug\itextsharp.dll
+C:\Users\jeron\OneDrive\Ambiente de Trabalho\da\ProjetoC-\iCantina\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\jeron\OneDrive\Ambiente de Trabalho\da\ProjetoC-\iCantina\bin\Debug\itextsharp.xml
