@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data.Entity.Migrations;
 using System.Data;
+using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -247,7 +248,7 @@ namespace iCantina
 
                 if (menus.Any())
                 {
-                    comboBoxMenu.DisplayMember = "ToString"; // Usa o método ToString para exibir a descrição completa
+                    comboBoxMenu.DisplayMember = "Prato"; // Usa o método ToString para exibir a descrição completa
                     comboBoxMenu.ValueMember = "Id";
                     comboBoxMenu.DataSource = menus;
                 }
