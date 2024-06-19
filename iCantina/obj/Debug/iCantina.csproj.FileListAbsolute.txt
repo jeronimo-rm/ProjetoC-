@@ -83,3 +83,4 @@ C:\Users\User\Documents\GitHub\ProjetoC-\iCantina\obj\Debug\iCantina.csproj.Copy
 C:\Users\User\Documents\GitHub\ProjetoC-\iCantina\obj\Debug\iCantina.exe
 C:\Users\User\Documents\GitHub\ProjetoC-\iCantina\obj\Debug\iCantina.pdb
 >>>>>>> Stashed changes
+C:\Users\User\Documents\GitHub\ProjetoC-\iCantina\bin\Debug\BouncyCastle.Crypto.dll

@@ -1,17 +1,12 @@
-﻿using System;
+﻿using iTextSharp.text;
+using iTextSharp.text.pdf;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data.Entity.Migrations;
 using System.Data;
 using System.Data.Entity;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using iTextSharp.text;
-using iTextSharp.text.pdf;
 using System.IO;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace iCantina
 {
@@ -240,7 +235,7 @@ namespace iCantina
             }
 
         }
-<<<<<<< HEAD
+
         public bool validarDadosInseridos()
         {
             // Validação da seleção de um menu
@@ -261,11 +256,11 @@ namespace iCantina
                 MessageBox.Show("Tem que selecionar um prato!", "Aviso!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
-            
+
 
             return true;
         }
-        private void buttonGuardarReserva_Click(object sender, EventArgs e)
+       /* private void buttonGuardarReserva_Click(object sender, EventArgs e)
         {
             // Validação dos dados inseridos
             if (!validarDadosInseridos())
@@ -277,18 +272,18 @@ namespace iCantina
             string nomeCliente = textBoxCliente.Text;
             Prato pratoSelecionado = (Prato)comboBoxPrato.SelectedItem;
             Extra extraSelecionado = (Extra)comboBoxExtras.SelectedItem;
-            
+
             if (!decimal.TryParse(textBoxValor.Text.Trim('€'), out decimal valorSelecionado))
             {
                 MessageBox.Show("Valor inválido.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            
+
             TimeSpan horario = dateTimePicker1.Value.TimeOfDay;
 
             // Criação do objeto Reserva
-            Reserva novaReserva = new Reserva(nomeCliente, pratoSelecionado, extraSelecionado, valorSelecionado,  horario);
-            
+            Reserva novaReserva = new Reserva(nomeCliente, pratoSelecionado, extraSelecionado, valorSelecionado, horario);
+
             // Adiciona o novo menu à ListBoxMENU para visualização
             listBoxReservas.Items.Add(novaReserva);
 
@@ -300,7 +295,7 @@ namespace iCantina
             }
 
             MessageBox.Show("Reserva criado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
+        }*/
 
         private void listBoxReservas_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -346,8 +341,10 @@ namespace iCantina
                 {
                     db.Reservas.Remove(reservaapagar); // remove reserva pelo id
                     db.SaveChanges(); // guarda as alterações na base de dados
-=======
+                }
+            }
 
+        }
         // Método para carregar os menus disponíveis
         private void CarregarMenusDisponiveis()
         {
@@ -365,12 +362,11 @@ namespace iCantina
                 else
                 {
                     MessageBox.Show("Nenhum menu encontrado!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
->>>>>>> 39cc7c544681b80f64d2e582410a139e070b1d10
                 }
             }
         }
 
-<<<<<<< HEAD
+
         private void btnFatura_Click(object sender, EventArgs e)
         {
 
@@ -406,7 +402,7 @@ namespace iCantina
                 texto_a_escrever += "---------------------------";
                 texto_a_escrever += Environment.NewLine;
 
-                
+
                 // Nome do documento
                 string nome_documento = reserva.Id + "_" + reserva.Cliente.NomeUtilizador;
 
@@ -452,9 +448,6 @@ namespace iCantina
                 MessageBox.Show("Ocorreu um erro ao criar o PDF: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-       
-=======
->>>>>>> 39cc7c544681b80f64d2e582410a139e070b1d10
     }
 }
+

@@ -82,7 +82,7 @@
             this.tabControlReservas.Controls.Add(this.tabPage1);
             this.tabControlReservas.Controls.Add(this.tabPage2);
             this.tabControlReservas.Location = new System.Drawing.Point(11, 11);
-            this.tabControlReservas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControlReservas.Margin = new System.Windows.Forms.Padding(2);
             this.tabControlReservas.Name = "tabControlReservas";
             this.tabControlReservas.SelectedIndex = 0;
             this.tabControlReservas.Size = new System.Drawing.Size(856, 534);
@@ -93,9 +93,9 @@
             this.tabPage1.Controls.Add(this.groupBoxListaReservas);
             this.tabPage1.Controls.Add(this.groupBoxFuncionario);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage1.Size = new System.Drawing.Size(848, 508);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Reservas";
@@ -109,9 +109,9 @@
             this.groupBoxListaReservas.Controls.Add(this.buttonApagarReserva);
             this.groupBoxListaReservas.Controls.Add(this.buttonGuardarReserva);
             this.groupBoxListaReservas.Location = new System.Drawing.Point(364, 3);
-            this.groupBoxListaReservas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBoxListaReservas.Margin = new System.Windows.Forms.Padding(2);
             this.groupBoxListaReservas.Name = "groupBoxListaReservas";
-            this.groupBoxListaReservas.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBoxListaReservas.Padding = new System.Windows.Forms.Padding(2);
             this.groupBoxListaReservas.Size = new System.Drawing.Size(465, 385);
             this.groupBoxListaReservas.TabIndex = 19;
             this.groupBoxListaReservas.TabStop = false;
@@ -123,13 +123,12 @@
             this.btnFatura.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFatura.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnFatura.Location = new System.Drawing.Point(98, 314);
-            this.btnFatura.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnFatura.Margin = new System.Windows.Forms.Padding(2);
             this.btnFatura.Name = "btnFatura";
             this.btnFatura.Size = new System.Drawing.Size(76, 32);
             this.btnFatura.TabIndex = 7;
             this.btnFatura.Text = "Fatura";
             this.btnFatura.UseVisualStyleBackColor = false;
-            this.btnFatura.Click += new System.EventHandler(this.btnFatura_Click);
             // 
             // label1
             // 
@@ -147,7 +146,7 @@
             // 
             this.listBoxReservas.FormattingEnabled = true;
             this.listBoxReservas.Location = new System.Drawing.Point(3, 25);
-            this.listBoxReservas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listBoxReservas.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxReservas.Name = "listBoxReservas";
             this.listBoxReservas.Size = new System.Drawing.Size(447, 238);
             this.listBoxReservas.TabIndex = 0;
@@ -159,7 +158,7 @@
             this.buttonApagarReserva.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonApagarReserva.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonApagarReserva.Location = new System.Drawing.Point(191, 314);
-            this.buttonApagarReserva.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonApagarReserva.Margin = new System.Windows.Forms.Padding(2);
             this.buttonApagarReserva.Name = "buttonApagarReserva";
             this.buttonApagarReserva.Size = new System.Drawing.Size(76, 32);
             this.buttonApagarReserva.TabIndex = 5;
@@ -173,13 +172,13 @@
             this.buttonGuardarReserva.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonGuardarReserva.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonGuardarReserva.Location = new System.Drawing.Point(7, 314);
-            this.buttonGuardarReserva.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonGuardarReserva.Margin = new System.Windows.Forms.Padding(2);
             this.buttonGuardarReserva.Name = "buttonGuardarReserva";
             this.buttonGuardarReserva.Size = new System.Drawing.Size(76, 32);
             this.buttonGuardarReserva.TabIndex = 4;
             this.buttonGuardarReserva.Text = "Guardar";
             this.buttonGuardarReserva.UseVisualStyleBackColor = false;
-            this.buttonGuardarReserva.Click += new System.EventHandler(this.buttonGuardarReserva_Click);
+            //this.buttonGuardarReserva.Click += new System.EventHandler(this.buttonGuardarReserva_Click);
             // 
             // groupBoxFuncionario
             // 
@@ -203,9 +202,9 @@
             this.groupBoxFuncionario.Controls.Add(this.label10);
             this.groupBoxFuncionario.Controls.Add(this.label11);
             this.groupBoxFuncionario.Location = new System.Drawing.Point(3, 3);
-            this.groupBoxFuncionario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBoxFuncionario.Margin = new System.Windows.Forms.Padding(2);
             this.groupBoxFuncionario.Name = "groupBoxFuncionario";
-            this.groupBoxFuncionario.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBoxFuncionario.Padding = new System.Windows.Forms.Padding(2);
             this.groupBoxFuncionario.Size = new System.Drawing.Size(330, 501);
             this.groupBoxFuncionario.TabIndex = 4;
             this.groupBoxFuncionario.TabStop = false;
@@ -226,7 +225,7 @@
             // 
             this.textBoxCliente.Enabled = false;
             this.textBoxCliente.Location = new System.Drawing.Point(49, 81);
-            this.textBoxCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxCliente.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCliente.Name = "textBoxCliente";
             this.textBoxCliente.Size = new System.Drawing.Size(170, 20);
             this.textBoxCliente.TabIndex = 18;
@@ -308,13 +307,9 @@
             // 
             // monthCalendar1
             // 
-<<<<<<< HEAD
             this.monthCalendar1.Enabled = false;
-            this.monthCalendar1.Location = new System.Drawing.Point(7, 359);
+            this.monthCalendar1.Location = new System.Drawing.Point(5, 294);
             this.monthCalendar1.Margin = new System.Windows.Forms.Padding(12, 11, 12, 11);
-=======
-            this.monthCalendar1.Location = new System.Drawing.Point(5, 292);
->>>>>>> 39cc7c544681b80f64d2e582410a139e070b1d10
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 9;
             this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
@@ -358,7 +353,7 @@
             // textBoxNIF
             // 
             this.textBoxNIF.Location = new System.Drawing.Point(88, 32);
-            this.textBoxNIF.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxNIF.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxNIF.Name = "textBoxNIF";
             this.textBoxNIF.Size = new System.Drawing.Size(131, 20);
             this.textBoxNIF.TabIndex = 3;
@@ -404,9 +399,9 @@
             this.tabPage2.Controls.Add(this.listBoxDone);
             this.tabPage2.Controls.Add(this.listBoxWaiting);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage2.Size = new System.Drawing.Size(848, 508);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Verificação";
@@ -418,7 +413,7 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button1.Location = new System.Drawing.Point(362, 430);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(132, 37);
             this.button1.TabIndex = 7;
@@ -484,7 +479,7 @@
             this.listBoxDone.FormattingEnabled = true;
             this.listBoxDone.ItemHeight = 17;
             this.listBoxDone.Location = new System.Drawing.Point(448, 46);
-            this.listBoxDone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listBoxDone.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxDone.Name = "listBoxDone";
             this.listBoxDone.Size = new System.Drawing.Size(398, 378);
             this.listBoxDone.TabIndex = 1;
@@ -493,19 +488,9 @@
             // 
             this.listBoxWaiting.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxWaiting.FormattingEnabled = true;
-<<<<<<< HEAD
-            this.listBoxWaiting.ItemHeight = 20;
+            this.listBoxWaiting.ItemHeight = 17;
             this.listBoxWaiting.Location = new System.Drawing.Point(5, 57);
             this.listBoxWaiting.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-=======
-            this.listBoxWaiting.ItemHeight = 17;
-            this.listBoxWaiting.Items.AddRange(new object[] {
-            "aaa",
-            "bbb",
-            "ccc"});
-            this.listBoxWaiting.Location = new System.Drawing.Point(4, 46);
-            this.listBoxWaiting.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
->>>>>>> 39cc7c544681b80f64d2e582410a139e070b1d10
             this.listBoxWaiting.Name = "listBoxWaiting";
             this.listBoxWaiting.Size = new System.Drawing.Size(407, 378);
             this.listBoxWaiting.TabIndex = 0;
@@ -539,7 +524,7 @@
             this.ClientSize = new System.Drawing.Size(875, 584);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.tabControlReservas);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormReservas";
             this.Text = "FormReservas";
             this.Load += new System.EventHandler(this.FormReservas_Load);
