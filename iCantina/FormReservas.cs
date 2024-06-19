@@ -260,7 +260,7 @@ namespace iCantina
 
             return true;
         }
-       /* private void buttonGuardarReserva_Click(object sender, EventArgs e)
+        private void buttonGuardarReserva_Click(object sender, EventArgs e)
         {
             // Validação dos dados inseridos
             if (!validarDadosInseridos())
@@ -279,10 +279,10 @@ namespace iCantina
                 return;
             }
 
-            TimeSpan horario = dateTimePicker1.Value.TimeOfDay;
+            
 
             // Criação do objeto Reserva
-            Reserva novaReserva = new Reserva(nomeCliente, pratoSelecionado, extraSelecionado, valorSelecionado, horario);
+            Reserva novaReserva = new Reserva(nomeCliente, pratoSelecionado, extraSelecionado, valorSelecionado);
 
             // Adiciona o novo menu à ListBoxMENU para visualização
             listBoxReservas.Items.Add(novaReserva);
@@ -295,7 +295,7 @@ namespace iCantina
             }
 
             MessageBox.Show("Reserva criado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }*/
+        }
 
         private void listBoxReservas_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -365,15 +365,42 @@ namespace iCantina
                 }
             }
         }
-
+        private Reserva ObterReservaSelecionada()
+        {
+            // Exemplo: obter a reserva a partir de uma seleção em uma ListBox
+            if (listBoxReservas.SelectedItem is Reserva reserva)
+            {
+                return reserva;
+            }
+            return null;
+        }
 
         private void btnFatura_Click(object sender, EventArgs e)
         {
+            try
+            {
+                // Aqui você deve obter a reserva que deseja exportar
+                Reserva reservaSelecionada = ObterReservaSelecionada();
 
+                // Verifique se a reserva selecionada não é nula
+                if (reservaSelecionada != null)
+                {
+                    exportarFatura(reservaSelecionada);
+                    MessageBox.Show("Fatura exportado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Nenhuma reserva selecionada.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao exportar a fatura: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
 
-        private void exportarBilhete(Reserva reserva)
+        private void exportarFatura(Reserva reserva)
         {
             try
             {

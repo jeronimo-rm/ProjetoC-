@@ -35,6 +35,10 @@ namespace iCantina
             Horario = horario;
         }
 
+        public Reserva(string nomeCliente, Prato pratoSelecionado, Extra extraSelecionado, decimal valorSelecionado)
+        {
+        }
+
         public override string ToString()
         {
             return "Cliente: " + Cliente + "       Prato: " + Prato + "       Menu: " + Menu + "       Extra: " + Extra + "       Multa: " + Multa + "       Data: " + Horario;
