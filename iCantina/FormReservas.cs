@@ -24,6 +24,7 @@ namespace iCantina
         {
             this.FormPrincipal = formPrincipal;
         }
+
         public FormReservas()
         {
             InitializeComponent();
@@ -64,11 +65,11 @@ namespace iCantina
             }
         }
 
-
         private void FormReservas_Load(object sender, EventArgs e)
         {
             CarregarExtrasDisponiveis();
             CarregarPratosDisponiveis();
+            CarregarMenusDisponiveis(); // Carrega os menus disponíveis no evento de carregamento do formulário
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -85,27 +86,27 @@ namespace iCantina
         {
 
         }
+
         private void CarregarExtrasDisponiveis()
         {
             List<Extra> extras;
-            
+
             using (var db = new ApplicationContext())
             {
                 // Supondo que a tabela Extras tenha uma coluna 'Ativo' que indica se o extra está ativo
                 extras = db.Extras.Where(estadoExtra => estadoExtra.EstadoExtra == "Ativo").ToList();
-                
-                comboBoxExtras.DisplayMember = "descricaoExtra"; 
-                comboBoxExtras.ValueMember = "Id"; 
+
+                comboBoxExtras.DisplayMember = "DescricaoExtra";
+                comboBoxExtras.ValueMember = "Id";
                 comboBoxExtras.DataSource = extras;
             }
         }
 
         private void CarregarPratosDisponiveis(int? idMenu = null)
         {
-
             using (var db = new ApplicationContext())
             {
-                 List<Prato> pratos;
+                List<Prato> pratos;
 
                 if (idMenu.HasValue)
                 {
@@ -115,7 +116,7 @@ namespace iCantina
                 {
                     pratos = new List<Prato>();
                 }
-                comboBoxPrato.DisplayMember = "descricaoPrato";
+                comboBoxPrato.DisplayMember = "DescricaoPrato";
                 comboBoxPrato.ValueMember = "Id";
                 comboBoxPrato.DataSource = pratos;
             }
@@ -235,5 +236,27 @@ namespace iCantina
             }
 
         }
+
+        // Método para carregar os menus disponíveis
+        private void CarregarMenusDisponiveis()
+        {
+            using (var db = new ApplicationContext())
+            {
+                // Inclui as entidades relacionadas (Prato e Extra)
+                var menus = db.Menus.Include(m => m.Prato).Include(m => m.Extra).ToList();
+
+                if (menus.Any())
+                {
+                    comboBoxMenu.DisplayMember = "ToString"; // Usa o método ToString para exibir a descrição completa
+                    comboBoxMenu.ValueMember = "Id";
+                    comboBoxMenu.DataSource = menus;
+                }
+                else
+                {
+                    MessageBox.Show("Nenhum menu encontrado!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+        }
+
     }
 }

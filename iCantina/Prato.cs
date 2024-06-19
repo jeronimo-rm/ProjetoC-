@@ -15,10 +15,11 @@ namespace iCantina
         public string DescricaoPrato { get; set; }
         public string TipoPrato { get; set; }
         public string EstadoPrato { get; set; }
+        public virtual ICollection<Menu> Menus { get; set; }
 
         public Prato() // Construtor vazio para o entity framework
         {
-
+            Menus = new HashSet<Menu>();
         }
 
         public Prato(string descricaoPrato, string tipoPrato, string estadoPrato)
