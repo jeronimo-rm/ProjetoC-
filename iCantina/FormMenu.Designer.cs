@@ -30,7 +30,7 @@
         {
             this.ComboBoxPrato = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonCriarMenu = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -57,7 +57,7 @@
             this.ComboBoxPrato.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBoxPrato.FormattingEnabled = true;
             this.ComboBoxPrato.Location = new System.Drawing.Point(97, 28);
-            this.ComboBoxPrato.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ComboBoxPrato.Margin = new System.Windows.Forms.Padding(2);
             this.ComboBoxPrato.Name = "ComboBoxPrato";
             this.ComboBoxPrato.Size = new System.Drawing.Size(92, 21);
             this.ComboBoxPrato.TabIndex = 0;
@@ -74,29 +74,29 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Prato:";
             // 
-            // button1
+            // buttonCriarMenu
             // 
-            this.button1.BackColor = System.Drawing.Color.ForestGreen;
-            this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(293, 285);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(73, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Criar";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonCriarMenu.BackColor = System.Drawing.Color.ForestGreen;
+            this.buttonCriarMenu.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCriarMenu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonCriarMenu.Location = new System.Drawing.Point(305, 299);
+            this.buttonCriarMenu.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonCriarMenu.Name = "buttonCriarMenu";
+            this.buttonCriarMenu.Size = new System.Drawing.Size(90, 35);
+            this.buttonCriarMenu.TabIndex = 4;
+            this.buttonCriarMenu.Text = "Criar";
+            this.buttonCriarMenu.UseVisualStyleBackColor = false;
+            this.buttonCriarMenu.Click += new System.EventHandler(this.buttonCriarMenu_Click);
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Brown;
             this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(650, 285);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Location = new System.Drawing.Point(832, 299);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(69, 23);
+            this.button2.Size = new System.Drawing.Size(92, 35);
             this.button2.TabIndex = 5;
             this.button2.Text = "Apagar";
             this.button2.UseVisualStyleBackColor = false;
@@ -140,7 +140,7 @@
             this.ComboBoxTipo.Enabled = false;
             this.ComboBoxTipo.FormattingEnabled = true;
             this.ComboBoxTipo.Location = new System.Drawing.Point(97, 93);
-            this.ComboBoxTipo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ComboBoxTipo.Margin = new System.Windows.Forms.Padding(2);
             this.ComboBoxTipo.Name = "ComboBoxTipo";
             this.ComboBoxTipo.Size = new System.Drawing.Size(92, 21);
             this.ComboBoxTipo.TabIndex = 11;
@@ -159,7 +159,7 @@
             // textBoxPreco
             // 
             this.textBoxPreco.Location = new System.Drawing.Point(96, 123);
-            this.textBoxPreco.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPreco.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPreco.Multiline = true;
             this.textBoxPreco.Name = "textBoxPreco";
             this.textBoxPreco.Size = new System.Drawing.Size(92, 24);
@@ -170,18 +170,19 @@
             this.comboBoxExtras.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxExtras.FormattingEnabled = true;
             this.comboBoxExtras.Location = new System.Drawing.Point(97, 58);
-            this.comboBoxExtras.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxExtras.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxExtras.Name = "comboBoxExtras";
             this.comboBoxExtras.Size = new System.Drawing.Size(92, 21);
             this.comboBoxExtras.TabIndex = 16;
+            this.comboBoxExtras.SelectedIndexChanged += new System.EventHandler(this.comboBoxExtras_SelectedIndexChanged);
             // 
             // TextboxQuantidade
             // 
             this.TextboxQuantidade.Location = new System.Drawing.Point(97, 199);
-            this.TextboxQuantidade.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TextboxQuantidade.Margin = new System.Windows.Forms.Padding(2);
             this.TextboxQuantidade.Multiline = true;
             this.TextboxQuantidade.Name = "TextboxQuantidade";
-            this.TextboxQuantidade.Size = new System.Drawing.Size(92, 27);
+            this.TextboxQuantidade.Size = new System.Drawing.Size(92, 21);
             this.TextboxQuantidade.TabIndex = 18;
             // 
             // label7
@@ -198,7 +199,7 @@
             // dateTimePickerdoMENU
             // 
             this.dateTimePickerdoMENU.Location = new System.Drawing.Point(97, 257);
-            this.dateTimePickerdoMENU.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePickerdoMENU.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePickerdoMENU.Name = "dateTimePickerdoMENU";
             this.dateTimePickerdoMENU.Size = new System.Drawing.Size(141, 20);
             this.dateTimePickerdoMENU.TabIndex = 19;
@@ -238,7 +239,6 @@
             this.label10.Size = new System.Drawing.Size(15, 16);
             this.label10.TabIndex = 23;
             this.label10.Text = "€";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label5
             // 
@@ -278,7 +278,7 @@
             this.ListBoxMENU.Location = new System.Drawing.Point(293, 17);
             this.ListBoxMENU.Margin = new System.Windows.Forms.Padding(2);
             this.ListBoxMENU.Name = "ListBoxMENU";
-            this.ListBoxMENU.Size = new System.Drawing.Size(427, 264);
+            this.ListBoxMENU.Size = new System.Drawing.Size(646, 264);
             this.ListBoxMENU.TabIndex = 6;
             this.ListBoxMENU.SelectedIndexChanged += new System.EventHandler(this.ListBoxMENU_SelectedIndexChanged);
             // 
@@ -297,7 +297,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
-            this.ClientSize = new System.Drawing.Size(728, 351);
+            this.ClientSize = new System.Drawing.Size(950, 351);
             this.Controls.Add(this.labelPrecoProf);
             this.Controls.Add(this.labelPrecoEstudante);
             this.Controls.Add(this.label9);
@@ -316,11 +316,11 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.ListBoxMENU);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonCriarMenu);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ComboBoxPrato);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormMenu";
             this.Text = "FormMenu";
             this.Load += new System.EventHandler(this.FormMenu_Load);
@@ -333,7 +333,7 @@
 
         private System.Windows.Forms.ComboBox ComboBoxPrato;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonCriarMenu;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;

@@ -17,7 +17,9 @@ namespace iCantina
         public FormMenu(FormPrincipal formPrincipal)
         {
             InitializeComponent();
+            //atualizarDadosAoEntrar();
             textBoxPreco.TextChanged += textBoxPreco_TextChanged;
+            comboBoxExtras.SelectedIndexChanged += comboBoxExtras_SelectedIndexChanged;
         }
 
         private void FormMenu_Load(object sender, EventArgs e)
@@ -27,90 +29,36 @@ namespace iCantina
         }
 
         public bool validarDadosInseridos()
-        {   // RECEBE VALORES DAS TEXTSBOX E VALIDA
-            int pratoselecionado = ListBoxMENU.SelectedIndex;
-            if (pratoselecionado== -1)
+        {
+            // Validação da seleção de um prato
+            if (ComboBoxPrato.SelectedIndex == -1)
             {
                 MessageBox.Show("Tem que selecionar um prato!", "Aviso!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
-            int Tiposelecionado = ListBoxMENU.SelectedIndex;
-            if (Tiposelecionado == -1)
-            {
-                MessageBox.Show("Tem que selecionar u m tipo, Estudante/Professor!", "Aviso!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return false;
-            }
-            string precoInserido = ListBoxMENU.Text;
-            if (precoInserido == null)
+            // Validação do preço inserido
+            // Substitua 'textBoxPreco' pelo nome real do seu campo de texto de preço, se for diferente
+            if (string.IsNullOrWhiteSpace(textBoxPreco.Text))
             {
                 MessageBox.Show("Tem que inserir um preço para este menu!", "Aviso!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
+
             return true;
-        }
-        
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-            int prato = int.Parse(ComboBoxPrato.Text);
-            int tipoPrato =int.Parse( ComboBoxTipo.Text);
-            int quantidade  = int.Parse(TextboxQuantidade.Text);
-            int extra = int.Parse(comboBoxExtras.Text);         
-
-
-            validarDadosInseridos();
-
-            // se for vazio mensagem de erro 
-                string Preco = textBoxPreco.Text.ToString();
-                if (Preco == "")
-                {
-                    MessageBox.Show("Digite o Preço do Menu!", "Aviso!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-                try
-                {
-                    decimal preco = decimal.Parse(Preco);
-              //    string data = dateTimePickerdoMENU.Value.ToString("dd/MM/yyyy");
-                    TimeSpan hora = TimeSpan.Parse(dateTimePickerHoraMENU.Value.ToString("HH:mm"));
-
-                decimal precoEstudante = preco;
-                decimal precoProfessor = preco;
-
-
-                Menu menu = new Menu(prato, extra, precoEstudante, precoProfessor, quantidade, hora);
-                var db = new ApplicationContext();
-                ListBoxMENU.Items.Add(menu);
-                db.Menus.Add(menu); // Adicionar menu na base de dados
-                db.SaveChanges(); // Salva as alterações na base de dados
-            }
-                catch (FormatException)
-                {
-                    MessageBox.Show("Erro", "Aviso!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
-            
         }
 
         private void ListBoxMENU_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int menulista= ListBoxMENU.SelectedIndex;
-            if (menulista!= -1)
+            int escolherMenu = ListBoxMENU.SelectedIndex;
+            if (escolherMenu != -1)
             {
-                using (var db = new ApplicationContext())
-                {
-                    Menu menuselecionado= (Menu)ListBoxMENU.SelectedItem; // descobrir o que será indicado nas textbox ao selecionar na listBox
-                                                                               // mostra dados da multa                                                                                   
-                    ComboBoxPrato.Text = menuselecionado.IdPrato.ToString();
-                    if(ComboBoxTipo.Text == "Estudante")
-                    {
-                        textBoxPreco.Text = menuselecionado.PrecoEstudante.ToString();
-                    }
-                    else
-                    {
-                        textBoxPreco.Text = menuselecionado.PrecoProfessor.ToString();
-                    }
-                    dateTimePickerdoMENU.Value.Add(menuselecionado.Horario);
-
-                }
+                Menu menuSelecionado = (Menu)ListBoxMENU.SelectedItem;
+                ComboBoxPrato.Text = menuSelecionado.Prato.DescricaoPrato;
+                comboBoxExtras.Text = menuSelecionado.Extra.DescricaoExtra;
+                ComboBoxTipo.Text = menuSelecionado.Prato.TipoPrato;
+                TextboxQuantidade.Text = menuSelecionado.Quantidade.ToString();
+                dateTimePickerdoMENU.Text = menuSelecionado.Horario.ToString();
+                dateTimePickerHoraMENU.Text = menuSelecionado.Horario.ToString();
             }
         }
 
@@ -138,11 +86,6 @@ namespace iCantina
                     db.SaveChanges(); // guarda as alterações na base de dados
                 }
             }
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void CarregarExtrasDisponiveis()
@@ -192,37 +135,86 @@ namespace iCantina
         }
         private void AtualizarPrecos()
         {
-            // Tenta converter o texto da textBoxPreco para um valor decimal
             if (decimal.TryParse(textBoxPreco.Text, out decimal precoBase))
             {
-                // Inicializa o preço do extra como 0
                 decimal precoExtra = 0;
 
-                // Verifica se um extra está selecionado e tenta obter seu preço
                 if (comboBoxExtras.SelectedItem is Extra extraSelecionado)
                 {
-                    precoExtra = extraSelecionado.PrecoExtra;
+                    precoExtra = extraSelecionado.PrecoExtra; // Certifique-se de que PrecoExtra está correto
                 }
 
-                // Calcula o preço total adicionando o preço do extra ao preço base
                 decimal precoTotal = precoBase + precoExtra;
-
-                // Atualiza a labelPrecoEstudante com o preço total
                 labelPrecoEstudante.Text = precoTotal.ToString("C");
-
-                // Calcula o preço para professores, subtraindo 0,70 do preço total
                 decimal precoProf = precoTotal - 0.70m;
-
-                // Verifica se o preço para professores não é negativo antes de atualizar a labelPrecoProf
                 labelPrecoProf.Text = precoProf >= 0 ? precoProf.ToString("C") : "Valor inválido";
             }
             else
             {
-                // Se o valor inserido não for um número válido, atualiza as labels para indicar o erro
                 labelPrecoEstudante.Text = "Valor inválido";
                 labelPrecoProf.Text = "Valor inválido";
             }
         }
+
+        private void comboBoxExtras_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            AtualizarPrecos();
+        }
+
+        private void buttonCriarMenu_Click(object sender, EventArgs e)
+        {
+            // Validação dos dados inseridos
+            if (!validarDadosInseridos())
+            {
+                return;
+            }
+
+            // Coleta de informações dos controles
+            Prato pratoSelecionado = (Prato)ComboBoxPrato.SelectedItem;
+            Extra extraSelecionado = (Extra)comboBoxExtras.SelectedItem;
+            if (!decimal.TryParse(labelPrecoEstudante.Text.Trim('€'), out decimal precoEstudante))
+            {
+                MessageBox.Show("Preço de estudante inválido.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (!decimal.TryParse(labelPrecoProf.Text.Trim('€'), out decimal precoProfessor))
+            {
+                MessageBox.Show("Preço de professor inválido.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (!int.TryParse(TextboxQuantidade.Text, out int quantidade) || quantidade <= 0)
+            {
+                MessageBox.Show("Quantidade inválida. Por favor, insira um número inteiro positivo.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            TimeSpan horario = dateTimePickerdoMENU.Value.TimeOfDay;
+
+            // Criação do objeto Menu
+            Menu novoMenu = new Menu(pratoSelecionado, extraSelecionado, precoEstudante, precoProfessor, quantidade, horario);
+
+            // Adiciona o novo menu à ListBoxMENU para visualização
+            ListBoxMENU.Items.Add(novoMenu);
+
+            // Salva o novo menu na base de dados
+            using (var db = new ApplicationContext())
+            {
+                db.Menus.Add(novoMenu);
+                db.SaveChanges();
+            }
+
+            MessageBox.Show("Menu criado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        /*private void atualizarDadosAoEntrar()
+        {
+            using (var db = new ApplicationContext())
+            {
+                var menus = db.Menus.OfType<Menu>();
+                foreach (var menu in menus) //correr os extras para os adicionar à listBox 
+                {
+                    ListBoxMENU.Items.Add(menu);
+                }
+            }
+        }*/
     }
 }
     

@@ -27,6 +27,10 @@ namespace iCantina
         public FormReservas()
         {
             InitializeComponent();
+            comboBoxMenu.SelectedIndexChanged += comboBoxMenu_SelectedIndexChanged;
+            timerFormReservas.Tick += timerFormReservas_Tick;
+            monthCalendar1.MinDate = DateTime.Today; // Impede a seleção de datas anteriores à data atual
+            monthCalendar1.MaxDate = DateTime.Today.AddMonths(1);
         }
 
         private void buttonPesquisarClientes_Click(object sender, EventArgs e)
@@ -96,16 +100,22 @@ namespace iCantina
             }
         }
 
-        private void CarregarPratosDisponiveis(int? idMenuSelecionado = null)
+        private void CarregarPratosDisponiveis(int? idMenu = null)
         {
-            List<Prato> pratos;
 
             using (var db = new ApplicationContext())
             {
-                // Supondo que a tabela Extras tenha uma coluna 'Ativo' que indica se o extra está ativo
-                pratos = db.Pratos.Where(estadoPrato => estadoPrato.EstadoPrato == "Ativado").ToList();
+                 List<Prato> pratos;
 
-                comboBoxPrato.DisplayMember = "descricaoExtra";
+                if (idMenu.HasValue)
+                {
+                    pratos = db.Pratos.Where(estadoPrato => estadoPrato.EstadoPrato == "Ativado" && estadoPrato.Id == idMenu.Value).ToList();
+                }
+                else
+                {
+                    pratos = new List<Prato>();
+                }
+                comboBoxPrato.DisplayMember = "descricaoPrato";
                 comboBoxPrato.ValueMember = "Id";
                 comboBoxPrato.DataSource = pratos;
             }
@@ -125,11 +135,23 @@ namespace iCantina
         {
             decimal valorTotal = 0;
 
+            // Verifica se há um extra selecionado e adiciona seu preço ao valor total
             if (comboBoxExtras.SelectedItem is Extra precoExtra)
             {
                 valorTotal += precoExtra.PrecoExtra;
             }
 
+            // Verifica se a labelMulta tem um valor numérico válido e adiciona ao valor total
+            if (!string.IsNullOrEmpty(labelMulta.Text))
+            {
+                // Tenta converter o texto da labelMulta para decimal, considerando o formato de moeda
+                if (decimal.TryParse(labelMulta.Text, System.Globalization.NumberStyles.Currency, System.Globalization.CultureInfo.CurrentCulture, out decimal valorMulta))
+                {
+                    valorTotal += valorMulta;
+                }
+            }
+
+            // Atualiza o texto da textBoxValor com o valor total formatado como moeda
             textBoxValor.Text = valorTotal.ToString("C");
         }
 
@@ -140,7 +162,50 @@ namespace iCantina
 
         private void comboBoxMenu_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (comboBoxMenu.SelectedItem is Menu menu)
+            {
+                CarregarPratosDisponiveis(menu.Id);
+            }
+        }
 
+        private void timerFormReservas_Tick(object sender, EventArgs e)
+        {
+            this.toolStripStatusHora.Text = DateTime.Now.ToString("G");
+            VerificarMulta();
+        }
+
+        private void VerificarMulta()
+        {
+            TimeSpan horaAtual = DateTime.Now.TimeOfDay;
+
+            using (var db = new ApplicationContext())
+            {
+                // Busca por uma multa cuja hora é igual ou anterior à hora atual
+                var multaAplicavel = db.Multas.OrderByDescending(multa => multa.NumHoras) // Garante que a multa mais recente seja considerada primeiro
+                                       .FirstOrDefault(multa => horaAtual >= multa.NumHoras);
+
+                if (multaAplicavel != null)
+                {
+                    // Se encontrou uma multa aplicável, atualiza a label com o valor dessa multa
+                    AtualizarLabelMulta(multaAplicavel.Valor);
+                }
+                else
+                {
+                    // Se não encontrou nenhuma multa aplicável, pode optar por limpar a label ou deixar o valor anterior
+                    labelMulta.Text = null;
+                }
+            }
+            AtualizarValorTotal();
+        }
+
+        private void AtualizarLabelMulta(decimal valorMulta)
+        {
+            labelMulta.Text = valorMulta.ToString("C");
+        }
+
+        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
+        {
+            dateTimePicker1.Value = monthCalendar1.SelectionStart;
         }
     }
 }

@@ -102,5 +102,10 @@ namespace iCantina
             monthCalendar.Show();*/
 
         }
+
+        private void toolStripStatusLabelHora_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

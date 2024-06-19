@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tabControlReservas = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBoxListaReservas = new System.Windows.Forms.GroupBox();
@@ -65,11 +66,15 @@
             this.label4 = new System.Windows.Forms.Label();
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusHora = new System.Windows.Forms.ToolStripStatusLabel();
+            this.timerFormReservas = new System.Windows.Forms.Timer(this.components);
             this.tabControlReservas.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBoxListaReservas.SuspendLayout();
             this.groupBoxFuncionario.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControlReservas
@@ -77,7 +82,7 @@
             this.tabControlReservas.Controls.Add(this.tabPage1);
             this.tabControlReservas.Controls.Add(this.tabPage2);
             this.tabControlReservas.Location = new System.Drawing.Point(11, 11);
-            this.tabControlReservas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControlReservas.Margin = new System.Windows.Forms.Padding(2);
             this.tabControlReservas.Name = "tabControlReservas";
             this.tabControlReservas.SelectedIndex = 0;
             this.tabControlReservas.Size = new System.Drawing.Size(856, 534);
@@ -88,9 +93,9 @@
             this.tabPage1.Controls.Add(this.groupBoxListaReservas);
             this.tabPage1.Controls.Add(this.groupBoxFuncionario);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage1.Size = new System.Drawing.Size(848, 508);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Reservas";
@@ -104,9 +109,9 @@
             this.groupBoxListaReservas.Controls.Add(this.buttonApagarReserva);
             this.groupBoxListaReservas.Controls.Add(this.buttonGuardarReserva);
             this.groupBoxListaReservas.Location = new System.Drawing.Point(364, 3);
-            this.groupBoxListaReservas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBoxListaReservas.Margin = new System.Windows.Forms.Padding(2);
             this.groupBoxListaReservas.Name = "groupBoxListaReservas";
-            this.groupBoxListaReservas.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBoxListaReservas.Padding = new System.Windows.Forms.Padding(2);
             this.groupBoxListaReservas.Size = new System.Drawing.Size(465, 385);
             this.groupBoxListaReservas.TabIndex = 19;
             this.groupBoxListaReservas.TabStop = false;
@@ -118,7 +123,7 @@
             this.btnFatura.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFatura.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnFatura.Location = new System.Drawing.Point(98, 314);
-            this.btnFatura.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnFatura.Margin = new System.Windows.Forms.Padding(2);
             this.btnFatura.Name = "btnFatura";
             this.btnFatura.Size = new System.Drawing.Size(76, 32);
             this.btnFatura.TabIndex = 7;
@@ -141,7 +146,7 @@
             // 
             this.listBoxReservas.FormattingEnabled = true;
             this.listBoxReservas.Location = new System.Drawing.Point(3, 25);
-            this.listBoxReservas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listBoxReservas.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxReservas.Name = "listBoxReservas";
             this.listBoxReservas.Size = new System.Drawing.Size(447, 238);
             this.listBoxReservas.TabIndex = 0;
@@ -152,7 +157,7 @@
             this.buttonApagarReserva.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonApagarReserva.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonApagarReserva.Location = new System.Drawing.Point(191, 314);
-            this.buttonApagarReserva.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonApagarReserva.Margin = new System.Windows.Forms.Padding(2);
             this.buttonApagarReserva.Name = "buttonApagarReserva";
             this.buttonApagarReserva.Size = new System.Drawing.Size(76, 32);
             this.buttonApagarReserva.TabIndex = 5;
@@ -165,7 +170,7 @@
             this.buttonGuardarReserva.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonGuardarReserva.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonGuardarReserva.Location = new System.Drawing.Point(7, 314);
-            this.buttonGuardarReserva.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonGuardarReserva.Margin = new System.Windows.Forms.Padding(2);
             this.buttonGuardarReserva.Name = "buttonGuardarReserva";
             this.buttonGuardarReserva.Size = new System.Drawing.Size(76, 32);
             this.buttonGuardarReserva.TabIndex = 4;
@@ -194,9 +199,9 @@
             this.groupBoxFuncionario.Controls.Add(this.label10);
             this.groupBoxFuncionario.Controls.Add(this.label11);
             this.groupBoxFuncionario.Location = new System.Drawing.Point(3, 3);
-            this.groupBoxFuncionario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBoxFuncionario.Margin = new System.Windows.Forms.Padding(2);
             this.groupBoxFuncionario.Name = "groupBoxFuncionario";
-            this.groupBoxFuncionario.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBoxFuncionario.Padding = new System.Windows.Forms.Padding(2);
             this.groupBoxFuncionario.Size = new System.Drawing.Size(330, 501);
             this.groupBoxFuncionario.TabIndex = 4;
             this.groupBoxFuncionario.TabStop = false;
@@ -217,7 +222,7 @@
             // 
             this.textBoxCliente.Enabled = false;
             this.textBoxCliente.Location = new System.Drawing.Point(49, 81);
-            this.textBoxCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxCliente.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCliente.Name = "textBoxCliente";
             this.textBoxCliente.Size = new System.Drawing.Size(170, 20);
             this.textBoxCliente.TabIndex = 18;
@@ -235,7 +240,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(216, 190);
+            this.label6.Location = new System.Drawing.Point(193, 142);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(42, 13);
             this.label6.TabIndex = 16;
@@ -244,7 +249,7 @@
             // labelMulta
             // 
             this.labelMulta.AutoSize = true;
-            this.labelMulta.Location = new System.Drawing.Point(267, 190);
+            this.labelMulta.Location = new System.Drawing.Point(241, 145);
             this.labelMulta.Name = "labelMulta";
             this.labelMulta.Size = new System.Drawing.Size(0, 13);
             this.labelMulta.TabIndex = 15;
@@ -289,17 +294,20 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(144, 143);
+            this.dateTimePicker1.Enabled = false;
+            this.dateTimePicker1.Location = new System.Drawing.Point(5, 268);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(181, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(155, 20);
             this.dateTimePicker1.TabIndex = 10;
+            this.dateTimePicker1.Value = new System.DateTime(2024, 6, 19, 9, 15, 30, 0);
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(8, 275);
+            this.monthCalendar1.Location = new System.Drawing.Point(5, 292);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 9;
+            this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
             // 
             // comboBoxExtras
             // 
@@ -340,7 +348,7 @@
             // textBoxNIF
             // 
             this.textBoxNIF.Location = new System.Drawing.Point(88, 32);
-            this.textBoxNIF.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxNIF.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxNIF.Name = "textBoxNIF";
             this.textBoxNIF.Size = new System.Drawing.Size(131, 20);
             this.textBoxNIF.TabIndex = 3;
@@ -386,9 +394,9 @@
             this.tabPage2.Controls.Add(this.listBox2);
             this.tabPage2.Controls.Add(this.listBox1);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage2.Size = new System.Drawing.Size(848, 508);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Verificação";
@@ -400,7 +408,7 @@
             this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button1.Location = new System.Drawing.Point(367, 431);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(125, 32);
             this.button1.TabIndex = 7;
@@ -463,7 +471,7 @@
             // 
             this.listBox2.FormattingEnabled = true;
             this.listBox2.Location = new System.Drawing.Point(448, 46);
-            this.listBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listBox2.Margin = new System.Windows.Forms.Padding(2);
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(398, 381);
             this.listBox2.TabIndex = 1;
@@ -472,18 +480,40 @@
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(4, 46);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(2);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(407, 381);
             this.listBox1.TabIndex = 0;
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusHora});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 562);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(875, 22);
+            this.statusStrip1.TabIndex = 8;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusHora
+            // 
+            this.toolStripStatusHora.Name = "toolStripStatusHora";
+            this.toolStripStatusHora.Size = new System.Drawing.Size(110, 17);
+            this.toolStripStatusHora.Text = "toolStripStatusHora";
+            // 
+            // timerFormReservas
+            // 
+            this.timerFormReservas.Enabled = true;
+            this.timerFormReservas.Tick += new System.EventHandler(this.timerFormReservas_Tick);
             // 
             // FormReservas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(875, 556);
+            this.ClientSize = new System.Drawing.Size(875, 584);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.tabControlReservas);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormReservas";
             this.Text = "FormReservas";
             this.Load += new System.EventHandler(this.FormReservas_Load);
@@ -495,7 +525,10 @@
             this.groupBoxFuncionario.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -538,5 +571,8 @@
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusHora;
+        private System.Windows.Forms.Timer timerFormReservas;
     }
 }

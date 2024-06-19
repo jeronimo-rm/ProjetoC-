@@ -12,7 +12,7 @@ namespace iCantina
     {
         [Key]
         public int Id { get; set; }
-        public string DescricaoPrato {  get; set; }
+        public string DescricaoPrato { get; set; }
         public string TipoPrato { get; set; }
         public string EstadoPrato { get; set; }
 
@@ -20,14 +20,13 @@ namespace iCantina
         {
 
         }
+
         public Prato(string descricaoPrato, string tipoPrato, string estadoPrato)
         {
             DescricaoPrato = descricaoPrato;
             TipoPrato = tipoPrato;
             EstadoPrato = estadoPrato;
-     
         }
-
 
         // OVERRIDE PARA DIZER O QUE VAI ESCREVER NA LISTBOX
         public override string ToString()
