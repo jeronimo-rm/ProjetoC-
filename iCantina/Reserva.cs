@@ -17,7 +17,7 @@ namespace iCantina
         public Menu Menu { get; set; }
         public Extra Extra { get; set; }
         public Multa Multa { get; set; }
-        public DateTime DataReserva { get; set; }
+        public TimeSpan Horario { get; set; }
 
 
         public Reserva()
@@ -25,20 +25,19 @@ namespace iCantina
 
         }
 
-        public Reserva(int id, Cliente cliente, Prato prato, Menu menu, Extra extra, Multa multa, DateTime dataReserva)
+        public Reserva(Cliente cliente, Prato prato, Menu menu, Extra extra, Multa multa, TimeSpan horario)
         {
-            Id = id;
-            Cliente = cliente;
-            Prato = prato;
-            Menu = menu;
-            Extra = extra;
-            Multa = multa;
-            DataReserva = dataReserva;
+            this.Cliente = Cliente;
+            this.Prato = Prato;
+            this.Menu = Menu;
+            this.Extra = Extra;
+            this.Multa = Multa;
+            Horario = horario;
         }
 
         public override string ToString()
         {
-            return "Cliente: " + Cliente + "       Prato: " + Prato + "       Menu: " + Menu + "       Extra: " + Extra + "       Multa: " + Multa + "       Data: " + DataReserva;
+            return "Cliente: " + Cliente + "       Prato: " + Prato + "       Menu: " + Menu + "       Extra: " + Extra + "       Multa: " + Multa + "       Data: " + Horario;
         }
     }
 

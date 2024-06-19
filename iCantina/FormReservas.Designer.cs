@@ -129,6 +129,7 @@
             this.btnFatura.TabIndex = 7;
             this.btnFatura.Text = "Fatura";
             this.btnFatura.UseVisualStyleBackColor = false;
+            this.btnFatura.Click += new System.EventHandler(this.btnFatura_Click);
             // 
             // label1
             // 
@@ -150,6 +151,7 @@
             this.listBoxReservas.Name = "listBoxReservas";
             this.listBoxReservas.Size = new System.Drawing.Size(595, 292);
             this.listBoxReservas.TabIndex = 0;
+            this.listBoxReservas.SelectedIndexChanged += new System.EventHandler(this.listBoxReservas_SelectedIndexChanged);
             // 
             // buttonApagarReserva
             // 
@@ -163,6 +165,7 @@
             this.buttonApagarReserva.TabIndex = 5;
             this.buttonApagarReserva.Text = "Apagar";
             this.buttonApagarReserva.UseVisualStyleBackColor = false;
+            this.buttonApagarReserva.Click += new System.EventHandler(this.buttonApagarReserva_Click);
             // 
             // buttonGuardarReserva
             // 
@@ -176,6 +179,7 @@
             this.buttonGuardarReserva.TabIndex = 4;
             this.buttonGuardarReserva.Text = "Guardar";
             this.buttonGuardarReserva.UseVisualStyleBackColor = false;
+            this.buttonGuardarReserva.Click += new System.EventHandler(this.buttonGuardarReserva_Click);
             // 
             // groupBoxFuncionario
             // 
@@ -310,6 +314,7 @@
             // 
             // monthCalendar1
             // 
+            this.monthCalendar1.Enabled = false;
             this.monthCalendar1.Location = new System.Drawing.Point(7, 359);
             this.monthCalendar1.Margin = new System.Windows.Forms.Padding(12, 11, 12, 11);
             this.monthCalendar1.Name = "monthCalendar1";
@@ -485,10 +490,6 @@
             this.listBoxWaiting.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxWaiting.FormattingEnabled = true;
             this.listBoxWaiting.ItemHeight = 20;
-            this.listBoxWaiting.Items.AddRange(new object[] {
-            "aaa",
-            "bbb",
-            "ccc"});
             this.listBoxWaiting.Location = new System.Drawing.Point(5, 57);
             this.listBoxWaiting.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listBoxWaiting.Name = "listBoxWaiting";

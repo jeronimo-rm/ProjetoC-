@@ -36,6 +36,12 @@ namespace iCantina
                 MessageBox.Show("Tem que selecionar um prato!", "Aviso!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
+            // Validação da seleção de um extra
+            if (comboBoxExtras.SelectedIndex == -1)
+            {
+                MessageBox.Show("Tem que selecionar um extra!", "Aviso!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
             // Validação do preço inserido
             // Substitua 'textBoxPreco' pelo nome real do seu campo de texto de preço, se for diferente
             if (string.IsNullOrWhiteSpace(textBoxPreco.Text))
