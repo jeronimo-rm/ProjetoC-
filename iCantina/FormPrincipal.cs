@@ -103,7 +103,7 @@ namespace iCantina
 
         }
 
-        private void toolStripStatusLabel1_Click(object sender, EventArgs e)
+        private void toolStripStatusLabelHora_Click(object sender, EventArgs e)
         {
 
         }

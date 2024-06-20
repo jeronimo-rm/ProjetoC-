@@ -44,3 +44,44 @@ C:\Users\Abner Gonçalves\Documents\GitHub\ProjetoC-\iCantina\obj\Debug\iCantina
 C:\Users\Abner Gonçalves\Documents\GitHub\ProjetoC-\iCantina\obj\Debug\iCantina.pdb
 C:\Users\jeron\OneDrive\Ambiente de Trabalho\da\ProjetoC-\iCantina\obj\Debug\iCantina.FormReservas.resources
 C:\Users\Abner Gonçalves\Documents\GitHub\ProjetoC-\iCantina\obj\Debug\iCantina.FormReservas.resources
+C:\Users\Abner Gonçalves\Documents\GitHub\ProjetoC-\iCantina\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\Abner Gonçalves\Documents\GitHub\ProjetoC-\iCantina\bin\Debug\itextsharp.dll
+C:\Users\Abner Gonçalves\Documents\GitHub\ProjetoC-\iCantina\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\Abner Gonçalves\Documents\GitHub\ProjetoC-\iCantina\bin\Debug\itextsharp.xml
+
+C:\Users\jeron\OneDrive\Ambiente de Trabalho\da\ProjetoC-\iCantina\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\jeron\OneDrive\Ambiente de Trabalho\da\ProjetoC-\iCantina\bin\Debug\itextsharp.dll
+C:\Users\jeron\OneDrive\Ambiente de Trabalho\da\ProjetoC-\iCantina\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\jeron\OneDrive\Ambiente de Trabalho\da\ProjetoC-\iCantina\bin\Debug\itextsharp.xml
+=======
+C:\Users\User\Documents\GitHub\ProjetoC-\iCantina\bin\Debug\iCantina.exe.config
+C:\Users\User\Documents\GitHub\ProjetoC-\iCantina\bin\Debug\iCantina.exe
+C:\Users\User\Documents\GitHub\ProjetoC-\iCantina\bin\Debug\iCantina.pdb
+C:\Users\User\Documents\GitHub\ProjetoC-\iCantina\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\User\Documents\GitHub\ProjetoC-\iCantina\bin\Debug\EntityFramework.dll
+C:\Users\User\Documents\GitHub\ProjetoC-\iCantina\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Documents\GitHub\ProjetoC-\iCantina\bin\Debug\itextsharp.dll
+C:\Users\User\Documents\GitHub\ProjetoC-\iCantina\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\User\Documents\GitHub\ProjetoC-\iCantina\bin\Debug\EntityFramework.xml
+C:\Users\User\Documents\GitHub\ProjetoC-\iCantina\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Documents\GitHub\ProjetoC-\iCantina\bin\Debug\itextsharp.xml
+C:\Users\User\Documents\GitHub\ProjetoC-\iCantina\obj\Debug\iCantina.csproj.AssemblyReference.cache
+C:\Users\User\Documents\GitHub\ProjetoC-\iCantina\obj\Debug\iCantina.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Documents\GitHub\ProjetoC-\iCantina\obj\Debug\iCantina.FormExtras.resources
+C:\Users\User\Documents\GitHub\ProjetoC-\iCantina\obj\Debug\iCantina.FormFuncionarios.resources
+C:\Users\User\Documents\GitHub\ProjetoC-\iCantina\obj\Debug\iCantina.FormGestaoClientes.resources
+C:\Users\User\Documents\GitHub\ProjetoC-\iCantina\obj\Debug\iCantina.FormMenu.resources
+C:\Users\User\Documents\GitHub\ProjetoC-\iCantina\obj\Debug\iCantina.FormMulta.resources
+C:\Users\User\Documents\GitHub\ProjetoC-\iCantina\obj\Debug\iCantina.FormPratos.resources
+C:\Users\User\Documents\GitHub\ProjetoC-\iCantina\obj\Debug\iCantina.FormPrincipal.resources
+C:\Users\User\Documents\GitHub\ProjetoC-\iCantina\obj\Debug\iCantina.FormReservas.resources
+C:\Users\User\Documents\GitHub\ProjetoC-\iCantina\obj\Debug\iCantina.Migrations.InitialCreate.resources
+C:\Users\User\Documents\GitHub\ProjetoC-\iCantina\obj\Debug\iCantina.Properties.Resources.resources
+C:\Users\User\Documents\GitHub\ProjetoC-\iCantina\obj\Debug\iCantina.csproj.GenerateResource.cache
+C:\Users\User\Documents\GitHub\ProjetoC-\iCantina\obj\Debug\iCantina.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\ProjetoC-\iCantina\obj\Debug\iCantina.csproj.CopyComplete
+C:\Users\User\Documents\GitHub\ProjetoC-\iCantina\obj\Debug\iCantina.exe
+C:\Users\User\Documents\GitHub\ProjetoC-\iCantina\obj\Debug\iCantina.pdb
+>>>>>>> Stashed changes
+C:\Users\User\Documents\GitHub\ProjetoC-\iCantina\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\jeron\OneDrive\Ambiente de Trabalho\da\ProjetoC-\iCantina\bin\Debug\BouncyCastle.Crypto.dll

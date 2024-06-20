@@ -97,9 +97,9 @@ namespace iCantina
             {
                 Prato pratoSelecionado = (Prato)listBoxPratos.SelectedItem;
                 // altera dos dados do prato selecionado
-                pratoSelecionado.descricaoPrato = textBoxDescricaoPrato.Text;
-                pratoSelecionado.tipoPrato = comboBoxTipoPrato.Text;
-                pratoSelecionado.estadoPrato = comboBoxEstadoPrato.Text;
+                pratoSelecionado.DescricaoPrato = textBoxDescricaoPrato.Text;
+                pratoSelecionado.TipoPrato = comboBoxTipoPrato.Text;
+                pratoSelecionado.EstadoPrato = comboBoxEstadoPrato.Text;
 
                 // Atualizar a exibição dos pratos na ListBox
                 int editarPrato = listBoxPratos.SelectedIndex;
@@ -167,9 +167,9 @@ namespace iCantina
                 using (var db = new ApplicationContext())
                 {
                     Prato pratoEscolhido = (Prato)listBoxPratos.SelectedItem;
-                    textBoxDescricaoPrato.Text = pratoEscolhido.descricaoPrato;
-                    comboBoxTipoPrato.Text = pratoEscolhido.tipoPrato;
-                    comboBoxEstadoPrato.Text = pratoEscolhido.estadoPrato;
+                    textBoxDescricaoPrato.Text = pratoEscolhido.DescricaoPrato;
+                    comboBoxTipoPrato.Text = pratoEscolhido.TipoPrato;
+                    comboBoxEstadoPrato.Text = pratoEscolhido.EstadoPrato;
                 }
             }
         }

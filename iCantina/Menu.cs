@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Data.Entity.Core.Metadata.Edm;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace iCantina
 {
@@ -13,34 +9,38 @@ namespace iCantina
     {
         [Key]
         public int Id { get; set; }
-        public string DescricaoMenu { get; set; }
-        public int IdPrato { get; set; }
-        public int IdExtra { get; set; }
+
+        [ForeignKey("Prato")]
+        public int PratoId { get; set; }
+        public virtual Prato Prato { get; set; }
+
+        [ForeignKey("Extra")]
+        public int ExtraId { get; set; }
+        public virtual Extra Extra { get; set; }
+
         public decimal PrecoEstudante { get; set; }
         public decimal PrecoProfessor { get; set; }
         public int Quantidade { get; set; }
+        public TimeSpan Horario { get; set; }
 
-        public Menu()
+        public Menu(Prato prato, Extra extra, decimal precoEstudante, decimal precoProfessor, int quantidade, TimeSpan horario)
         {
-
+            this.Prato = prato;
+            this.Extra = extra;
+            this.PrecoEstudante = precoEstudante;
+            this.PrecoProfessor = precoProfessor;
+            this.Quantidade = quantidade;
+            this.Horario = horario;
         }
 
-        public Menu(string descricaoMenu, int idPrato, int idExtra, decimal precoEstudante, decimal precoProfessor, int quantidade)
+        // Construtor sem parâmetros
+        public Menu()
         {
-            DescricaoMenu = descricaoMenu;
-            IdPrato = idPrato;
-            IdExtra = idExtra;
-            PrecoEstudante = precoEstudante;
-            PrecoProfessor = precoProfessor;
-            Quantidade = quantidade;
         }
 
         public override string ToString()
         {
-            var db = new ApplicationContext();
-            var nomePrato = db.Pratos.Find(IdPrato);
-            var nomeExtra = db.Extras.Find(IdExtra);
-            return "Menu: " + DescricaoMenu + "    Prato: " + nomePrato.descricaoPrato + "     Extra: " + nomeExtra.DescricaoExtra + "     Preço Estudante: " + PrecoEstudante + "€    Preço Professor: " + PrecoProfessor + "€       Quantidade: " + Quantidade;
+            return $"Prato: {Prato.DescricaoPrato} Extra: {Extra.DescricaoExtra} Preço Estudante: {PrecoEstudante}€ Preço Professor: {PrecoProfessor}€ Quantidade: {Quantidade}";
         }
     }
 }

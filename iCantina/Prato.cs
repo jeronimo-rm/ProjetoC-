@@ -12,26 +12,27 @@ namespace iCantina
     {
         [Key]
         public int Id { get; set; }
-        public string descricaoPrato {  get; set; }
-        public string tipoPrato { get; set; }
-        public string estadoPrato { get; set; }
-
-        public Prato(string descricaoPrato, string tipoPrato, string estadoPrato)
-        {
-            this.descricaoPrato = descricaoPrato;
-            this.tipoPrato = tipoPrato;
-            this.estadoPrato = estadoPrato;
-        }
+        public string DescricaoPrato { get; set; }
+        public string TipoPrato { get; set; }
+        public string EstadoPrato { get; set; }
+        public virtual ICollection<Menu> Menus { get; set; }
 
         public Prato() // Construtor vazio para o entity framework
         {
+            Menus = new HashSet<Menu>();
+        }
 
+        public Prato(string descricaoPrato, string tipoPrato, string estadoPrato)
+        {
+            DescricaoPrato = descricaoPrato;
+            TipoPrato = tipoPrato;
+            EstadoPrato = estadoPrato;
         }
 
         // OVERRIDE PARA DIZER O QUE VAI ESCREVER NA LISTBOX
         public override string ToString()
         {
-            return "Prato: " + descricaoPrato + "       Tipo: " + tipoPrato + "     Estado: " + estadoPrato;
+            return "Prato: " + DescricaoPrato + "       Tipo: " + TipoPrato + "     Estado: " + EstadoPrato;
         }
     }
 }
